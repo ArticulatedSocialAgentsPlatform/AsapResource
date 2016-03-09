@@ -1,0 +1,269 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+<!--
+NIET AF
+-->
+<!-- GLOBAL -->
+
+<xs:group name="vhSpecContent">
+	<xs:choice>		
+		<xs:element ref="IncludeSpec"/>
+		<xs:element ref="BMLRealizerSpec"/>
+	  <xs:element ref="AudioPlannerSpec"/>
+		<xs:element ref="VoiceSpec"/>
+		<xs:element ref="GestureBindingSpec"/>
+		<xs:element ref="SpeechBindingSpec"/>
+		<xs:element ref="FaceSpec"/>
+		<xs:element ref="BodySpec"/>
+		<xs:element ref="PhysicsSpec"/>
+	</xs:choice>
+</xs:group>
+
+<xs:element name="VirtualHumanSpec">
+	<xs:complexType>
+		<xs:sequence>
+			<xs:group ref="vhSpecContent" minOccurs="0" maxOccurs="unbounded"/>			
+		</xs:sequence>				
+		<xs:attribute use="required" name="version" type="xs:NMTOKEN"/>
+		<xs:attribute use="optional" name="resources" type="xs:normalizedString"/>
+	</xs:complexType>
+</xs:element>
+
+<!-- Include -->
+
+<xs:element name="IncludeSpec">
+	<xs:complexType>
+		<xs:attribute use="required" name="filename" type="xs:normalizedString"/>
+	</xs:complexType>				
+</xs:element>
+
+<!-- BMLRealizer -->
+
+<xs:element name="BMLRealizerSpec">
+	<xs:complexType>
+		<xs:attribute use="required" name="createrealizer" type="javaBool"/>
+	</xs:complexType>				
+</xs:element>
+
+<!-- AudioPlanner -->
+
+<xs:element name="AudioPlannerSpec">
+	<xs:complexType>
+		<xs:attribute use="required" name="createaudioplanner" type="javaBool"/>
+	</xs:complexType>				
+</xs:element>
+
+<!-- VOICE -->
+
+<xs:element name="VoiceSpec">
+	<xs:complexType>
+		<xs:attribute use="required" name="voicetype" type="voicetype"/>
+		<xs:attribute use="optional" name="voicename" type="xs:NMTOKEN"/>
+		<xs:attribute use="optional" name="factory" type="ttsfactory"/> <!-- only for TTS voicetypes! -->
+	</xs:complexType>				
+</xs:element>
+
+<xs:simpleType name="voicetype">
+  <xs:restriction base="xs:string">
+    <xs:enumeration value="SAPI5"/>
+    <xs:enumeration value="TEXT"/>
+    <xs:enumeration value="NOVOICE"/>
+  </xs:restriction>
+</xs:simpleType> 
+
+<xs:simpleType name="ttsfactory">
+  <xs:restriction base="xs:string">
+    <xs:enumeration value="WAV_TTS"/>
+    <xs:enumeration value="DIRECT_TTS"/>
+  </xs:restriction>
+</xs:simpleType> 
+
+<!-- GestureBinding -->
+
+<xs:element name="GestureBindingSpec">
+	<xs:complexType>
+		<xs:attribute use="required" name="filename" type="xs:normalizedString"/>
+		<xs:attribute use="optional" name="resources" type="xs:normalizedString"/>
+	</xs:complexType>				
+</xs:element>
+
+<!-- SpeechBinding -->
+<xs:element name="SpeechBindingSpec">
+	<xs:complexType>
+		<xs:attribute use="required" name="filename" type="xs:normalizedString"/>
+		<xs:attribute use="optional" name="resources" type="xs:normalizedString"/>
+	</xs:complexType>				
+</xs:element>
+
+
+<!-- FACE -->
+
+<xs:element name="FaceBinding">
+	<xs:complexType>
+		<xs:attribute use="required" name="filename" type="xs:normalizedString"/>
+		<xs:attribute use="optional" name="resources" type="xs:normalizedString"/>
+	</xs:complexType>				
+</xs:element>
+
+<xs:element name="MorphVisemeBinding">
+	<xs:complexType>
+		<xs:attribute use="required" name="filename" type="xs:normalizedString"/>
+		<xs:attribute use="optional" name="resources" type="xs:normalizedString"/>
+	</xs:complexType>				
+</xs:element>
+
+<xs:element name="MorphTargets">
+	<xs:complexType>
+		<xs:sequence>
+			<xs:element ref="Target" minOccurs="0" maxOccurs="unbounded"/>			
+		</xs:sequence>				
+	</xs:complexType>				
+</xs:element>
+
+<xs:group name="faceSpecContent">
+	<xs:choice>		
+		<xs:element ref="FaceBinding"/>
+		<xs:element ref="MorphVisemeBinding"/>
+	  <xs:element ref="MorphTargets"/>
+	</xs:choice>
+</xs:group>
+
+<xs:element name="FaceSpec">
+	<xs:complexType>
+		<xs:sequence>
+			<xs:group ref="faceSpecContent" minOccurs="0" maxOccurs="unbounded"/>			
+		</xs:sequence>				
+	</xs:complexType>
+</xs:element>
+
+<xs:element name="Target">
+	<xs:complexType>
+		<xs:attribute use="required" name="name" type="xs:NMTOKEN"/>
+	</xs:complexType>
+</xs:element>
+
+
+<!-- Body -->
+
+<xs:element name="BodySpec">
+	<xs:complexType>
+		<xs:sequence>
+			<xs:group ref="bodySpecContent" minOccurs="0" maxOccurs="unbounded"/>			
+		</xs:sequence>				
+	</xs:complexType>
+</xs:element>
+
+<xs:group name="bodySpecContent">
+	<xs:choice>		
+		<xs:element ref="ColladaSpec"/>
+		<xs:element ref="StartPose"/>
+	  <xs:element ref="StartPosition"/>
+	  <xs:element ref="StartRotation"/>
+	  <xs:element name="GlueFeetToFloor"/>
+	</xs:choice>
+</xs:group>
+
+<xs:element name="ColladaSpec">
+	<xs:complexType>
+		<xs:sequence>
+			<xs:group ref="colladaSpecContent" minOccurs="0" maxOccurs="unbounded"/>		
+		</xs:sequence>
+	</xs:complexType>
+</xs:element>
+
+<xs:group name="colladaSpecContent">
+	<xs:choice>		
+		<xs:element name="ColladaIncludeDir">
+			<xs:complexType>
+				<xs:attribute use="required" name="path" type="xs:token"/>
+	  	</xs:complexType>
+		</xs:element>
+		
+		<xs:element name="ColladaFile">
+			<xs:complexType>
+				<xs:attribute use="required" name="filename" type="xs:token"/>
+	  	</xs:complexType>
+		</xs:element>
+	  
+	  <xs:element name="ColladaRenamingFile">
+	  	<xs:complexType>
+	  		<xs:attribute use="required" name="filename" type="xs:token"/>
+	  	</xs:complexType>
+		</xs:element>
+	  
+	  <xs:element name="ColladaScalingFactor">
+	  	<xs:complexType>
+	  		<xs:attribute use="required" name="factor" type="xs:float"/>
+	  	</xs:complexType>
+		</xs:element>
+		
+	</xs:choice>
+</xs:group>
+
+<xs:element name="StartPose">
+	<xs:complexType>
+		<xs:attribute use="required" name="resources" type="xs:token"/>
+		<xs:attribute use="required" name="filename" type="xs:token"/>
+	</xs:complexType>
+</xs:element>
+
+<xs:element name="StartPosition">
+	<xs:complexType>
+		<xs:attribute use="required" name="offset" type="xs:token"/> <!-- Should be vec3 -->
+	</xs:complexType>
+</xs:element>
+
+<xs:element name="StartRotation">
+	<xs:complexType>
+		<xs:attribute use="required" name="rotation" type="xs:token"/> <!-- Should be vec4 -->
+	</xs:complexType>
+</xs:element>
+
+<!-- Physics -->
+
+<xs:element name="MixedSystem">
+	<xs:complexType>
+		<xs:attribute use="required" name="name" type="xs:token"/>
+		<xs:attribute use="required" name="filename" type="xs:token"/>
+	</xs:complexType>
+</xs:element>
+
+<xs:group name="physicsSpecContent">
+	<xs:choice>		
+		<xs:element name="MixedSystems">
+			<xs:complexType>
+				<xs:sequence>
+					<xs:element ref="MixedSystem" minOccurs="0" maxOccurs="unbounded"/>
+				</xs:sequence>
+	  	</xs:complexType>
+		</xs:element>
+		
+		<xs:element name="PhysicalModel">
+			<xs:complexType>
+				<xs:attribute use="required" name="filename" type="xs:token"/>	
+	  	</xs:complexType>
+		</xs:element>		
+		
+	</xs:choice>
+</xs:group>		
+
+<xs:element name="PhysicsSpec">
+	<xs:complexType>
+	<xs:sequence>
+		<xs:group ref="physicsSpecContent" minOccurs="0" maxOccurs="unbounded"/>
+	</xs:sequence>
+	<xs:attribute use="optional" name="resources" type="xs:token"/>			
+	</xs:complexType>
+</xs:element>
+
+<!-- do not use standard boolean, because that allows 0 and 1 too -->
+
+<xs:simpleType name="javaBool">
+  <xs:restriction base="xs:string">
+    <xs:enumeration value="true"/>
+    <xs:enumeration value="false"/>    
+  </xs:restriction>
+</xs:simpleType>
+
+</xs:schema>

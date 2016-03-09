@@ -1,0 +1,17 @@
+<!--
+A fragment of aligned verbal and nonverbal behavior
+
+-->
+<bml xmlns="http://www.bml-initiative.org/bml/bml-1.0"  xmlns:bmlt="http://hmi.ewi.utwente.nl/bmlt" id="bml1">
+	<speech id = "bluespeech" start="gaze2:ready">
+  <text>Ich gucke nach dem blauen Kubus.</text>
+	</speech>
+	<speech id = "greenspeech" start="gaze1:start">
+  <text>Guck mal! Eine grune Kugel.</text>
+	</speech>
+	<speech id = "bluespeech2" start="gaze1:end">
+  <text>Gucke jetzt weiter nach dem blauen Kubus.</text>
+	</speech>
+	<gaze id="gaze1" bmlt:dynamic="true" start="4" ready="5" relax="6" end="7" influence="NECK" target="greensphere"/>		
+	<gaze id="gaze2" start="1" ready="2" influence="NECK" target="bluebox"/>	
+</bml>

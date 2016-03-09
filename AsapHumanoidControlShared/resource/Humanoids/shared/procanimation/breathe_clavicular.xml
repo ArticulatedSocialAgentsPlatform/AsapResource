@@ -1,0 +1,13 @@
+<!--
+needs to be made into the proper animation with the shoulders:)
+-->
+<ProcAnimation prefDuration="1.0" minDuration="1" maxDuration="1.0">
+	<Rotation rotation="0;0;if (t &lt; 0.25,0,if (t &lt; 0.75, a * 0.02 * (-cos( (t-0.25) * 4.0 * pi ) +1),0))" target="l_sternoclavicular"/>
+	<Rotation rotation="0;0;if (t &lt; 0.25,0,if (t &lt; 0.75, -a * 0.02 * (-cos( (t-0.25) * 4.0 * pi )+1),0))" target="r_sternoclavicular"/>
+	<Parameter sid="a" description="magnitude" value="0.25"/>
+	<KeyPosition id="start" time="0.0" weight="1.0"></KeyPosition>
+	<KeyPosition id="ready" time="0.25" weight="1.0"></KeyPosition>
+	<KeyPosition id="stroke" time="0.5" weight="1.0"></KeyPosition>
+	<KeyPosition id="relax" time="0.75" weight="1.0"></KeyPosition>
+	<KeyPosition id="end" time="1.0" weight="1.0"></KeyPosition>
+</ProcAnimation>

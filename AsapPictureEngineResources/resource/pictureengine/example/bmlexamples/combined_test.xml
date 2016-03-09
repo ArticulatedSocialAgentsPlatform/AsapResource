@@ -1,0 +1,26 @@
+
+<bml id="bml1" xmlns="http://www.bml-initiative.org/bml/bml-1.0" xmlns:pe="http://hmi.ewi.utwente.nl/pictureengine" xmlns:bmlt="http://hmi.ewi.utwente.nl/bmlt">
+    <pe:setImage filePath="pictureengine/example/pictures/" fileName="neutral-open.png" start="0" end="30.0" id="0"/>
+    <speech id="s1" start="1.0">
+        <text>Hello, my name is Brenda, I will be your coach for the coming weeks.</text>
+    </speech>
+    <speech id="s2" start="s1:end">
+        <text>This text is synchronized through BML!</text>
+    </speech>
+    <faceLexeme lexeme="smile" id="smile1" start="s2:start" end="s2:end"/>
+    <speech id="s4" start="s2:end">
+        <text>Would you like a cookie?</text>
+    </speech>
+    <pe:addImage id="brows" filePath="pictureengine/example/pictures/" fileName="brows-raised.png" layer="7" start="s4:start" end="s4:end"/>
+    <bmlt:blinkemitter id="blinkemitter1" start="0" range="1" avgwaitingtime="4"/>
+    <pointing id="behavior1" target="icon" mode="LEFT_HAND" start="0" end="2"/>
+    <gesture id="beatL" lexeme="BEAT" mode="LEFT_HAND" start="4" end="5" />
+    <gesture id="beatR" lexeme="BEAT" mode="RIGHT_HAND" start="6" end="7" />
+    <pointing id="hand_r" target="icon" mode="RIGHT_HAND" start="9" end="11" />
+    <speech id="s3" start="lookleft:start">
+        <text>I will move my hands right after this sentence.</text>
+    </speech>
+    <gaze influence="EYES" target="right" id="lookright" start="10" end="14" />
+    <gaze influence="EYES" target="left" id="lookleft" start="14" end="30" />
+    <gesture id="beat2" lexeme="BEAT" mode="BOTH_HANDS" start="s3:end"/>
+</bml>

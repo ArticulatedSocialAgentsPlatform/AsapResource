@@ -1,0 +1,15 @@
+<!--
+Should generate a warning, anticipator is not a valid bml block or anticipator
+(should have been anticipators)
+-->
+<bml xmlns="http://www.bml-initiative.org/bml/bml-1.0"  id="bml1">
+	<speech id="speech1"> 
+		<text>Hello <sync id="sync1"/>world. </text>
+  </speech>    
+  <constraint>
+  <synchronize>
+			<sync ref="speech1:sync1"/>
+			<sync ref="anticipator:dummyanticipator:dummy"/>
+	</synchronize>
+	</constraint>
+</bml>

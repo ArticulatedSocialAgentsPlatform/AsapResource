@@ -1,0 +1,3 @@
+Note: some Asap loader files are found in other modules.
+
+* example of picture engine loader: AsapResource/AsapPictureEngineResources

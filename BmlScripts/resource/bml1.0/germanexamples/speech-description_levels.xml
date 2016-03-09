@@ -1,0 +1,43 @@
+<!--
+Description levels in speech.
+
+- the realizer will try the highest priority descriptions first. If it cannot deal with them, it will revert to lower levels.
+- all synchronisation points must be present in all levels: if a realizer can ONLY realize the core-BML description, it should still have all synchronisation points available
+- note that not all voices can deal with all description levels. In the example below, the text of each level is slightly different, so you can find out which levels are supported by a particular voice
+-->
+<bml xmlns="http://www.bml-initiative.org/bml/bml-1.0"  id="bml1">
+
+  <speech id="speech1" start="1">
+
+    <text>Hallo, ich verwende jetzt core <sync id="bml"/>BML!</text>
+
+    <!-- should not work at all -->
+    <description priority="3" type="dummy">
+      <dummy >
+        Hallo, ich verwende jetzt <dummy>dummy</dummy> <sync id="bml"/>.
+      </dummy>
+    </description>
+
+    <description priority="1" type="application/msapi+xml">
+      <sapi >
+        Hallo ich verwende jetzt <spell>MSAPI</spell> <mark name="bml"/><spell>BML</spell>.        
+      </sapi>
+    </description>
+
+    <!-- only for Mary voices -->
+    <description priority="10" type="maryxml">
+      <maryxml xmlns="http://mary.dfki.de/2002/MaryXML">
+        Hallo! Ich verwende jetzt <mark name="bml"/>MaryTTS.
+      </maryxml>    
+    </description>
+    
+    <!-- MSAPI voices often can also deal with SSML -->
+    <description priority="2" type="application/ssml+xml">
+      <speak xmlns="http://www.w3.org/2001/10/synthesis">        
+        Hallo! <break time="3s"/> <prosody pitch="high">Ich verwende jetzt <mark name="bml"/>SSML</prosody>.
+      </speak>
+    </description>
+  
+  </speech>
+  
+</bml>

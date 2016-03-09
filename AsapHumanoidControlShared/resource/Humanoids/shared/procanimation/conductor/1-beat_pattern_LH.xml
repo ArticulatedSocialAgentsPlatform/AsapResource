@@ -1,0 +1,29 @@
+<ProcAnimation prefDuration="2" minDuration="2" maxDuration="2">
+<EndEffector local="true" translation="-0.15+0.2+(0 -0.0012*(10*a + 3*abs(a)+12)+(0.5-t)^2*( 0.07+(10*a + 3*abs(a)+12)*0.012))*0.8+xoff;-1.3+1.3+-0.3+((10*a + 3*abs(a)+12)*0.025-(0.8*(10*a + 3*abs(a)+12)-15)*0.007 -(t-0.5)^2*((10*a + 3*abs(a)+12)*0.1))*0.8+yoff;0.05+0.30-0.002*(10*a + 3*abs(a)+12)*sin(t*pi)+ (t-0.5)^2*((10*a + 3*abs(a)+12)*0.0018)+zoff" swivel="-0.42" target="l_wrist"></EndEffector>
+<Rotation rotation="pi- (0.2+0.01*a)*(t-0.5)^2;pi;pi" target="vc7"></Rotation>
+<Rotation rotation="3;3;3" target="vc1"></Rotation>
+<Rotation rotation="-0.3;0;0" target="l_thumb1"></Rotation>
+<Rotation rotation="-0.2;0;0" target="l_thumb2"></Rotation>
+<Rotation rotation="-0.2;0;0" target="l_thumb3"></Rotation>
+<Rotation rotation="0;0;-0.1" target="l_index1"></Rotation>
+<Rotation rotation="0;0;-0.2" target="l_index2"></Rotation>
+<Rotation rotation="0;0;-0.3" target="l_index3"></Rotation>
+<Rotation rotation="0;0;-0.1" target="l_middle1"></Rotation>
+<Rotation rotation="0;0;-0.2" target="l_middle2"></Rotation>
+<Rotation rotation="0;0;-0.3" target="l_middle3"></Rotation>
+<Rotation rotation="0;0;-0.1" target="l_ring1"></Rotation>
+<Rotation rotation="0;0;-0.2" target="l_ring2"></Rotation>
+<Rotation rotation="0;0;-0.3" target="l_ring3"></Rotation>
+<Rotation rotation="0;0;-0.1" target="l_pinky1"></Rotation>
+<Rotation rotation="0;0;-0.2" target="l_pinky2"></Rotation>
+<Rotation rotation="0;0;-0.3" target="l_pinky3"></Rotation>
+<KeyPosition id="start" time="0.0" weight="1.0" ></KeyPosition>
+<KeyPosition id="beat1a" time="0.25" weight="1.0" ></KeyPosition>
+<KeyPosition id="beat1b" time="0.5" weight="1.0" ></KeyPosition>
+<KeyPosition id="beat1c" time="0.75" weight="1.0" ></KeyPosition>
+<KeyPosition id="end" time="1.0" weight="1.0" ></KeyPosition>
+<Parameter sid="a" value="1.0"></Parameter>
+<Parameter sid="xoff" value="0.0"></Parameter>
+<Parameter sid="yoff" value="0.0"></Parameter>
+<Parameter sid="zoff" value="0.0"></Parameter>
+</ProcAnimation>

@@ -1,0 +1,21 @@
+<bml id="bml1" xmlns="http://www.bml-initiative.org/bml/bml-1.0">
+  <speech id="speech1">
+    <text>
+      <sync id="t1"/>It looks like this<sync id="t2"/>
+    </text>
+  </speech>
+  <gesture id="gesture1" strokeStart="speech1:t1" strokeEnd="speech1:t2" lexeme="SIZE" mode="BOTH_HANDS">
+    <description priority="1" type="murmlgesture">
+      <murmlgesture  id="gesture_1" xmlns="http://www.techfak.uni-bielefeld.de/ags/soa/murml">
+      <murml-description>
+	<symmetrical dominant="right_arm" symmetry="SymMS">
+	  <parallel>  
+          <static slot="HandLocation" value="LocShoulder LocCenterRight LocNorm" />
+	  <static slot="PalmOrientation" value="DirL"/>
+	  </parallel>  
+	</symmetrical>	  
+      </murml-description>
+      </murmlgesture>
+    </description>
+  </gesture>
+</bml>

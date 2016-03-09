@@ -1,0 +1,3 @@
+<bml id="bml1" xmlns="http://www.bml-initiative.org/bml/bml-1.0" xmlns:pe="http://hmi.ewi.utwente.nl/pictureengine">
+    <pe:addAnimationXML id="anim" layer="5" start="0" end="5" filePath="pictureengine/example/animations/" fileName="speak.xml"/>
+</bml>

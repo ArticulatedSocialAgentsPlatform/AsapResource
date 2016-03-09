@@ -1,0 +1,24 @@
+<ProcAnimation prefDuration="10" minDuration="10" maxDuration="10">
+	<EndEffector local="true" translation="0.05+tcbspline(t,0,0,    0,0,    (direction/180)*0.2,0.2,0,0,0,   (direction/180)*0.2,0.8,0,0,0,    0,1);-0.6+tcbspline(t,2,0,     0,0,    0.5+(row*0.3),0.2,0,0,0,      0.6+(row*0.3),0.60,0,0,0,   0.5+(row*0.3),0.65,0,0,0,    0.55+(row*0.3),0.8,0,0,0,    0,1);0.05+tcbspline(t,2,0,     0,0,   0.4,0.2,0,0,0,   0.4,0.8,0,0,0,    0,1)" swivel="-0.6" target="l_wrist"/>
+	<Rotation rotation="0;tcbspline(t,0,0,   0,0,   (direction/90)*0.1,0.2,0,0,0     ,(direction/90)*0.1,0.8,0,0,0,    0,1);0" target="vl5"/>
+	<Rotation rotation="0;tcbspline(t,0,0,   0,0,   (direction/90)*0.1,0.2,0,0,0     ,(direction/90)*0.1,0.8,0,0,0,    0,1);0" target="vl4"/>
+	<Rotation rotation="0;tcbspline(t,0,0,   0,0,   (direction/90)*0.1,0.2,0,0,0     ,(direction/90)*0.1,0.8,0,0,0,    0,1);0" target="vl3"/>
+	<Rotation rotation="0;tcbspline(t,0,0,   0,0,   (direction/90)*0.1,0.2,0,0,0     ,(direction/90)*0.1,0.8,0,0,0,    0,1);0" target="vl2"/>
+	<Rotation rotation="0;tcbspline(t,0,0,   0,0,   (direction/90)*0.1,0.2,0,0,0     ,(direction/90)*0.1,0.8,0,0,0,    0,1);0" target="vl1"/>
+	<Rotation rotation="hermite(t*2,0,0, 0,1*pointing,0);0;0" target="l_thumb1"/>
+	<Rotation rotation="hermite(t*2,0,0, 0,1*pointing,0);0;0" target="l_thumb2"/>
+	<Rotation rotation="hermite(t*2,0,0, 0,1*pointing,0);0;0" target="l_thumb3"/>
+	<Rotation rotation="0;0;hermite(t*2,0,0, 0,(-1)*pointing,0)" target="l_middle1"/>
+	<Rotation rotation="0;0;hermite(t*2,0,0, 0,(-1)*pointing,0)" target="l_middle2"/>
+	<Rotation rotation="0;0;hermite(t*2,0,0, 0,(-1)*pointing,0)" target="l_middle3"/>
+	<Rotation rotation="0;0;hermite(t*2,0,0, 0,(-1)*pointing,0)" target="l_ring1"/>
+	<Rotation rotation="0;0;hermite(t*2,0,0, 0,(-1)*pointing,0)" target="l_ring2"/>
+	<Rotation rotation="0;0;hermite(t*2,0,0, 0,(-1)*pointing,0)" target="l_ring3"/>
+	<Rotation rotation="0;0;hermite(t*2,0,0, 0,(-1)*pointing,0)" target="l_pinky1"/>
+	<Rotation rotation="0;0;hermite(t*2,0,0, 0,(-1)*pointing,0)" target="l_pinky2"/>
+	<Rotation rotation="0;0;hermite(t*2,0,0, 0,(-1)*pointing,0)" target="l_pinky3"/>
+	<KeyPosition time="0.65" weight="1.0" id="x"/>
+	<Parameter sid="direction" value="90.0"/>
+	<Parameter sid="row" value="0.0"/>
+	<Parameter sid="pointing" value="1.0"/>
+</ProcAnimation>

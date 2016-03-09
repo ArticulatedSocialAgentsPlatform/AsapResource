@@ -1,0 +1,76 @@
+<AsapVirtualHuman>
+  <BMLRealizer>
+    <!--LogPipe requestlog="hmi.elckerlyc.requests" /--> <!--only requests -->
+    <!--LogPipe requestlog="hmi.elckerlyc.requests" feedbacklog="hmi.elckerlyc.feedback"/--> <!--log both requests and feedback-->
+    <!--ServerAdapter requestport="7521" feedbackport="1257"/-->
+  </BMLRealizer> 
+
+  <Loader id="guiembodiment" loader="asap.environment.impl.JFrameEmbodiment">
+    <BmlUI/>
+    <!--BmlUI demoscriptresources="bml/defaultexamples"/-->
+    <FeedbackUI/>
+    <!--ServerUI/-->
+    <KillButton/>
+  </Loader>
+  
+  <Loader id="graphicalembodiment" loader="hmi.renderenvironment.HmiRenderEmbodimentLoader">
+    <!-- requires loader="hmi.environment.vhloader.impl.HmiRenderEmbodimentLoader" -->
+    <Body postprocessing="BLUEGUY" 
+          resourcedir="Humanoids/blueguy/bin" 
+          filename="blueguy.bin"/> 
+  </Loader>
+
+  <Loader id="skeletondebug" loader="hmi.debug.VJointDebugVisualisationLoader" requiredloaders="graphicalembodiment">
+    <Placement offset="-0.5 0 -0.5" type="diamond"/>
+  </Loader>
+  
+    <!-- since we will be using physics and a mixedanimationengine, we need to transform the skeletonembodiment into a mixedskeletonembodiment -->
+  <Loader id="mixedskeletonembodiment" loader="hmi.physicsenvironment.MixedSkeletonEmbodimentLoader" requiredloaders="graphicalembodiment"/>
+  
+  <Loader id="physicalembodiment" 
+              loader="hmi.physicsenvironment.OdePhysicalEmbodiment"
+              requiredloaders="mixedskeletonembodiment">
+    <MixedSystems> <!-- preferably, those are generated on the fly from the physical model... -->
+      <MixedSystem name="lowerbody"            filename="Humanoids/blueguy/mixedsystems/blueguylowerbody.xml"/> 
+      <MixedSystem name="lowerbodyandleftarm"  filename="Humanoids/blueguy/mixedsystems/blueguylowerbodyandleftarm.xml"/>
+      <MixedSystem name="lowerbodyandrightarm" filename="Humanoids/blueguy/mixedsystems/blueguylowerbodyandrightarm.xml"/>
+      <MixedSystem name="lowerbodyandarms"     filename="Humanoids/blueguy/mixedsystems/blueguylowerbodyarms.xml"/>
+    </MixedSystems>
+    <GlueFeetToFloor/>
+    <!--DebugPhysicalHuman offset="0.5f 0 -0.5"/-->    
+  </Loader>
+
+  <Loader id="physicsdebug" loader="hmi.debug.PhysicsDebugVisualisationLoader" requiredloaders="physicalembodiment">
+    <Placement offset="0.5 0 -0.5"/>
+  </Loader>
+  
+
+  <!--Loader id="textembodiment" loader="hmi.environment.vhloader.impl.StdOutTextEmbodiment"/-->
+
+  <Loader id="audioengine" loader="hmi.audioengine.loader.AudioEngineLoader"/>
+  
+  <Loader id="animationengine" 
+          loader="hmi.animationengine.loader.MixedAnimationEngineLoader"
+          requiredloaders="mixedskeletonembodiment,physicalembodiment">
+    <GestureBinding basedir="" resources="Humanoids/shared/gesturebinding/" filename="gesturebinding.xml"/>
+    <StartPose resources="Humanoids/blueguy/restposes/" filename="looselyhangingarms.xml"/>
+    <StartPosition offset="00 0 0"/>
+    <StartRotation rotation="0 1 0 0"/>
+  </Loader>
+  
+  <Loader id="speechengine" loader="hmi.speechengine.loader.SpeechEngineLoader" requiredloaders="animationengine,guiembodiment">
+    <!--Voice voicetype="TEXT"/--> <!-- requires a text embodiment to send the text to -->
+    <Voice voicetype="MARY" localmarydir="HmiResource/MARYTTS" factory="WAV_TTS"/>
+    <SpeechUI/>
+  </Loader>
+
+
+
+
+  <!-- routing for BMLBehaviors to Engines -->
+  <!-- This overrides the routes that are registered by default for the various engines -->
+  <!-- BMLRouting>
+    <Route behaviourclass="hmi.bml.core.FaceBehaviour" engineid="animationengine"/>
+  </BMLRouting -->
+  
+</AsapVirtualHuman>

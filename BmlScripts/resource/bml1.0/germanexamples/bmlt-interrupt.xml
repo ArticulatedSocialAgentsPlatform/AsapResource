@@ -1,0 +1,12 @@
+<!--
+interruption
+-->
+<bml xmlns="http://www.bml-initiative.org/bml/bml-1.0"  id="bml1" xmlns:bmla="http://www.asap-project.org/bmla">
+  
+  <bmla:interrupt id="i1" target="bml1" include="speech1" start="3"/> 
+  <!-- note that you can also target behaviors from earlier BML blocks! 
+  Leave out the include attribute to interrupt the whole block. -->
+  
+  <speech id="speech1" start="1"><text>Das ist ein Test fuer die Interruption des Verhaltens.</text></speech>
+
+</bml>

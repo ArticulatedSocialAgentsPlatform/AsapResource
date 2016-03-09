@@ -1,0 +1,25 @@
+<ProcAnimation prefDuration="10" minDuration="10" maxDuration="10">
+
+	<EndEffector local="true" translation="-0.02;-1;0" swivel="1" target="r_wrist"/>
+	<Rotation rotation="pi- (0.2+0.01*a)*(t-0.5)^2;pi;pi" target="vc7"/>
+	<Rotation rotation="3;3;3" target="vc1"/>
+	<Rotation rotation="((30-a)/30)*0.1;((30-a)/30)*0.1;-((30-a)/30)*0.3" target="r_wrist"/>
+	<KeyPosition id="start" time="0.0" weight="1.0" ></KeyPosition>
+	<KeyPosition id="beat1a" time="0.0625" weight="1.0" ></KeyPosition>
+	<KeyPosition id="beat1b" time="0.125" weight="1.0" ></KeyPosition>
+	<KeyPosition id="beat1c" time="0.1875" weight="1.0" ></KeyPosition>
+	<KeyPosition id="beat2" time="0.25" weight="1.0" ></KeyPosition>
+	<KeyPosition id="beat2a" time="0.3125" weight="1.0" ></KeyPosition>
+	<KeyPosition id="beat2b" time="0.375" weight="1.0" ></KeyPosition>
+	<KeyPosition id="beat2c" time="0.4375" weight="1.0" ></KeyPosition>
+	<KeyPosition id="beat3" time="0.5" weight="1.0" ></KeyPosition>
+	<KeyPosition id="beat3a" time="0.5625" weight="1.0" ></KeyPosition>
+	<KeyPosition id="beat3b" time="0.625" weight="1.0" ></KeyPosition>
+	<KeyPosition id="beat3c" time="0.6875" weight="1.0" ></KeyPosition>
+	<KeyPosition id="beat4" time="0.75" weight="1.0" ></KeyPosition>
+	<KeyPosition id="beat4a" time="0.8125" weight="1.0" ></KeyPosition>
+	<KeyPosition id="beat4b" time="0.875" weight="1.0" ></KeyPosition>
+	<KeyPosition id="beat4c" time="0.9375" weight="1.0" ></KeyPosition>
+	<KeyPosition id="end" time="1.0" weight="1.0" ></KeyPosition>
+	<Parameter sid="a" value="0.0"/>
+</ProcAnimation>

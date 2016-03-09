@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<CompoundController xmlns:bmlt="http://hmi.ewi.utwente.nl/bmlt">
+  <required>
+	  <Controller class="hmi.physics.controller.BallJointController" id="shoulder">
+			<bmlt:parameter name="joint" value="r_shoulder"/>
+		</Controller>
+	  <Controller class="hmi.physics.controller.HingeJointController" id="elbow">
+			<bmlt:parameter name="joint" value="r_elbow"/>
+		</Controller>
+	</required>
+	<desired>
+		<Controller class="hmi.physics.controller.HingeJointController" id="wristx">
+			<bmlt:parameter name="joint" value="r_wrist"/>
+			<bmlt:parameter name="axis" value="0"/>
+		</Controller>
+		<Controller class="hmi.physics.controller.HingeJointController" id="wristz">
+			<bmlt:parameter name="joint" value="r_wrist"/>
+			<bmlt:parameter name="axis" value="2"/>
+		</Controller>
+	</desired>
+</CompoundController>

@@ -1,0 +1,204 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+<xs:simpleType name="partsType">
+	<xs:restriction base="xs:string">
+		<xs:pattern value="([a-zA-Z0-9_])+( *([a-zA-Z0-9_])+)*"/>
+	</xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="jepTriple">
+	<xs:restriction base="xs:string">
+		<xs:pattern value=".+;.+;.+"/>
+	</xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="jointType">
+	<xs:restriction base="xs:string">
+		<xs:pattern value="([a-zA-Z0-9_])+"/>
+	</xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="posfloat">
+	<xs:restriction base="xs:decimal">
+		<xs:minInclusive value="0" />
+	</xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="keyTime">
+	<xs:restriction base="xs:decimal">
+		<xs:minInclusive value="0" />
+		<xs:maxInclusive value="1" />
+	</xs:restriction>
+</xs:simpleType>
+
+<!-- do not use standard boolean, because that allows 0 and 1 too -->
+<xs:simpleType name="javaBool">
+  <xs:restriction base="xs:string">
+    <xs:enumeration value="true"/>
+    <xs:enumeration value="false"/>    
+  </xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="rotEncodingSI">
+  <xs:restriction base="xs:string">
+    <xs:enumeration value="Quat"/>
+    <xs:enumeration value="axisangles"/>
+    <xs:enumeration value="quaternion"/>
+  </xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="rotEncodingKF">
+  <xs:restriction base="xs:string">
+    <xs:enumeration value="euler"/>
+    <xs:enumeration value="axisangles"/>
+    <xs:enumeration value="quaternion"/>
+  </xs:restriction>
+</xs:simpleType>
+
+
+<xs:element name="ProcAnimation">
+	<xs:complexType>
+		<xs:sequence>
+			<xs:group ref="procGroup" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+		
+		<!-- minDuration <= prefDuration <= maxDuration -->
+		<xs:attribute use="required" name="prefDuration" type="posfloat"/>			
+		<xs:attribute use="required" name="minDuration" type="posfloat"/>
+		<xs:attribute use="required" name="maxDuration" type="posfloat"/>				
+	</xs:complexType>
+</xs:element>
+
+<xs:group name="procGroup">
+	<xs:choice>
+		<xs:group ref="rotationGroup"/>
+		<xs:group ref="parameterGroup"/>
+		<xs:group ref="keyPosGroup"/>
+		<xs:group ref="endEffectorGroup"/>
+		<xs:group ref="keyFramesGroup"/>
+		<xs:group ref="skeletonInterpolatorGroup"/>
+	</xs:choice>
+</xs:group>
+
+<xs:group name="skeletonInterpolatorGroup">
+	<xs:sequence>
+	<xs:element name="SkeletonInterpolator" minOccurs="0" maxOccurs="unbounded"> 
+		<xs:complexType>			
+			<xs:simpleContent>
+				<!-- 
+											=> frame+
+				frame			    => time value*									 
+				value					=> translation|rotation|velocity|avel (order prescribed by encoding(?))
+				translation   => decimal decimal decimal				
+				rotation			=> decimal decimal decimal decimal (is valid quaternion/axisangle)
+				velocity			=> decimal decimal decimal
+				avel					=> decimal decimal decimal
+				-->
+				<xs:extension base="xs:string">
+					<xs:attribute use="optional" name="rotationEncoding" type="rotEncodingSI"/>
+					
+					<xs:attribute use="required" name="parts" type="partsType"/>
+					
+					
+					<!-- 
+						          => T1 rest* | transrest
+						rest      => R|S|V|W
+						transrest => T|rest
+					-->
+					<xs:attribute use="required" name="encoding" type="xs:string"/>
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	</xs:sequence>
+</xs:group>
+
+
+<xs:group name="keyFramesGroup">
+	<xs:sequence>
+	<xs:element name="Keyframes" minOccurs="0" maxOccurs="unbounded"> 
+		<xs:complexType>			
+			<xs:group ref="keyFrameGroup"/>			
+			<xs:attribute use="required" name="target" type="jointType"/>			
+			<xs:attribute use="required" name="encoding" type="rotEncodingKF"/>
+		</xs:complexType>
+	</xs:element>
+	</xs:sequence>
+</xs:group>
+
+<xs:group name="keyFrameGroup">
+	<xs:sequence>
+		<xs:element name="Keyframe" minOccurs="1" maxOccurs="unbounded"> 
+			<xs:complexType>		
+				<xs:attribute use="required" name="time" type="keyTime"/>
+				<xs:attribute use="optional" name="local" type="javaBool"/>
+				
+				<!-- 	rotation should be a valid set of 3 or 4 (depending on encoding) JEP formulas, seperated by 2 or 3 ';'-s. 
+							only tests for 2 ;'s
+				-->
+				<xs:attribute use="required" name="value" type="jepTriple"/>
+			</xs:complexType>
+		</xs:element>
+	</xs:sequence>
+</xs:group>
+
+<xs:group name="rotationGroup">
+	<xs:sequence>
+	<xs:element name="Rotation" minOccurs="0" maxOccurs="unbounded"> 
+		<xs:complexType>			
+			<xs:attribute use="required" name="target" type="jointType"/>
+			
+			<!-- rotation should be a valid set of 3 JEP formulas, seperated by 2 ';'-s.
+			     only the latter is tested 
+			-->
+			<xs:attribute use="required" name="rotation" type="jepTriple"/>
+		</xs:complexType>
+	</xs:element>
+	</xs:sequence>
+</xs:group>
+
+<xs:group name="endEffectorGroup">
+	<xs:sequence>
+	<xs:element name="EndEffector" minOccurs="0" maxOccurs="unbounded"> 
+		<xs:complexType>			
+			<xs:attribute use="optional" name="local" type="javaBool"/>
+			
+			<!-- translation should be a valid set of 3 JEP formulas, seperated by 2 ';'-s. 
+						only the latter is tested
+			-->
+			<xs:attribute use="required" name="translation" type="jepTriple"/>			
+			
+			<!-- swivel should be a valid JEP formula -->
+			<xs:attribute use="optional" name="swivel" type="xs:string"/>			
+			<xs:attribute use="required" name="target" type="jointType"/>
+		</xs:complexType>
+	</xs:element>
+	</xs:sequence>
+</xs:group>
+
+<xs:group name="keyPosGroup">
+	<xs:sequence>
+	<xs:element name="KeyPosition" minOccurs="0" maxOccurs="unbounded"> 
+		<xs:complexType>			
+			<xs:attribute use="required" name="id" type="xs:ID"/>
+			<xs:attribute use="required" name="time" type="keyTime"/>
+			<xs:attribute use="required" name="weight" type="keyTime"/>
+		</xs:complexType>
+	</xs:element>
+	</xs:sequence>
+</xs:group>
+
+
+<xs:group name="parameterGroup">
+	<xs:sequence>
+	<xs:element name="Parameter" minOccurs="0" maxOccurs="unbounded">
+		<xs:complexType>
+			<xs:attribute use="required" name="sid" type="xs:ID"/>
+			<xs:attribute use="optional" name="description" type="xs:string"/>
+			<xs:attribute use="required" name="value" type="xs:decimal"/>
+		</xs:complexType>			
+	</xs:element>					
+	</xs:sequence>
+</xs:group>
+</xs:schema>

@@ -1,0 +1,6 @@
+<ProcAnimation prefDuration="1.0" minDuration="1" maxDuration="1.0">
+	<Rotation rotation="0;a * 0.5 * sin( t * 0.5 * pi * r);0" target="vc4"/>
+	<Rotation rotation="0;a * 0.5 * sin( t * 0.5 * pi * r);0" target="skullbase"/>	
+  <Parameter sid="a" description="magnitude" value="0.25"/>
+  <Parameter sid="r" description="repeats" value="1"/>  
+</ProcAnimation>

@@ -1,0 +1,6 @@
+<!--
+Creates a warning, locomotion is not yet supported
+-->
+<bml xmlns="http://www.bml-initiative.org/bml/bml-1.0"  id="bml1">
+	<locomotion id="locomotion1" manner="WALK" target="home"/>
+</bml>

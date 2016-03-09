@@ -1,0 +1,21 @@
+<!--
+Matches with looselyhanging arms pose in restingpose dir
+-->
+<CompoundController xmlns:bmlt="http://hmi.ewi.utwente.nl/bmlt">
+  <required>
+	  <Controller class="hmi.physics.controller.BallJointController" id="shoulder">
+			<bmlt:parameter name="joint" value="r_shoulder"/>
+			<bmlt:parameter name="anglez" value="-0.20"/>
+			<bmlt:parameter name="ksz" value="7"/>
+			<bmlt:parameter name="dsz" value="3"/>
+		</Controller>
+	  <Controller class="hmi.physics.controller.HingeJointController" id="elbow">
+			<bmlt:parameter name="joint" value="r_elbow"/>		
+		</Controller>
+	</required>
+	<desired>
+		<Controller class="hmi.physics.controller.BallJointController" id="wrist">
+			<bmlt:parameter name="joint" value="r_wrist"/>		
+		</Controller>
+	</desired>
+</CompoundController>

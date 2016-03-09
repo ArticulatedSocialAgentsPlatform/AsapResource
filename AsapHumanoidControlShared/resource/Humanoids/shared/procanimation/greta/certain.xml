@@ -1,0 +1,23 @@
+<!--
+This procedural animation was constructed using the Greta (http://www.tsi.enst.fr/~pelachau/Greta/)
+gesture with the corresponding name.
+-->
+<ProcAnimation prefDuration="1.1928366" minDuration="1.1928366" maxDuration="1.1928366">
+<EndEffector local="true" swivel="0.3" target="r_wrist" translation="tcbspline(t,0,0,XC,0.0,XC,0.08383378,0,0,0,XC,0.5419169,0,0,0,XC,1.0);tcbspline(t,0,0,YUPPERP,0.0,YUPPERP,0.08383378,0,0,0,YCC,0.5419169,0,0,0,YCC,1.0);tcbspline(t,0,0,ZMIDDLE,0.0,ZMIDDLE,0.08383378,0,0,0,ZMIDDLE,0.5419169,0,0,0,ZMIDDLE,1.0)"/>
+<Keyframes target="r_wrist" encoding="quaternion">
+<Keyframe time="0.0" local="false" value="0.7071068;-0.7071068;0.0;0.0"/>
+<Keyframe time="1" local="false" value="0.7071068;-0.7071068;0.0;0.0"/>
+</Keyframes>
+<KeyPosition id="start" weight="1" time="0.0"/>
+<KeyPosition id="strokeStart" weight="1" time="0.08383378"/>
+<KeyPosition id="strokeEnd" weight="1" time="0.5419169"/>
+<KeyPosition id="end" weight="1" time="1.0"/>
+<Parameter description="" sid="XC" value="0.01"/>
+<Parameter description="" sid="YUPPERP" value="-0.1"/>
+<Parameter description="" sid="ZMIDDLE" value="0.18"/>
+<Parameter description="" sid="YCC" value="-0.3"/>
+<SkeletonInterpolator rotationEncoding="axisangles" parts="r_thumb1 r_thumb2 r_thumb3 r_pinky1 r_index1 r_middle1 r_ring1 r_pinky2 r_middle2 r_index2 r_ring2 r_index3 r_pinky3 r_ring3 r_middle3" encoding="R">
+		  	0 -0.4 1 0 2 1 0 0 0.8 1 0 0 0.2 0 0 1 0.6 0 0 1.2 1 0 0 1 0.6 0 0 1 0.6 0 0 1 0.6 0 0 1 0.6 0 0 1 0.8 0 0 1 0.6 0 0 1 0.6 0 0 1 0.3 0 0 1 0.3 0 0 1 0.3
+		  	1 -0.4 1 0 2 1 0 0 0.8 1 0 0 0.2 0 0 1 0.6 0 0 1.2 1 0 0 1 0.6 0 0 1 0.6 0 0 1 0.6 0 0 1 0.6 0 0 1 0.8 0 0 1 0.6 0 0 1 0.6 0 0 1 0.3 0 0 1 0.3 0 0 1 0.3
+</SkeletonInterpolator>
+</ProcAnimation>

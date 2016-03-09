@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<!-- Incomplete -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://hmi.ewi.utwente.nl/bmlt" xmlns="http://hmi.ewi.utwente.nl/bmlt">
+
+<!-- bmlt:element -->
+<xs:element name="parameter">
+	<xs:complexType>
+		<xs:attribute use="required" name="name" type="xs:NMTOKEN"/>
+		<xs:attribute use="required" name="value" type="xs:NMTOKEN"/>
+	</xs:complexType>
+</xs:element>
+
+</xs:schema>

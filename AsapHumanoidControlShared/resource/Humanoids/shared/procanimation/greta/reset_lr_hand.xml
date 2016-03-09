@@ -1,0 +1,31 @@
+<ProcAnimation prefDuration="0.005" minDuration="0.005" maxDuration="0.005">
+<Keyframes target="r_wrist" encoding="axisangles">
+<Keyframe time="0.0" local="true" value="1;0;0;0"/>
+<Keyframe time="1.0" local="true" value="1;0;0;0"/>
+</Keyframes>
+<Keyframes target="l_wrist" encoding="axisangles">
+<Keyframe time="0.0" local="true" value="1;0;0;0"/>
+<Keyframe time="1.0" local="true" value="1;0;0;0"/>
+</Keyframes>
+<KeyPosition id="start" weight="1" time="0.0"/>
+<KeyPosition id="strokeStart" weight="1" time="0.0"/>
+<KeyPosition id="strokeEnd" weight="1" time="1.0"/>
+<KeyPosition id="relax" weight="1" time="1.0"/>
+<KeyPosition id="end" weight="1" time="1.0"/>
+<SkeletonInterpolator rotationEncoding="axisangles" parts="r_pinky1 r_index1 r_middle1 r_ring1 r_pinky2 r_middle2 r_index2 r_ring2 r_pinky3 r_middle3 r_index3 r_ring3" encoding="R">
+       0   1 0 0 0   1 0 0 0  1 0 0 0   1 0 0 0   1 0 0 0   1 0 0 0   1 0 0 0   1 0 0 0     1 0 0 0   1 0 0 0   1 0 0 0   1 0 0 0  
+       1   1 0 0 0   1 0 0 0  1 0 0 0   1 0 0 0   1 0 0 0   1 0 0 0   1 0 0 0   1 0 0 0     1 0 0 0   1 0 0 0   1 0 0 0   1 0 0 0  
+</SkeletonInterpolator>
+<SkeletonInterpolator rotationEncoding="axisangles" parts="r_thumb1 r_thumb2 r_thumb3" encoding="R">
+	0	  1 0 0 0   1 0 0 0   1 0 0 0   
+	1	  1 0 0 0   1 0 0 0   1 0 0 0   
+</SkeletonInterpolator>
+<SkeletonInterpolator rotationEncoding="axisangles" parts="l_pinky1 l_index1 l_middle1 l_ring1 l_pinky2 l_middle2 l_index2 l_ring2 l_pinky3 l_middle3 l_index3 l_ring3" encoding="R">
+       0   1 0 0 0   1 0 0 0  1 0 0 0   1 0 0 0   1 0 0 0   1 0 0 0   1 0 0 0   1 0 0 0     1 0 0 0   1 0 0 0   1 0 0 0   1 0 0 0  
+       1   1 0 0 0   1 0 0 0  1 0 0 0   1 0 0 0   1 0 0 0   1 0 0 0   1 0 0 0   1 0 0 0     1 0 0 0   1 0 0 0   1 0 0 0   1 0 0 0  
+</SkeletonInterpolator>
+<SkeletonInterpolator rotationEncoding="axisangles" parts="l_thumb1 l_thumb2 l_thumb3" encoding="R">
+	0	  1 0 0 0   1 0 0 0   1 0 0 0   
+	1	  1 0 0 0   1 0 0 0   1 0 0 0   
+</SkeletonInterpolator>
+</ProcAnimation>

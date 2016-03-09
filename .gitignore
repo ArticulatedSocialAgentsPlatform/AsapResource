@@ -1,0 +1,11 @@
+build
+test/report
+dist
+privateprops
+.project
+.classpath
+*.*~
+/**/*.*~
+manifest.mf
+
+/MARYTTSIncremental/resource/MARYTTSIncremental/log

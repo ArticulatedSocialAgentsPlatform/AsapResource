@@ -1,0 +1,135 @@
+<speechbinding>
+	<VisimeSpec visime="0">
+		<parameterdefaults>
+			<parameterdefault name="a" value="0"/>			
+			<parameterdefault name="offset" value="0"/>			
+		</parameterdefaults>
+		<MotionUnit type="ProcAnimation" file="Humanoids/shared/procanimation/speech/speakjaw.xml"/>
+	</VisimeSpec>
+	<VisimeSpec visime="1">
+		<parameterdefaults>
+			<parameterdefault name="a" value="0.9"/>			
+		</parameterdefaults>
+		<MotionUnit type="ProcAnimation" file="Humanoids/shared/procanimation/speech/speakjaw.xml"/>
+	</VisimeSpec>
+	<VisimeSpec visime="2">
+		<parameterdefaults>
+			<parameterdefault name="a" value="0.9"/>			
+		</parameterdefaults>
+		<MotionUnit type="ProcAnimation" file="Humanoids/shared/procanimation/speech/speakjaw.xml"/>
+	</VisimeSpec>
+	<VisimeSpec visime="3">
+		<parameterdefaults>
+			<parameterdefault name="a" value="0.9"/>			
+		</parameterdefaults>
+		<MotionUnit type="ProcAnimation" file="Humanoids/shared/procanimation/speech/speakjaw.xml"/>
+	</VisimeSpec>
+	<VisimeSpec visime="4">
+		<parameterdefaults>
+			<parameterdefault name="a" value="0.9"/>			
+		</parameterdefaults>
+		<MotionUnit type="ProcAnimation" file="Humanoids/shared/procanimation/speech/speakjaw.xml"/>
+	</VisimeSpec>
+	<VisimeSpec visime="5">
+		<parameterdefaults>
+			<parameterdefault name="a" value="0.9"/>			
+		</parameterdefaults>
+		<MotionUnit type="ProcAnimation" file="Humanoids/shared/procanimation/speech/speakjaw.xml"/>
+	</VisimeSpec>
+	<VisimeSpec visime="6">
+		<parameterdefaults>
+			<parameterdefault name="a" value="0.9"/>			
+		</parameterdefaults>
+		<MotionUnit type="ProcAnimation" file="Humanoids/shared/procanimation/speech/speakjaw.xml"/>
+	</VisimeSpec>
+	<VisimeSpec visime="7">
+		<parameterdefaults>
+			<parameterdefault name="a" value="0"/>			
+		</parameterdefaults>
+		<MotionUnit type="ProcAnimation" file="Humanoids/shared/procanimation/speech/speakjaw.xml"/>
+	</VisimeSpec>
+	<VisimeSpec visime="8">
+		<parameterdefaults>
+			<parameterdefault name="a" value="0.9"/>			
+		</parameterdefaults>
+		<MotionUnit type="ProcAnimation" file="Humanoids/shared/procanimation/speech/speakjaw.xml"/>
+	</VisimeSpec>
+	<VisimeSpec visime="9">
+		<parameterdefaults>
+			<parameterdefault name="a" value="0.9"/>			
+		</parameterdefaults>
+		<MotionUnit type="ProcAnimation" file="Humanoids/shared/procanimation/speech/speakjaw.xml"/>
+	</VisimeSpec>
+	<VisimeSpec visime="10">
+		<parameterdefaults>
+			<parameterdefault name="a" value="0.9"/>			
+		</parameterdefaults>
+		<MotionUnit type="ProcAnimation" file="Humanoids/shared/procanimation/speech/speakjaw.xml"/>
+	</VisimeSpec>
+	<VisimeSpec visime="11">
+		<parameterdefaults>
+			<parameterdefault name="a" value="0.9"/>			
+		</parameterdefaults>
+		<MotionUnit type="ProcAnimation" file="Humanoids/shared/procanimation/speech/speakjaw.xml"/>
+	</VisimeSpec>
+	<VisimeSpec visime="12">
+		<parameterdefaults>
+			<parameterdefault name="a" value="0"/>			
+		</parameterdefaults>
+		<MotionUnit type="ProcAnimation" file="Humanoids/shared/procanimation/speech/speakjaw.xml"/>
+	</VisimeSpec>
+	<VisimeSpec visime="13">
+		<parameterdefaults>
+			<parameterdefault name="a" value="0"/>			
+		</parameterdefaults>
+		<MotionUnit type="ProcAnimation" file="Humanoids/shared/procanimation/speech/speakjaw.xml"/>
+	</VisimeSpec>
+	<VisimeSpec visime="14">
+		<parameterdefaults>
+			<parameterdefault name="a" value="0"/>			
+		</parameterdefaults>
+		<MotionUnit type="ProcAnimation" file="Humanoids/shared/procanimation/speech/speakjaw.xml"/>
+	</VisimeSpec>
+	<VisimeSpec visime="15">
+		<parameterdefaults>
+			<parameterdefault name="a" value="0"/>			
+		</parameterdefaults>
+		<MotionUnit type="ProcAnimation" file="Humanoids/shared/procanimation/speech/speakjaw.xml"/>
+	</VisimeSpec>
+	<VisimeSpec visime="16">
+		<parameterdefaults>
+			<parameterdefault name="a" value="0"/>			
+		</parameterdefaults>
+		<MotionUnit type="ProcAnimation" file="Humanoids/shared/procanimation/speech/speakjaw.xml"/>
+	</VisimeSpec>
+	<VisimeSpec visime="17">
+		<parameterdefaults>
+			<parameterdefault name="a" value="0"/>			
+		</parameterdefaults>
+		<MotionUnit type="ProcAnimation" file="Humanoids/shared/procanimation/speech/speakjaw.xml"/>
+	</VisimeSpec>
+	<VisimeSpec visime="18">
+		<parameterdefaults>
+			<parameterdefault name="a" value="0"/>			
+		</parameterdefaults>
+		<MotionUnit type="ProcAnimation" file="Humanoids/shared/procanimation/speech/speakjaw.xml"/>
+	</VisimeSpec>
+	<VisimeSpec visime="19">
+		<parameterdefaults>
+			<parameterdefault name="a" value="0"/>			
+		</parameterdefaults>
+		<MotionUnit type="ProcAnimation" file="Humanoids/shared/procanimation/speech/speakjaw.xml"/>
+	</VisimeSpec>
+	<VisimeSpec visime="20">
+		<parameterdefaults>
+			<parameterdefault name="a" value="0"/>			
+		</parameterdefaults>
+		<MotionUnit type="ProcAnimation" file="Humanoids/shared/procanimation/speech/speakjaw.xml"/>
+	</VisimeSpec>
+	<VisimeSpec visime="21">
+		<parameterdefaults>
+			<parameterdefault name="a" value="0"/>			
+		</parameterdefaults>
+		<MotionUnit type="ProcAnimation" file="Humanoids/shared/procanimation/speech/speakjaw.xml"/>
+	</VisimeSpec>
+</speechbinding>

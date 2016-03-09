@@ -1,0 +1,8 @@
+<bml xmlns:bmlt="http://hmi.ewi.utwente.nl/bmlt" xmlns="http://www.bml-initiative.org/bml/bml-1.0" id="bml1">
+  <bmlt:keyframe id="kf1" start="0" end="2">   
+    <SkeletonInterpolator xmlns="" rotationEncoding="axisangles" parts="skullbase" encoding="R">
+		0 0 1 0 0
+		1 0 1 0 1
+    </SkeletonInterpolator>
+  </bmlt:keyframe>
+</bml>

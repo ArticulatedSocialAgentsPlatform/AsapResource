@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:bmlt="http://hmi.ewi.utwente.nl/bmlt" elementFormDefault="qualified"
+  attributeFormDefault="qualified">
+<xs:import namespace="http://hmi.ewi.utwente.nl/bmlt" schemaLocation="bmlt.xsd"/>
+
+<xs:element name="CompoundController">
+	<xs:complexType>
+		<xs:sequence>
+			<xs:group ref="reqDesGroup" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>				
+	</xs:complexType>
+</xs:element>
+
+<xs:group name="reqDesGroup">
+	<xs:choice>
+		<xs:element ref="required"/>
+		<xs:element ref="desired"/>
+	</xs:choice>
+</xs:group>
+
+<xs:element name="required">
+	<xs:complexType>
+		<xs:group ref="controllersGroup"/>
+	</xs:complexType>
+</xs:element>
+
+<xs:element name="desired">
+	<xs:complexType>
+		<xs:group ref="controllersGroup"/>
+	</xs:complexType>
+</xs:element>
+
+<xs:group name="controllersGroup">
+	<xs:sequence>
+		<xs:element name="Controller" minOccurs="0" maxOccurs="unbounded"/>		
+	</xs:sequence>
+</xs:group>
+
+<xs:element name="Controller">
+	<xs:complexType>
+		<xs:sequence>
+			<xs:element ref="bmlt:parameter" minOccurs="0" maxOccurs="unbounded"/>					
+		</xs:sequence>
+		<xs:attribute use="required" name="class" type="xs:NMTOKEN"/>
+		<xs:attribute use="required" name="id" type="xs:ID"/>
+	</xs:complexType>
+</xs:element>
+
+</xs:schema>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<marytts-install xmlns="http://mary.dfki.de/installer">
+    <voice gender="female" locale="de" name="bits1-hsmm" type="hsmm" version="4.1.0">
+        <description>A female German Hidden semi-Markov model voice, built from voice recordings provided by the BITS project at the Bavarian Archive of Speech Signals.</description>
+        <license href="http://mary.dfki.de/download/by-nd-3.0.html"/>
+        <package filename="mary-bits1-hsmm-4.1.0.zip"
+            md5sum="99fe3d8bbc6712de285c1b565165ed4a" size="1360340">
+            <location href="http://mary.dfki.de/download/4.1.0/"/>
+        </package>
+        <files>conf/de-bits1-hsmm.config, lib/voices/bits1-hsmm/str.pdf, lib/voices/bits1-hsmm/tree-str.inf, lib/voices/bits1-hsmm/tree-lf0.inf, lib/voices/bits1-hsmm/gv-str-littend.pdf, lib/voices/bits1-hsmm/tree-mgc.inf, lib/voices/bits1-hsmm/gv-mgc-littend.pdf, lib/voices/bits1-hsmm/lf0.pdf, lib/voices/bits1-hsmm/dur.pdf, lib/voices/bits1-hsmm/gv-lf0-littend.pdf, lib/voices/bits1-hsmm/mix_excitation_filters.txt, lib/voices/bits1-hsmm/US10010923_0.pfeats, lib/voices/bits1-hsmm/trickyPhones.txt, lib/voices/bits1-hsmm/mgc.pdf, lib/voices/bits1-hsmm/tree-dur.inf</files>
+        <depends language="de" version="4.1.0"/>
+    </voice>
+</marytts-install>

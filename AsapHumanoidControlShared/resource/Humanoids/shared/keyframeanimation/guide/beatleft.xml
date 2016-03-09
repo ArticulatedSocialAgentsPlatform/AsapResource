@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?><SkeletonInterpolator rotationEncoding="axisangles" parts="l_shoulder l_elbow l_wrist" encoding="R">
+		  	0.5 -0.961471 0.016783 0.274392 0.127055 -0.987234 -0.125557 0.098007 1.815115 1.000000 0.000000 0.000000 0.000000 
+		  	1 -0.761404 0.065404 0.644970 0.407954 -0.902339 0.409560 0.134327 1.896649 1.000000 0.000000 0.000000 0.000000 
+	</SkeletonInterpolator>

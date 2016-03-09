@@ -1,0 +1,5 @@
+<bml xmlns="http://www.bml-initiative.org/bml/bml-1.0"  id="interruptcommand" xmlns:bmlt="http://hmi.ewi.utwente.nl/bmlt" composition="merge">
+  <bmlt:interrupt id="i1" target="bml1">
+    <bmlt:interruptspec behavior="s1" interruptSync="w_8" onStart="bml_forinterruptionat_w_5"/>
+  </bmlt:interrupt>
+</bml>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SkeletonInterpolator rotationEncoding="quaternion" parts="l_thumb1 l_thumb2 l_thumb3" encoding="R">
+	0	0.99437046 -0.10451254 -0.001824273 0.017356798 0.9981349 -0.06104855 0.0 0.0 0.9902682 -0.13917312 0.0 0.0
+	1	0.99437046 -0.10451254 -0.001824273 0.017356798 0.9981349 -0.06104855 0.0 0.0	0.9902682 -0.13917312 0.0 0.0  	
+</SkeletonInterpolator>

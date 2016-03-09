@@ -1,0 +1,11 @@
+<ivy-module version="2.0">
+   <info organisation="Asap" module="AsapHumanoidLoaderDefaults"/>
+   <configurations>
+      <include file="${ivy.settings.dir}/configurations.xml"/>
+   </configurations>
+   <dependencies>
+      
+
+
+   </dependencies>
+</ivy-module>

@@ -1,0 +1,12 @@
+<!--
+Constraints:
+bml2:pvc1:start = bml1:speech1:start
+bml2:pvc1:end = bml1:speech1:end
+
+Constraints tested in: test.bml.ParserTest
+-->
+<bml xmlns="http://www.bml-initiative.org/bml/bml-1.0"  id="bml2" xmlns:bmlt="http://hmi.ewi.utwente.nl/bmlt" bmlt:allowexternalrefs="true">
+  <bmlt:parametervaluechange id="pvc1" target="bml1:speech1" paramId="volume" start="bml1:speech1:start" end="bml1:speech1:end">
+    <bmlt:trajectory type="linear" initialValue="0" targetValue="100"/>
+	</bmlt:parametervaluechange>
+</bml>

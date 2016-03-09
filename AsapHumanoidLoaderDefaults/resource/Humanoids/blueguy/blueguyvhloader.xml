@@ -1,0 +1,59 @@
+<ElckerlycVirtualHuman>
+  <BMLRealizer loader="hmi.environment.vhloader.ElckerlycRealizerLoader">
+    <!--LogPipe requestlog="hmi.elckerlyc.requests" /--> <!--only requests -->
+    <!--LogPipe requestlog="hmi.elckerlyc.requests" feedbacklog="hmi.elckerlyc.feedback"/--> <!--log both requests and feedback-->
+    <!--ServerAdapter requestport="7521" feedbackport="1257"/-->
+  </BMLRealizer> 
+
+  <Loader id="guiembodiment" loader="hmi.environment.vhloader.impl.JFrameEmbodiment">
+    <BmlUI/>
+    <!--BmlUI demoscriptresources="bml/defaultexamples"/-->
+    <FeedbackUI/>
+    <!--ServerUI/-->
+    <KillButton/>
+  </Loader>
+  
+  <Loader id="graphicalembodiment" loader="hmi.environment.vhloader.impl.HmiRenderEmbodimentLoader">
+    <!-- requires loader="hmi.environment.vhloader.impl.HmiRenderEmbodimentLoader" -->
+    <Body postprocessing="BLUEGUY" 
+          resourcedir="Humanoids/blueguy/bin" 
+          filename="blueguy.bin"/> 
+    <!--DebugVJoints offset="-0.5f 0 -0.5" type="sphere"/-->
+  </Loader>
+  
+  <Loader id="physicalembodiment" 
+              loader="hmi.environment.vhloader.impl.OdePhysicalEmbodiment"
+              requiredloaders="graphicalembodiment">
+    <MixedSystems> <!-- preferably, those are generated on the fly from the physical model... -->
+      <MixedSystem name="lowerbody"            filename="Humanoids/blueguy/mixedsystems/blueguylowerbody.xml"/> 
+      <MixedSystem name="lowerbodyandleftarm"  filename="Humanoids/blueguy/mixedsystems/blueguylowerbodyandleftarm.xml"/>
+      <MixedSystem name="lowerbodyandrightarm" filename="Humanoids/blueguy/mixedsystems/blueguylowerbodyandrightarm.xml"/>
+      <MixedSystem name="lowerbodyandarms"     filename="Humanoids/blueguy/mixedsystems/blueguylowerbodyarms.xml"/>
+    </MixedSystems>
+    <GlueFeetToFloor/>
+    <DebugPhysicalHuman offset="0.5f 0 -0.5"/>    
+  </Loader>
+
+  <!--Loader id="textembodiment" loader="hmi.environment.vhloader.impl.StdOutTextEmbodiment"/-->
+
+  <Loader id="audioengine" loader="hmi.environment.vhloader.impl.AudioEngineLoader"/>
+  
+  <Loader id="animationengine" 
+          loader="hmi.environment.vhloader.impl.AnimationEngineLoader"
+          requiredloaders="graphicalembodiment,physicalembodiment">
+    <GestureBinding basedir="" resources="Humanoids/shared/gesturebinding/" filename="gesturebinding.xml"/>
+    <StartPose resources="Humanoids/blueguy/restposes/" filename="looselyhangingarms.xml"/>
+    <StartPosition offset="00 0 0"/>
+    <StartRotation rotation="0 1 0 0"/>
+  </Loader>
+  
+  <Loader id="speechengine" loader="hmi.environment.vhloader.impl.SpeechEngineLoader" requiredloaders="animationengine,guiembodiment">
+    <!--Voice voicetype="TEXT"/--> <!-- requires a text embodiment to send the text to -->
+    <Voice voicetype="SAPI5" voicename="Kate" factory="WAV_TTS"/> 
+    <SpeechUI/>
+  </Loader>
+
+
+
+  <!-- possibly: routing for BMLBehaviors to Engines -->
+</ElckerlycVirtualHuman>

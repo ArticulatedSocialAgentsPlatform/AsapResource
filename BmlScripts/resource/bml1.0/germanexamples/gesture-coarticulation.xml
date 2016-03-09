@@ -1,0 +1,12 @@
+<bml  xmlns="http://www.bml-initiative.org/bml/bml-1.0" id="bml1">
+  <speech  id="speech1" start="2">
+  	<text>Das is der erste Chunk<sync id="chunk"/></text>
+  </speech>
+  <gesture id="g1" lexeme="BEAT" mode="BOTH_HANDS" stroke="speech1:chunk"/>
+</bml>
+<bml xmlns:bmla="http://www.asap-project.org/bmla" xmlns="http://www.bml-initiative.org/bml/bml-1.0" id="bml2" bmla:chunkAfter="bml1">
+	<speech id="speech1"> 
+  	<text><sync id="this"/>Das ist der zweite Chunk.</text>
+  </speech>
+  <gesture id="g1" stroke="speech1:this" mode="LEFT_HAND" lexeme="BEAT"/>
+</bml>

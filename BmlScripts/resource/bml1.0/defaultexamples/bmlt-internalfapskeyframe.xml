@@ -1,0 +1,10 @@
+<bml xmlns:bmlt="http://hmi.ewi.utwente.nl/bmlt" xmlns="http://www.bml-initiative.org/bml/bml-1.0" id="bml1">
+  <bmlt:facekeyframe type="FAPS" id="kf1">   
+    <FaceInterpolator xmlns="" parts="31">
+		0 0
+		1 -100
+		2 100
+		3 0	
+    </FaceInterpolator>
+  </bmlt:facekeyframe>
+</bml>

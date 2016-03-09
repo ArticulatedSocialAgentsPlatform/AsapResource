@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<xs:schema xmlns="http://www.collada.org/2005/11/COLLADASchema" xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.collada.org/2005/11/COLLADASchema" xmlns:col="http://www.collada.org/2005/11/COLLADASchema" elementFormDefault="qualified">
+
+<xs:element name="shape">
+	<xs:complexType>
+		<xs:all>
+			<xs:element ref="colShape"/>
+			<xs:element name="translate" type="cfloat3" minOccurs="0"/>
+			<xs:element name="rotate" type="cfloat4" minOccurs="0"/>
+		</xs:all>
+	</xs:complexType>
+</xs:element>
+
+<xs:element name="box" substitutionGroup="colShape">
+	<xs:complexType>
+		<xs:sequence>
+			<xs:element name="half_extents" type="cfloat3"/>
+		</xs:sequence>
+	</xs:complexType>
+</xs:element>
+
+<xs:element name="capsule" substitutionGroup="colShape">
+	<xs:complexType>
+		<xs:all>
+			<xs:element name="height" type="xs:double"/>
+			<xs:element name="radius" type="xs:double"/> <!-- slightly different from Collada capsule, allows only 1 radius -->
+		</xs:all>
+	</xs:complexType>
+</xs:element>
+
+<xs:element name="sphere" substitutionGroup="colShape">
+	<xs:complexType>
+		<xs:sequence>
+			<xs:element name="radius" type="xs:double"/>
+		</xs:sequence>
+	</xs:complexType>
+</xs:element>
+
+<xs:element name="colShape" abstract="true"/>
+
+<xs:simpleType name="cListOfFloats">
+	<xs:list itemType="xs:double"/>
+</xs:simpleType>
+
+<xs:simpleType name="cfloat3">
+	<xs:restriction base="cListOfFloats">
+		<xs:minLength value="3"/>
+		<xs:maxLength value="3"/>
+	</xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="cfloat4">
+	<xs:restriction base="cListOfFloats">
+		<xs:minLength value="4"/>
+		<xs:maxLength value="4"/>
+	</xs:restriction>
+</xs:simpleType>
+
+</xs:schema>

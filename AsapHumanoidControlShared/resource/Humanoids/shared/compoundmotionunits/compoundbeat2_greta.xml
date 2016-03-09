@@ -1,0 +1,17 @@
+<CompoundMotionUnit>
+  <MUElement id="starttransition" start="start" end="ready">
+    <MotionUnit type="Transition" class="hmi.elckerlyc.animationengine.transitions.SlerpTransitionMU"/>    
+  </MUElement>
+  <MUElement id="strokeprocanimation" start="strokeStart" end="strokeEnd">
+    <MotionUnit type="ProcAnimation" file="Humanoids/shared/procanimation/greta/beat2_norest.xml"/>    
+  </MUElement>
+  <MUElement id="relaxcontroller" start="relax" end="end">
+    <MotionUnit type="CompoundController" file="Humanoids/shared/controllers/right_arm_hang.xml"/>    
+  </MUElement>
+  <KeyPosition id="start" time="0.0"/>
+  <KeyPosition id="ready" time="0.2"/>
+  <KeyPosition id="strokeStart" time="0.2"/>
+  <KeyPosition id="strokeEnd" time="0.8"/>
+  <KeyPosition id="relax" time="0.8"/>
+  <KeyPosition id="end" time="1"/>
+</CompoundMotionUnit>

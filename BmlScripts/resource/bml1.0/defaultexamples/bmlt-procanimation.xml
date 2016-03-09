@@ -1,0 +1,18 @@
+<bml xmlns:bmlt="http://hmi.ewi.utwente.nl/bmlt" xmlns="http://www.bml-initiative.org/bml/bml-1.0" id="bml1">
+  <bmlt:procanimation name="jawdown" id="jd1" start="0" end="20">   
+    <bmlt:parameter name="amount" value="1.5"/>
+  </bmlt:procanimation>
+  <constraint>
+    <synchronize>
+      <sync ref="2"/>
+      <sync ref="jd1:attackEnd"/>    
+    </synchronize>
+  </constraint>
+
+  <constraint>
+    <synchronize>
+      <sync ref="5"/>
+      <sync ref="jd1:decayStart"/>    
+    </synchronize>
+  </constraint>
+</bml>

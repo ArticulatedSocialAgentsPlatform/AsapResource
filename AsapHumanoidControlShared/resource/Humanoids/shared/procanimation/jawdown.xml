@@ -1,0 +1,9 @@
+<ProcAnimation prefDuration="1.0" minDuration="1.0" maxDuration="1.0">   
+   <!--Rotation rotation="if(t &lt; 0.25,t/0.25,if(t &lt; 0.75,1,1-(t-0.75)/0.25))*a;0;0" target="temporomandibular"/-->
+   <Rotation rotation="if(t &lt; 0.25,t/0.25,if(t &lt; 0.75,1,1-(t-0.75)/0.25))*a;0;0" target="temporomandibular"/>
+   <Parameter sid="a" description="a" value="0.9"/>   
+   <KeyPosition id="start" time="0.0" weight="1.0"/>
+   <KeyPosition id="attackEnd" time="0.25" weight="1.0"/>
+   <KeyPosition id="decayStart" time="0.75" weight="1.0"/>
+   <KeyPosition id="end" time="1.0" weight="1.0"/>
+</ProcAnimation>

@@ -1,0 +1,12 @@
+<ivy-module version="2.0">
+   <info organisation="Asap" module="MARYTTSIncremental"/>
+   <configurations>
+      <include file="${ivy.settings.dir}/configurations.xml"/>
+   </configurations>
+   <publications>
+     <artifact type="zip" ext="zip"/>
+   </publications>
+
+   <dependencies>
+   </dependencies>
+</ivy-module>

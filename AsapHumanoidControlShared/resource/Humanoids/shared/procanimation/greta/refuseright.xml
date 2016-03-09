@@ -1,0 +1,31 @@
+<!--
+This procedural animation was constructed using the Greta (http://www.tsi.enst.fr/~pelachau/Greta/)
+gesture with the corresponding name.
+-->
+<ProcAnimation prefDuration="2.250" minDuration="2.250" maxDuration="2.250">
+	<EndEffector local="true" 
+	  translation="tcbspline(t, 0,0, 0,0, XCC,0.44,0,0,0, XP,0.67,0,0,0, 0,1);
+	  		tcbspline(t, 0,0, YLOWERP,0, YLOWERC,0.44,0,0,0, YLOWERC,0.67,0,0,0, YLOWERP,1);
+	  		tcbspline(t, 0,0, 0.068,0, ZMIDDLE,0.44,0,0,0, ZMIDDLE,0.67,0,0,0, 0.068,1)" 
+	  swivel="0.5" target="r_wrist"/>
+	<Keyframes target="r_wrist" encoding="euler">
+		<Keyframe time="0.0" value="0;0;0" local="true"/>
+		<Keyframe time="0.44" value="0;1.57;-1.57" local="false"/>
+		<Keyframe time="0.67" value="0;1.57;-1.57" local="false"/>
+		<Keyframe time="1.0" value="0;0;0" local="true"/>
+	</Keyframes>
+	
+	<KeyPosition time="0.0" weight="1.0" id="start"/>
+	<KeyPosition time="0.0" weight="1.0" id="ready"/>
+  <KeyPosition time="0.44" weight="1.0" id="strokeStart"/>
+  <KeyPosition time="0.67" weight="1.0" id="stroke"/>
+  <KeyPosition time="0.67" weight="1.0" id="strokeEnd"/>
+  <KeyPosition time="1.0" weight="1.0" id="relax"/>
+  <KeyPosition time="1.0" weight="1.0" id="end"/>
+  
+  <Parameter description="XCC" sid="XCC" value="0.137"/>
+  <Parameter description="XP" sid="XP" value="-0.113"/>
+  <Parameter description="YLOWERC" sid="YLOWERC" value="-0.4"/>
+  <Parameter description="YLOWERP" sid="YLOWERP" value="-0.46"/>
+  <Parameter description="ZMIDDLE" sid="ZMIDDLE" value="0.18"/>
+</ProcAnimation>

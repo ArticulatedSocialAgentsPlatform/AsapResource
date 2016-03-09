@@ -1,0 +1,14 @@
+<!--
+Gaze to a target, with a relative offset
+-->
+<bml xmlns="http://www.bml-initiative.org/bml/bml-1.0"  id="bml1">
+  <gaze id="gaze1" start="0" ready="2"  influence="NECK"  target="camera" />		
+  <gaze id="gaze2" start="4" ready="5"  influence="NECK"  target="camera" offsetAngle="5" offsetDirection="UPLEFT"/>		
+  <gaze id="gaze3" start="7" ready="8"  influence="NECK"  target="camera" offsetAngle="5" offsetDirection="UPRIGHT"/>		
+  <gaze id="gaze4" start="10" ready="11"  influence="NECK"  target="camera" offsetAngle="5" offsetDirection="DOWNLEFT"/>		
+  <gaze id="gaze5" start="13" ready="14"  influence="NECK"  target="camera" offsetAngle="5" offsetDirection="DOWNRIGHT"/>		
+  <gaze id="gaze6" start="18" ready="19"  influence="NECK"  target="camera" offsetAngle="5" offsetDirection="UP"/>		
+  <gaze id="gaze7" start="21" ready="22"  influence="NECK"  target="camera" offsetAngle="5" offsetDirection="LEFT"/>		
+  <gaze id="gaze8" start="24" ready="25"  influence="NECK"  target="camera" offsetAngle="5" offsetDirection="RIGHT"/>		
+  <gaze id="gaze9" start="27" ready="28"  influence="NECK"  target="camera" offsetAngle="5" offsetDirection="DOWN"/>		
+</bml>

@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+<!--visemebinding-->
+<xs:element name="VisemeToMorphMapping">
+	<xs:complexType>
+		<xs:sequence>
+			<xs:element ref="Mapping" minOccurs="0" maxOccurs="unbounded"/>			
+		</xs:sequence>				
+	</xs:complexType>
+</xs:element>
+
+<xs:element name="Mapping">
+	<xs:complexType>
+		<xs:attribute use="required" name="viseme" type="xs:nonNegativeInteger"/>
+		<xs:attribute use="required" name="target" type="xs:token"/>
+		<xs:attribute use="optional" name="intensity" type="xs:decimal"/>
+	</xs:complexType>
+</xs:element>
+
+</xs:schema>

@@ -1,0 +1,9 @@
+<!-- 
+Gaze to blue box
+Gaze at green sphere
+Return gaze to blue box
+-->
+<bml xmlns="http://www.bml-initiative.org/bml/bml-1.0"  id="bml1" xmlns:bmlt="http://hmi.ewi.utwente.nl/bmlt">
+	<gaze bmlt:dynamic="true"  id="gaze1" start="4" ready="5" relax="6" end="7" influence="NECK" target="greensphere"/>	
+	<gaze id="gaze2" start="1" ready="2" influence="NECK" target="bluebox"/>	
+</bml>

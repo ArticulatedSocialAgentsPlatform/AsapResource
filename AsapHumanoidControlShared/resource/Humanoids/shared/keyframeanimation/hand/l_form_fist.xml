@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SkeletonInterpolator rotationEncoding="axisangles" parts="l_thumb1 l_thumb2 l_thumb3 l_pinky1 l_index1 l_middle1 l_ring1 l_pinky2 l_middle2 l_index2 l_ring2" encoding="R">
+		  	0 -1 0 0 0.6 -1 0 0 0.6 -1 0 0 0.4 0 0 -1 1.57 0 0 -1 1.57 0 0 -1 1.57 0 0 -1 1.57 0 0 -1 1.57 0 0 -1 1.57 0 0 -1 1.57 0 0 -1 1.57 
+		  	1 -1 0 0 0.6 -1 0 0 0.6 -1 0 0 0.4 0 0 -1 1.57 0 0 -1 1.57 0 0 -1 1.57 0 0 -1 1.57 0 0 -1 1.57 0 0 -1 1.57 0 0 -1 1.57 0 0 -1 1.57 
+</SkeletonInterpolator>

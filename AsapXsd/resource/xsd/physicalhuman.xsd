@@ -1,0 +1,137 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:collada="http://www.collada.org/2005/11/COLLADASchema" elementFormDefault="qualified" attributeFormDefault="qualified">
+<!--
+<xs:import namespace="http://www.collada.org/2005/11/COLLADASchema" schemaLocation="collada.xsd"/>
+-->
+
+<xs:import namespace="http://www.collada.org/2005/11/COLLADASchema" schemaLocation="http://www.herwinvanwelbergen.nl/collada/collada.xsd"/>
+
+<xs:simpleType name="axis">
+  <xs:restriction base="UnitVector3"/>
+</xs:simpleType>
+
+<xs:simpleType name="UnitVectorValue">
+  <xs:restriction base="xs:double">
+    <xs:minInclusive value="-1"/>
+    <xs:maxInclusive value="1"/>
+  </xs:restriction>   
+</xs:simpleType>
+  
+<xs:simpleType name="UnitVector">
+	<xs:list itemType="UnitVectorValue"/>	  
+</xs:simpleType>
+
+<xs:simpleType name="UnitVector3">
+  <xs:restriction base="UnitVector">
+    <xs:minLength value="3"/>
+	  <xs:maxLength value="3"/>
+	</xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="jointRotType">
+  <xs:restriction base="xs:string">
+    <xs:enumeration value="fixed" />
+    <xs:enumeration value="hinge" />
+    <xs:enumeration value="universal" />
+    <xs:enumeration value="ball" />
+  </xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="stopValue">
+  <xs:restriction base="xs:double">
+    <xs:minInclusive value="-3.1415926535897932384626433832795"/>
+    <xs:maxInclusive value="3.1415926535897932384626433832795"/>
+  </xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="ListOfFloats">
+	<xs:list itemType="xs:double"/>
+</xs:simpleType>
+
+<xs:simpleType name="float3">
+	<xs:restriction base="ListOfFloats">
+		<xs:minLength value="3"/>
+		<xs:maxLength value="3"/>
+	</xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="float9">
+	<xs:restriction base="ListOfFloats">
+		<xs:minLength value="9"/>
+		<xs:maxLength value="9"/>
+	</xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="float4">
+	<xs:restriction base="ListOfFloats">
+		<xs:minLength value="4"/>
+		<xs:maxLength value="4"/>
+	</xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="jointType">
+	<xs:restriction base="xs:string">
+		<xs:pattern value="([a-zA-Z0-9_])+"/>
+	</xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="jointsType">
+  <xs:list itemType="jointType"/>	
+</xs:simpleType>
+
+<xs:element name="PhysicalHumanoid">
+	<xs:complexType>
+		<xs:sequence>
+			<xs:element ref="PhysicalSegment" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element ref="PhysicalRootSegment " minOccurs="1" maxOccurs="1"/>
+			<xs:element ref="PhysicalSegment" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>				
+	</xs:complexType>
+</xs:element>
+
+<xs:element name="PhysicalRootSegment">
+	<xs:complexType>
+		<xs:sequence>
+			<xs:element ref="CollisionModel"/>
+		</xs:sequence>
+		<xs:attribute name="startJoint" type="jointType"/>
+		<xs:attribute name="endJoint" type="jointsType"/>
+		<xs:attribute name="mass" type="xs:double"/>
+		<xs:attribute name="position" type="float3"/>	
+		<xs:attribute name="I" type="float9"/>		
+	</xs:complexType>
+</xs:element>
+
+<xs:element name="PhysicalSegment">
+	<xs:complexType>
+		<xs:sequence>
+			<xs:element ref="CollisionModel"/>
+		</xs:sequence>	
+		<xs:attribute name="startJoint" type="jointType"/>
+		<xs:attribute name="endJoint" type="jointsType"/>
+		<xs:attribute name="mass" type="xs:double"/>
+		<xs:attribute name="position" type="float3"/>	
+		<xs:attribute name="I" type="float9"/>		
+		<xs:attribute name="type" type="jointRotType"/>			
+		<xs:attribute name="axis1" type="axis"/>			
+		<xs:attribute name="axis2" type="axis"/>			
+		<xs:attribute name="loStop1" type="stopValue"/>			
+		<xs:attribute name="loStop2" type="stopValue"/>			
+		<xs:attribute name="loStop3" type="stopValue"/>			
+		<xs:attribute name="hiStop1" type="stopValue"/>			
+		<xs:attribute name="hiStop2" type="stopValue"/>			
+		<xs:attribute name="hiStop3" type="stopValue"/>			
+	</xs:complexType>
+</xs:element>
+
+<xs:element name="CollisionModel">
+	<xs:complexType>
+		<xs:sequence>
+			<xs:element ref="collada:shape" minOccurs="1" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+</xs:element>
+
+
+
+</xs:schema>

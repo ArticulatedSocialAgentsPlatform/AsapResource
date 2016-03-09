@@ -1,0 +1,9 @@
+
+<xmlanim picturePath="pictureengine/example/pictures/">
+    <frame imgsrc="mouth-closed.png" duration="0.2"/>
+    <sync type="ready"/>
+    <sync type="stroke"/>
+    <frame imgsrc="mouth-smile.png" duration="0.2"/>
+    <sync type="relax"/>
+    <frame imgsrc="mouth-closed.png" duration="0.2"/>
+</xmlanim>

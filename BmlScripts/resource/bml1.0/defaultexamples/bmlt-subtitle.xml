@@ -1,0 +1,7 @@
+<bml xmlns="http://www.bml-initiative.org/bml/bml-1.0"  id="bml1" xmlns:bmlt="http://hmi.ewi.utwente.nl/bmlt">
+<speech id="s1">
+<text>Hello world. I'm Billy.</text>
+</speech>
+<bmlt:text id="t1" start="s1:start" end="s1:end">
+Hallo welt. Ich bin Billie.</bmlt:text>
+</bml>

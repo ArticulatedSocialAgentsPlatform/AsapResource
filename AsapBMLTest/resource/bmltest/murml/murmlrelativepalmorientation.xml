@@ -1,0 +1,12 @@
+<bml id="bml1" xmlns="http://www.bml-initiative.org/bml/bml-1.0">
+<murmlgesture id="gesture1" start="2" xmlns="http://www.techfak.uni-bielefeld.de/ags/soa/murml">
+  <murml-description>
+  <dynamic slot="PalmOrientation" scope="right_arm">
+    <dynamicElement>
+      <value type="start" name="PalmLU"/>
+      <value type="end" name="PalmU"/>
+    </dynamicElement>
+  </dynamic>
+  </murml-description>
+</murmlgesture>
+</bml>

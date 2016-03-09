@@ -1,0 +1,21 @@
+<!--
+Required timing:
+nod1:start = anticipator1:sync1
+nod2:start = nod1:end = anticipator1:sync2
+nod3:start = nod2:end = anticipator1:sync3
+nod3:end = anticipator1:sync4
+
+Constraints:
+c1 nod1:start,anticipator1:sync1
+c2 nod1:end,nod2:start,anticipator1:sync2
+c3 nod2:end, nod3:start,anticipator1:sync3
+c4 nod3:end, nod4:start,anticipator1:sync4
+
+Constraints tested in: test.bml.ParserTest
+Timing tested in: test.bml.TestScheduler
+-->
+<bml xmlns="http://www.bml-initiative.org/bml/bml-1.0"  id="bml1">
+	<head id="nod1" start="anticipators:anticipator1:sync1" end="anticipators:anticipator1:sync2" lexeme="NOD"/>
+	<head id="nod2" start="anticipators:anticipator1:sync2" end="anticipators:anticipator1:sync3" lexeme="NOD"/>
+	<head id="nod3" start="anticipators:anticipator1:sync3" end="anticipators:anticipator1:sync4" lexeme="NOD"/>	
+</bml>

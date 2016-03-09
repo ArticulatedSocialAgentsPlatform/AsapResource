@@ -1,0 +1,12 @@
+<bml xmlns:bmlt="http://hmi.ewi.utwente.nl/bmlt" xmlns="http://www.bml-initiative.org/bml/bml-1.0" id="bml1">
+  <bmlt:facekeyframe type="MORPH" id="kf1">   
+    <FaceInterpolator xmlns="" parts="Body_NG-mesh-morpher-yeux_NG01-1">
+		0 1
+		1 0
+		2 1
+		3 0
+		4 1
+		5 0
+    </FaceInterpolator>
+  </bmlt:facekeyframe>
+</bml>

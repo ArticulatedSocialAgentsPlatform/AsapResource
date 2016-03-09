@@ -1,0 +1,186 @@
+ByteValuedFeatureProcessors
+phone 0 2 2: 6 9 9~ ? @ C D E E: EI I N O OY R S T U Y Z _ a a: aI aU a~ b d e e: e~ f g h i i: j k l m n o o: o~ p pf r s t tS ts u u: v w x y y: z
+accented 0 1
+accented_syls_from_phrase_end 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19
+accented_syls_from_phrase_start 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19
+breakindex 0 1 2 3 4 5 6
+edge 0 start end
+gpos 0 in to det md cc wp pps aux punc content
+next_accent 0 * H* !H* ^H* L* L+H* L*+H L+!H* L*+!H L+^H* L*+^H H+L* H+!H* H+^H* !H+!H* ^H+!H* ^H+^H* H*+L !H*+L
+next_cplace 0 l a p b d v u g
+next_ctype 0 s f a n l r
+next_cvox 0 + -
+next_is_pause 0 1
+next_next_cplace 0 l a p b d v u g
+next_next_ctype 0 s f a n l r
+next_next_cvox 0 + -
+next_next_phone 0 2 2: 6 9 9~ ? @ C D E E: EI I N O OY R S T U Y Z _ a a: aI aU a~ b d e e: e~ f g h i i: j k l m n o o: o~ p pf r s t tS ts u u: v w x y y: z
+next_next_vc 0 + -
+next_next_vfront 0 1 2 3
+next_next_vheight 0 1 2 3
+next_next_vlng 0 s l d a
+next_next_vrnd 0 + -
+next_phone 0 2 2: 6 9 9~ ? @ C D E E: EI I N O OY R S T U Y Z _ a a: aI aU a~ b d e e: e~ f g h i i: j k l m n o o: o~ p pf r s t tS ts u u: v w x y y: z
+next_pos 0 NN NE NNm ADJA ADJD CARD CARDj ORD ITJ PDS PPOSS TRUNC ADV ADVq ADVf APPR APPRbis APPRART APPO APZR ART ARTdna ARTg ARTngd FM KOUI KOUS KON KOKOM KOKOMa PDAT PIS PIAT PIDAT PIDAT2 PPER PPOSAT PRELS PRELAT PRF PWS PWAT PWAV PAV PTKZU PTKNEG PTKVZ PTKANT PTKA SGML SPELL VVFIN VVIMP VVINF VVIZU VVPP VV VAFIN VAIMP VAINF VAPP VMFIN VMINF VMPP XY
+next_punctuation 0 . , ; : ( ) ? ! "
+next_stressed 0 1
+next_tobi_accent 0 * H* !H* ^H* L* L+H* L*+H L+!H* L*+!H L+^H* L*+^H H+L* H+!H* H+^H* !H+!H* ^H+!H* ^H+^H* H*+L !H*+L
+next_tobi_endtone 0 H- !H- L- H-% !H-% H-^H% !H-^H% L-H% L-% L-L% H-H% H-L%
+next_vc 0 + -
+next_vfront 0 1 2 3
+next_vheight 0 1 2 3
+next_vlng 0 s l d a
+next_vrnd 0 + -
+next_wordbegin_cplace 0 l a p b d v u g
+next_wordbegin_ctype 0 s f a n l r
+nextnext_tobi_accent 0 * H* !H* ^H* L* L+H* L*+H L+!H* L*+!H L+^H* L*+^H H+L* H+!H* H+^H* !H+!H* ^H+!H* ^H+^H* H*+L !H*+L
+nextnext_tobi_endtone 0 H- !H- L- H-% !H-% H-^H% !H-^H% L-H% L-% L-L% H-H% H-L%
+onsetcoda 0 onset coda
+ph_cplace 0 l a p b d v u g
+ph_ctype 0 s f a n l r
+ph_cvox 0 + -
+ph_vc 0 + -
+ph_vfront 0 1 2 3
+ph_vheight 0 1 2 3
+ph_vlng 0 s l d a
+ph_vrnd 0 + -
+phrase_endtone 0 H- !H- L- H-% !H-% H-^H% !H-^H% L-H% L-% L-L% H-H% H-L%
+phrase_numsyls 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19
+phrase_numwords 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19
+phrases_from_sentence_end 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19
+phrases_from_sentence_start 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19
+pos 0 NN NE NNm ADJA ADJD CARD CARDj ORD ITJ PDS PPOSS TRUNC ADV ADVq ADVf APPR APPRbis APPRART APPO APZR ART ARTdna ARTg ARTngd FM KOUI KOUS KON KOKOM KOKOMa PDAT PIS PIAT PIDAT PIDAT2 PPER PPOSAT PRELS PRELAT PRF PWS PWAT PWAV PAV PTKZU PTKNEG PTKVZ PTKANT PTKA SGML SPELL VVFIN VVIMP VVINF VVIZU VVPP VV VAFIN VAIMP VAINF VAPP VMFIN VMINF VMPP XY
+pos_in_syl 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19
+position_type 0 single final initial mid
+prev_accent 0 * H* !H* ^H* L* L+H* L*+H L+!H* L*+!H L+^H* L*+^H H+L* H+!H* H+^H* !H+!H* ^H+!H* ^H+^H* H*+L !H*+L
+prev_cplace 0 l a p b d v u g
+prev_ctype 0 s f a n l r
+prev_cvox 0 + -
+prev_is_pause 0 1
+prev_phone 0 2 2: 6 9 9~ ? @ C D E E: EI I N O OY R S T U Y Z _ a a: aI aU a~ b d e e: e~ f g h i i: j k l m n o o: o~ p pf r s t tS ts u u: v w x y y: z
+prev_phrase_endtone 0 H- !H- L- H-% !H-% H-^H% !H-^H% L-H% L-% L-L% H-H% H-L%
+prev_prev_cplace 0 l a p b d v u g
+prev_prev_ctype 0 s f a n l r
+prev_prev_cvox 0 + -
+prev_prev_phone 0 2 2: 6 9 9~ ? @ C D E E: EI I N O OY R S T U Y Z _ a a: aI aU a~ b d e e: e~ f g h i i: j k l m n o o: o~ p pf r s t tS ts u u: v w x y y: z
+prev_prev_vc 0 + -
+prev_prev_vfront 0 1 2 3
+prev_prev_vheight 0 1 2 3
+prev_prev_vlng 0 s l d a
+prev_prev_vrnd 0 + -
+prev_punctuation 0 . , ; : ( ) ? ! "
+prev_stressed 0 1
+prev_syl_break 0 1 unused 3 4
+prev_vc 0 + -
+prev_vfront 0 1 2 3
+prev_vheight 0 1 2 3
+prev_vlng 0 s l d a
+prev_vrnd 0 + -
+segs_from_syl_end 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19
+segs_from_syl_start 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19
+segs_from_word_end 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19
+segs_from_word_start 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19
+selection_next_phone_class 0 c_labial c_alveolar c_palatal c_labiodental c_dental c_velar c_glottal c_uvular v_i v_u v_O v_E v_EI v_@ v_aU v_6 v_~ v_a v_y v_2 v_e v_o v_9 v_OY v_Ya v_aI
+selection_prosody 0 stressed pre-nuclear nuclear finalHigh finalLow final
+sentence_numphrases 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19
+sentence_numwords 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19
+sentence_punc 0 . , ; : ( ) ? ! "
+stressed 0 1
+stressed_syls_from_phrase_end 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19
+stressed_syls_from_phrase_start 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19
+style 0 neutral poker happy sad angry excited
+syl_break 0 1 unused 3 4
+syl_numsegs 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19
+syls_from_phrase_end 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19
+syls_from_phrase_start 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19
+syls_from_prev_accent 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19
+syls_from_prev_stressed 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19
+syls_from_word_end 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19
+syls_from_word_start 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19
+syls_to_next_accent 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19
+syls_to_next_stressed 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19
+tobi_accent 0 * H* !H* ^H* L* L+H* L*+H L+!H* L*+!H L+^H* L*+^H H+L* H+!H* H+^H* !H+!H* ^H+!H* ^H+^H* H*+L !H*+L
+tobi_endtone 0 H- !H- L- H-% !H-% H-^H% !H-^H% L-H% L-% L-L% H-H% H-L%
+word_frequency 0 1 2 3 4 5 6 7 8 9
+word_numsegs 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19
+word_numsyls 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19
+words_from_phrase_end 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19
+words_from_phrase_start 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19
+words_from_prev_punctuation 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19
+words_from_sentence_end 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19
+words_from_sentence_start 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19
+words_to_next_punctuation 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19
+ShortValuedFeatureProcessors
+ContinuousFeatureProcessors
+
+_ 0 3 0 0 0 0 L+H* g s - 0 0 0 0 aI + 1 3 d - ? NN 0 1 L+H* 0 - 0 0 0 0 g s 0 0 0 0 0 0 0 0 0 0 0 L-% 10 5 0 0 0 0 0 0 0 0 0 0 _ 0 0 0 0 _ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 c_glottal 0 1 4 . 0 4 0 0 0 0 10 0 0 0 0 0 1 1 0 0 0 0 0 4 0 0 4 0 0
+? 1 2 0 0 0 0 H* 0 0 0 0 a n + n - 0 0 0 0 aI APPR . 0 0 0 + 1 3 d - l s 0 0 onset g s - - 0 0 0 0 L-% 10 5 0 0 NN 0 initial 0 0 0 0 1 _ 0 0 0 0 _ 0 0 0 0 0 0 0 0 0 0 0 0 0 2 0 5 0 v_aI pre-nuclear 1 4 . 1 3 0 0 0 3 9 0 0 0 1 0 5 2 L+H* 0 0 6 2 3 0 0 3 0 4
+aI 1 2 0 0 0 0 H* a n + 0 g f - h - 0 0 0 0 n APPR . 0 0 0 - 0 0 0 0 l s 0 0 coda 0 0 0 + 1 3 d - L-% 10 5 0 0 NN 1 initial 0 g s - 0 ? 0 0 0 0 _ 0 0 0 0 0 0 0 0 - 0 0 0 0 1 1 4 1 c_alveolar pre-nuclear 1 4 . 1 3 0 0 0 3 9 0 0 0 1 0 5 2 L+H* 0 0 6 2 3 0 0 3 0 4
+n 1 2 0 0 0 0 H* g f - 0 0 0 0 aI + 1 3 d - h APPR . 0 0 0 - 0 0 0 0 l s 0 0 coda a n + - 0 0 0 0 L-% 10 5 0 0 NN 2 initial 0 0 0 0 0 aI 0 g s - ? - 0 0 0 0 0 0 0 + 1 3 d - 0 2 3 2 c_glottal pre-nuclear 1 4 . 1 3 0 0 0 3 9 0 0 0 1 0 5 2 L+H* 0 0 6 2 3 0 0 3 0 4
+h 0 2 1 0 0 0 H* 0 0 0 0 a s - t - 0 0 0 0 aI APPR . 1 0 0 + 1 3 d - l s 0 0 onset g f - - 0 0 0 0 L-% 10 5 0 0 NN 0 final L+H* a n + 0 n 0 0 0 0 aI + 1 3 d - 0 1 0 - 0 0 0 0 2 0 2 3 v_aI 0 1 4 . 0 3 1 0 1 3 8 1 1 1 0 1 4 1 0 0 0 6 2 3 0 0 3 0 4
+aI 0 2 1 0 0 0 H* a s - 0 l s + b - 0 0 0 0 t APPR . 1 0 0 - 0 0 0 0 l s 0 0 coda 0 0 0 + 1 3 d - L-% 10 5 0 0 NN 1 final L+H* g f - 0 h 0 a n + n - 0 0 0 0 0 1 0 - 0 0 0 0 1 1 1 4 c_alveolar 0 1 4 . 0 3 1 0 1 3 8 1 1 1 0 1 4 1 0 0 0 6 2 3 0 0 3 0 4
+t 0 2 1 1 0 0 H* l s + 0 0 0 0 I + 1 1 s - b APPR . 1 0 0 - 0 0 0 0 l s 0 0 coda a s - - 0 0 0 0 L-% 10 5 0 0 NN 2 final L+H* 0 0 0 0 aI 0 g f - h - 0 0 0 0 0 1 0 + 1 3 d - 0 2 0 5 c_labial 0 1 4 . 0 3 1 0 1 3 8 1 1 1 0 1 4 1 0 0 0 6 2 3 0 0 3 0 4
+b 0 2 1 0 0 0 H* 0 0 0 0 a f - s - 0 0 0 0 I CARD . 0 0 0 + 1 1 s - a n 0 0 onset l s + - 0 0 0 0 L-% 10 5 0 0 APPR 0 single L+H* a s - 0 t 0 0 0 0 aI + 1 3 d - 0 0 1 - 0 0 0 0 2 0 2 0 v_i stressed 1 4 . 1 2 1 0 1 3 7 2 2 2 0 0 3 3 0 0 0 3 1 2 1 1 2 1 3
+I 0 2 1 0 0 0 H* a f - 0 a n + n - 0 0 0 0 s CARD . 0 0 0 - 0 0 0 0 a n 0 0 coda 0 0 0 + 1 1 s - L-% 10 5 0 0 APPR 1 single L+H* l s + 0 b 0 a s - t - 0 0 0 0 0 0 1 - 0 0 0 0 1 1 1 1 c_alveolar stressed 1 4 . 1 2 1 0 1 3 7 2 2 2 0 0 3 3 0 0 0 3 1 2 1 1 2 1 3
+s 0 2 1 1 0 0 H* a n + 0 0 0 0 OY + 3 2 d + n CARD . 0 0 0 - 0 0 0 0 a n 0 0 coda a f - - 0 0 0 0 L-% 10 5 0 0 APPR 2 single L+H* 0 0 0 0 I 0 l s + b - 0 0 0 0 0 0 1 + 1 1 s - 0 2 0 2 c_alveolar stressed 1 4 . 1 2 1 0 1 3 7 2 2 2 0 0 3 3 0 0 0 3 1 2 1 1 2 1 3
+n 0 2 1 0 0 0 H* 0 0 0 0 a n + n - 0 0 0 0 OY VVPP . 0 0 0 + 3 2 d + g s H* 0 onset a n + - 0 0 0 0 L-% 10 5 0 0 CARD 0 initial L+H* a f - 0 s 0 0 0 0 I + 1 1 s - 0 1 1 - 0 0 0 0 2 0 12 0 v_OY 0 1 4 . 0 2 2 0 0 3 6 3 3 1 3 0 2 2 0 0 0 13 4 1 2 2 1 2 2
+OY 0 2 1 0 0 0 H* a n + 0 g s - ? - 0 0 0 0 n VVPP . 0 0 0 - 0 0 0 0 g s H* 0 coda 0 0 0 + 3 2 d + L-% 10 5 0 0 CARD 1 initial L+H* a n + 0 n 0 a f - s - 0 0 0 0 0 1 1 - 0 0 0 0 1 1 11 1 c_alveolar 0 1 4 . 0 2 2 0 0 3 6 3 3 1 3 0 2 2 0 0 0 13 4 1 2 2 1 2 2
+n 0 2 1 0 0 0 H* g s - 0 0 0 0 U + 3 1 s + ? VVPP . 0 0 0 - 0 0 0 0 g s H* 0 coda a n + - 0 0 0 0 L-% 10 5 0 0 CARD 2 initial L+H* 0 0 0 0 OY 0 a n + n - 0 0 0 0 0 1 1 + 3 2 d + 0 2 10 2 c_glottal 0 1 4 . 0 2 2 0 0 3 6 3 3 1 3 0 2 2 0 0 0 13 4 1 2 2 1 2 2
+? 0 2 1 0 0 0 H* 0 0 0 0 a n + n - 0 0 0 0 U VVPP . 1 H* 0 + 3 1 s + g s 0 0 onset g s - - 0 0 0 0 L-% 10 5 0 0 CARD 0 mid L+H* a n + 0 n 0 0 0 0 OY + 3 2 d + 0 0 0 - 0 0 0 0 3 0 9 3 v_u 0 1 4 . 0 2 2 0 0 4 5 4 4 2 2 1 1 1 0 0 0 13 4 1 2 2 1 2 2
+U 0 2 1 0 0 0 H* a n + 0 a s - t - 0 0 0 0 n VVPP . 1 H* 0 - 0 0 0 0 g s 0 0 coda 0 0 0 + 3 1 s + L-% 10 5 0 0 CARD 1 mid L+H* g s - 0 ? 0 a n + n - 0 0 0 0 0 0 0 - 0 0 0 0 2 1 8 4 c_alveolar 0 1 4 . 0 2 2 0 0 4 5 4 4 2 2 1 1 1 0 0 0 13 4 1 2 2 1 2 2
+n 0 2 1 0 0 0 H* a s - 0 a n + n - 0 0 0 0 t VVPP . 1 H* 0 - 0 0 0 0 g s 0 0 coda a n + - 0 0 0 0 L-% 10 5 0 0 CARD 2 mid L+H* 0 0 0 0 U 0 g s - ? - 0 0 0 0 0 0 0 + 3 1 s + 1 2 7 5 c_alveolar 0 1 4 . 0 2 2 0 0 4 5 4 4 2 2 1 1 1 0 0 0 13 4 1 2 2 1 2 2
+t 0 2 1 0 0 0 H* a n + 0 0 0 0 OY + 3 2 d + n VVPP . 1 H* 0 - 0 0 0 0 g s 0 0 coda a s - - 0 0 0 0 L-% 10 5 0 0 CARD 3 mid L+H* a n + 0 n 0 0 0 0 U + 3 1 s + 0 0 0 - 0 0 0 0 0 3 6 6 c_alveolar 0 1 4 . 0 2 2 0 0 4 5 4 4 2 2 1 1 1 0 0 0 13 4 1 2 2 1 2 2
+n 1 1 1 0 0 0 * 0 0 0 0 a n + n - 0 0 0 0 OY VVPP . 0 0 0 + 3 2 d + g s * 0 onset a n + - 0 0 0 0 L-% 10 5 0 0 CARD 0 mid L+H* a s - 0 t 0 a n + n - 0 0 0 0 0 0 0 - 0 0 0 0 2 0 5 7 v_OY pre-nuclear 1 4 . 1 1 2 0 0 3 4 5 5 3 1 2 2 2 H* 0 0 13 4 1 2 2 1 2 2
+OY 1 1 1 0 0 0 * a n + 0 a a - ts - 0 0 0 0 n VVPP . 0 0 0 - 0 0 0 0 g s * 0 coda 0 0 0 + 3 2 d + L-% 10 5 0 0 CARD 1 mid L+H* a n + 0 n 0 a s - t - 0 0 0 0 0 0 0 - 0 0 0 0 1 1 4 8 c_alveolar pre-nuclear 1 4 . 1 1 2 0 0 3 4 5 5 3 1 2 2 2 H* 0 0 13 4 1 2 2 1 2 2
+n 1 1 1 0 0 0 * a a - 0 0 0 0 I + 1 1 s - ts VVPP . 0 0 0 - 0 0 0 0 g s * 0 coda a n + - 0 0 0 0 L-% 10 5 0 0 CARD 2 mid L+H* 0 0 0 0 OY 0 a n + n - 0 0 0 0 0 0 0 + 3 2 d + 0 2 3 9 c_alveolar pre-nuclear 1 4 . 1 1 2 0 0 3 4 5 5 3 1 2 2 2 H* 0 0 13 4 1 2 2 1 2 2
+ts 0 1 2 0 0 0 * 0 0 0 0 v f - C - 0 0 0 0 I VVPP . 1 * 0 + 1 1 s - g s 0 0 onset a a - - 0 0 0 0 L-% 10 5 0 0 CARD 0 final H* a n + 0 n 0 0 0 0 OY + 3 2 d + 0 1 0 - 0 0 0 0 2 0 2 10 v_i 0 1 4 . 0 1 3 0 1 3 3 6 1 1 0 3 1 1 0 0 0 13 4 1 2 2 1 2 2
+I 0 1 2 0 0 0 * v f - 0 g s - ? - 0 0 0 0 C VVPP . 1 * 0 - 0 0 0 0 g s 0 0 coda 0 0 0 + 1 1 s - L-% 10 5 0 0 CARD 1 final H* a a - 0 ts 0 a n + n - 0 0 0 0 0 1 0 - 0 0 0 0 1 1 1 11 c_velar 0 1 4 . 0 1 3 0 1 3 3 6 1 1 0 3 1 1 0 0 0 13 4 1 2 2 1 2 2
+C 0 1 2 1 0 0 * g s - 0 0 0 0 a + 2 3 s - ? VVPP . 1 * 0 - 0 0 0 0 g s 0 0 coda v f - - 0 0 0 0 L-% 10 5 0 0 CARD 2 final H* 0 0 0 0 I 0 a a - ts - 0 0 0 0 0 1 0 + 1 1 s - 0 2 0 12 c_glottal 0 1 4 . 0 1 3 0 1 3 3 6 1 1 0 3 1 1 0 0 0 13 4 1 2 2 1 2 2
+? 1 0 2 0 0 0 0 0 0 0 0 a n + n - 0 0 0 0 a 0 . 0 0 0 + 2 3 s - 0 0 0 L-% onset g s - - 0 0 0 0 L-% 10 5 0 0 VVPP 0 initial H* v f - 0 C 0 0 0 0 I + 1 1 s - 0 0 1 - 0 0 0 0 2 0 10 0 v_a nuclear 1 4 . 1 0 3 0 0 3 2 7 2 2 2 0 2 2 * 0 0 11 3 0 3 3 0 3 1
+a 1 0 2 0 0 0 0 a n + 0 v s + g - 0 0 0 0 n 0 . 0 0 0 - 0 0 0 0 0 0 0 L-% coda 0 0 0 + 2 3 s - L-% 10 5 0 0 VVPP 1 initial H* g s - 0 ? 0 v f - C - 0 0 0 0 0 0 1 - 0 0 0 0 1 1 9 1 c_alveolar nuclear 1 4 . 1 0 3 0 0 3 2 7 2 2 2 0 2 2 * 0 0 11 3 0 3 3 0 3 1
+n 1 0 2 0 0 0 0 v s + 0 0 0 0 @ + 2 2 a - g 0 . 0 0 0 - 0 0 0 0 0 0 0 L-% coda a n + - 0 0 0 0 L-% 10 5 0 0 VVPP 2 initial H* 0 0 0 0 a 0 g s - ? - 0 0 0 0 0 0 1 + 2 3 s - 0 2 8 2 c_velar nuclear 1 4 . 1 0 3 0 0 3 2 7 2 2 2 0 2 2 * 0 0 11 3 0 3 3 0 3 1
+g 0 0 3 0 0 0 0 0 0 0 0 p f - S - 0 0 0 0 @ 0 . 0 0 L-% + 2 2 a - 0 0 0 0 onset v s + - 0 0 0 0 L-% 10 5 0 0 VVPP 0 mid * a n + 0 n 0 0 0 0 a + 2 3 s - 0 1 0 - 0 0 0 0 1 0 7 3 v_@ 0 1 4 . 0 0 4 0 0 2 1 8 1 1 1 1 1 1 0 0 0 11 3 0 3 3 0 3 1
+@ 0 0 3 0 0 0 0 p f - 0 a s - t - 0 0 0 0 S 0 . 0 0 L-% - 0 0 0 0 0 0 0 0 coda 0 0 0 + 2 2 a - L-% 10 5 0 0 VVPP 1 mid * v s + 0 g 0 a n + n - 0 0 0 0 0 1 0 - 0 0 0 0 0 1 6 4 c_palatal 0 1 4 . 0 0 4 0 0 2 1 8 1 1 1 1 1 1 0 0 0 11 3 0 3 3 0 3 1
+S 0 0 3 0 0 0 0 a s - 0 u l + R - 0 0 0 0 t 0 . 0 0 0 - 0 0 0 0 0 0 0 0 onset p f - - 0 0 0 0 L-% 10 5 0 0 VVPP 0 final * 0 0 0 0 @ 0 v s + g - 0 0 0 0 0 0 0 + 2 2 a - 5 0 5 5 c_alveolar finalLow 1 4 . 0 0 4 0 4 6 0 9 2 2 0 2 0 0 0 L-% 0 11 3 0 3 3 0 3 1
+t 0 0 3 0 0 0 0 u l + 0 0 0 0 e: + 1 2 l - R 0 . 0 0 0 - 0 0 0 0 0 0 0 0 onset a s - - 0 0 0 0 L-% 10 5 0 0 VVPP 1 final * p f - 0 S 0 0 0 0 @ + 2 2 a - 0 0 0 - 0 0 0 0 4 1 4 6 c_uvular finalLow 1 4 . 0 0 4 0 4 6 0 9 2 2 0 2 0 0 0 L-% 0 11 3 0 3 3 0 3 1
+R 0 0 3 0 0 0 0 0 0 0 0 l s - p - 0 0 0 0 e: 0 . 0 0 0 + 1 2 l - 0 0 0 0 onset u l + - 0 0 0 0 L-% 10 5 0 0 VVPP 2 final * a s - 0 t 0 p f - S - 0 0 0 0 0 0 0 - 0 0 0 0 3 2 3 7 v_e finalLow 1 4 . 0 0 4 0 4 6 0 9 2 2 0 2 0 0 0 L-% 0 11 3 0 3 3 0 3 1
+e: 0 0 3 0 0 0 0 l s - 0 a s - t - 0 0 0 0 p 0 . 0 0 0 - 0 0 0 0 0 0 0 0 coda 0 0 0 + 1 2 l - L-% 10 5 0 0 VVPP 3 final * u l + 0 R 0 a s - t - 0 0 0 0 0 0 0 - 0 0 0 0 2 3 2 8 c_labial finalLow 1 4 . 0 0 4 0 4 6 0 9 2 2 0 2 0 0 0 L-% 0 11 3 0 3 3 0 3 1
+p 0 0 3 0 0 0 0 a s - 0 0 0 0 _ 0 0 0 0 0 t 0 . 0 0 0 - 0 0 0 0 0 0 0 0 coda l s - - 0 0 0 0 L-% 10 5 0 0 VVPP 4 final * 0 0 0 0 e: 0 u l + R - 0 0 0 0 0 0 0 + 1 2 l - 1 4 1 9 c_alveolar finalLow 1 4 . 0 0 4 0 4 6 0 9 2 2 0 2 0 0 0 L-% 0 11 3 0 3 3 0 3 1
+t 0 0 3 5 0 0 0 0 0 0 1 0 0 0 _ 0 0 0 0 0 _ 0 . 0 0 0 0 0 0 0 0 0 0 0 0 coda a s - - 0 0 0 0 L-% 10 5 0 0 VVPP 5 final * l s - 0 p 0 0 0 0 e: + 1 2 l - 0 0 0 - 0 0 0 0 0 5 0 10 0 finalLow 1 4 . 0 0 4 0 4 6 0 9 2 2 0 2 0 0 0 L-% 0 11 3 0 3 3 0 3 1
+_ 0 0 3 0 0 0 0 0 0 0 0 0 0 0 _ 0 0 0 0 0 _ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 L-% 10 5 0 0 0 0 0 * a s - 0 t 0 l s - p - 0 0 0 0 0 0 4 - 0 0 0 0 0 0 0 0 0 0 1 4 . 0 0 4 0 0 0 0 10 3 3 0 0 0 0 0 0 0 0 0 0 4 0 0 4 0
+
+23 0 3 0 0 0 0 6 8 1 2 0 0 0 0 26 1 1 3 3 2 6 1 0 1 6 0 2 0 0 0 0 8 1 0 0 0 0 0 0 0 0 0 0 0 9 10 5 0 0 0 0 0 0 0 0 0 0 23 0 0 0 0 23 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 7 0 1 4 1 0 4 0 0 0 0 10 0 0 0 0 0 1 1 0 0 0 0 0 4 0 0 4 0 0
+6 1 2 0 0 0 0 2 0 0 0 0 2 4 1 43 2 0 0 0 0 26 16 1 0 0 0 1 1 3 3 2 1 1 0 0 1 8 1 2 2 0 0 0 0 9 10 5 0 0 1 0 3 0 0 0 0 1 23 0 0 0 0 23 0 0 0 0 0 0 0 0 0 0 0 0 0 2 0 5 0 26 2 1 4 1 1 3 0 0 0 3 9 0 0 0 1 0 5 2 6 0 0 6 2 3 0 0 3 0 4
+26 1 2 0 0 0 0 2 2 4 1 0 8 2 2 36 2 0 0 0 0 43 16 1 0 0 0 2 0 0 0 0 1 1 0 0 2 0 0 0 1 1 3 3 2 9 10 5 0 0 1 1 3 0 8 1 2 0 6 0 0 0 0 23 0 0 0 0 0 0 0 0 2 0 0 0 0 1 1 4 1 2 2 1 4 1 1 3 0 0 0 3 9 0 0 0 1 0 5 2 6 0 0 6 2 3 0 0 3 0 4
+43 1 2 0 0 0 0 2 8 2 2 0 0 0 0 26 1 1 3 3 2 36 16 1 0 0 0 2 0 0 0 0 1 1 0 0 2 2 4 1 2 0 0 0 0 9 10 5 0 0 1 2 3 0 0 0 0 0 26 0 8 1 2 6 2 0 0 0 0 0 0 0 1 1 3 3 2 0 2 3 2 7 2 1 4 1 1 3 0 0 0 3 9 0 0 0 1 0 5 2 6 0 0 6 2 3 0 0 3 0 4
+36 0 2 1 0 0 0 2 0 0 0 0 2 1 2 51 2 0 0 0 0 26 16 1 1 0 0 1 1 3 3 2 1 1 0 0 1 8 2 2 2 0 0 0 0 9 10 5 0 0 1 0 2 6 2 4 1 0 43 0 0 0 0 26 1 1 3 3 2 0 1 0 2 0 0 0 0 2 0 2 3 26 0 1 4 1 0 3 1 0 1 3 8 1 1 1 0 1 4 1 0 0 0 6 2 3 0 0 3 0 4
+26 0 2 1 0 0 0 2 2 1 2 0 1 1 1 29 2 0 0 0 0 51 16 1 1 0 0 2 0 0 0 0 1 1 0 0 2 0 0 0 1 1 3 3 2 9 10 5 0 0 1 1 2 6 8 2 2 0 36 0 2 4 1 43 2 0 0 0 0 0 1 0 2 0 0 0 0 1 1 1 4 2 0 1 4 1 0 3 1 0 1 3 8 1 1 1 0 1 4 1 0 0 0 6 2 3 0 0 3 0 4
+51 0 2 1 1 0 0 2 1 1 1 0 0 0 0 13 1 1 1 1 2 29 16 1 1 0 0 2 0 0 0 0 1 1 0 0 2 2 1 2 2 0 0 0 0 9 10 5 0 0 1 2 2 6 0 0 0 0 26 0 8 2 2 36 2 0 0 0 0 0 1 0 1 1 3 3 2 0 2 0 5 1 0 1 4 1 0 3 1 0 1 3 8 1 1 1 0 1 4 1 0 0 0 6 2 3 0 0 3 0 4
+29 0 2 1 0 0 0 2 0 0 0 0 2 2 2 50 2 0 0 0 0 13 6 1 0 0 0 1 1 1 1 2 2 4 0 0 1 1 1 1 2 0 0 0 0 9 10 5 0 0 16 0 1 6 2 1 2 0 51 0 0 0 0 26 1 1 3 3 2 0 0 1 2 0 0 0 0 2 0 2 0 9 1 1 4 1 1 2 1 0 1 3 7 2 2 2 0 0 3 3 0 0 0 3 1 2 1 1 2 1 3
+13 0 2 1 0 0 0 2 2 2 2 0 2 4 1 43 2 0 0 0 0 50 6 1 0 0 0 2 0 0 0 0 2 4 0 0 2 0 0 0 1 1 1 1 2 9 10 5 0 0 16 1 1 6 1 1 1 0 29 0 2 1 2 51 2 0 0 0 0 0 0 1 2 0 0 0 0 1 1 1 1 2 1 1 4 1 1 2 1 0 1 3 7 2 2 2 0 0 3 3 0 0 0 3 1 2 1 1 2 1 3
+50 0 2 1 1 0 0 2 2 4 1 0 0 0 0 16 1 3 2 3 1 43 6 1 0 0 0 2 0 0 0 0 2 4 0 0 2 2 2 2 2 0 0 0 0 9 10 5 0 0 16 2 1 6 0 0 0 0 13 0 1 1 1 29 2 0 0 0 0 0 0 1 1 1 1 1 2 0 2 0 2 2 1 1 4 1 1 2 1 0 1 3 7 2 2 2 0 0 3 3 0 0 0 3 1 2 1 1 2 1 3
+43 0 2 1 0 0 0 2 0 0 0 0 2 4 1 43 2 0 0 0 0 16 56 1 0 0 0 1 3 2 3 1 8 1 2 0 1 2 4 1 2 0 0 0 0 9 10 5 0 0 6 0 3 6 2 2 2 0 50 0 0 0 0 13 1 1 1 1 2 0 1 1 2 0 0 0 0 2 0 12 0 24 0 1 4 1 0 2 2 0 0 3 6 3 3 1 3 0 2 2 0 0 0 13 4 1 2 2 1 2 2
+16 0 2 1 0 0 0 2 2 4 1 0 8 1 2 6 2 0 0 0 0 43 56 1 0 0 0 2 0 0 0 0 8 1 2 0 2 0 0 0 1 3 2 3 1 9 10 5 0 0 6 1 3 6 2 4 1 0 43 0 2 2 2 50 2 0 0 0 0 0 1 1 2 0 0 0 0 1 1 11 1 2 0 1 4 1 0 2 2 0 0 3 6 3 3 1 3 0 2 2 0 0 0 13 4 1 2 2 1 2 2
+43 0 2 1 0 0 0 2 8 1 2 0 0 0 0 20 1 3 1 1 1 6 56 1 0 0 0 2 0 0 0 0 8 1 2 0 2 2 4 1 2 0 0 0 0 9 10 5 0 0 6 2 3 6 0 0 0 0 16 0 2 4 1 43 2 0 0 0 0 0 1 1 1 3 2 3 1 0 2 10 2 7 0 1 4 1 0 2 2 0 0 3 6 3 3 1 3 0 2 2 0 0 0 13 4 1 2 2 1 2 2
+6 0 2 1 0 0 0 2 0 0 0 0 2 4 1 43 2 0 0 0 0 20 56 1 1 2 0 1 3 1 1 1 8 1 0 0 1 8 1 2 2 0 0 0 0 9 10 5 0 0 6 0 4 6 2 4 1 0 43 0 0 0 0 16 1 3 2 3 1 0 0 0 2 0 0 0 0 3 0 9 3 10 0 1 4 1 0 2 2 0 0 4 5 4 4 2 2 1 1 1 0 0 0 13 4 1 2 2 1 2 2
+20 0 2 1 0 0 0 2 2 4 1 0 2 1 2 51 2 0 0 0 0 43 56 1 1 2 0 2 0 0 0 0 8 1 0 0 2 0 0 0 1 3 1 1 1 9 10 5 0 0 6 1 4 6 8 1 2 0 6 0 2 4 1 43 2 0 0 0 0 0 0 0 2 0 0 0 0 2 1 8 4 2 0 1 4 1 0 2 2 0 0 4 5 4 4 2 2 1 1 1 0 0 0 13 4 1 2 2 1 2 2
+43 0 2 1 0 0 0 2 2 1 2 0 2 4 1 43 2 0 0 0 0 51 56 1 1 2 0 2 0 0 0 0 8 1 0 0 2 2 4 1 2 0 0 0 0 9 10 5 0 0 6 2 4 6 0 0 0 0 20 0 8 1 2 6 2 0 0 0 0 0 0 0 1 3 1 1 1 1 2 7 5 2 0 1 4 1 0 2 2 0 0 4 5 4 4 2 2 1 1 1 0 0 0 13 4 1 2 2 1 2 2
+51 0 2 1 0 0 0 2 2 4 1 0 0 0 0 16 1 3 2 3 1 43 56 1 1 2 0 2 0 0 0 0 8 1 0 0 2 2 1 2 2 0 0 0 0 9 10 5 0 0 6 3 4 6 2 4 1 0 43 0 0 0 0 20 1 3 1 1 1 0 0 0 2 0 0 0 0 0 3 6 6 2 0 1 4 1 0 2 2 0 0 4 5 4 4 2 2 1 1 1 0 0 0 13 4 1 2 2 1 2 2
+43 1 1 1 0 0 0 1 0 0 0 0 2 4 1 43 2 0 0 0 0 16 56 1 0 0 0 1 3 2 3 1 8 1 1 0 1 2 4 1 2 0 0 0 0 9 10 5 0 0 6 0 4 6 2 1 2 0 51 0 2 4 1 43 2 0 0 0 0 0 0 0 2 0 0 0 0 2 0 5 7 24 2 1 4 1 1 1 2 0 0 3 4 5 5 3 1 2 2 2 2 0 0 13 4 1 2 2 1 2 2
+16 1 1 1 0 0 0 1 2 4 1 0 2 3 2 53 2 0 0 0 0 43 56 1 0 0 0 2 0 0 0 0 8 1 1 0 2 0 0 0 1 3 2 3 1 9 10 5 0 0 6 1 4 6 2 4 1 0 43 0 2 1 2 51 2 0 0 0 0 0 0 0 2 0 0 0 0 1 1 4 8 2 2 1 4 1 1 1 2 0 0 3 4 5 5 3 1 2 2 2 2 0 0 13 4 1 2 2 1 2 2
+43 1 1 1 0 0 0 1 2 3 2 0 0 0 0 13 1 1 1 1 2 53 56 1 0 0 0 2 0 0 0 0 8 1 1 0 2 2 4 1 2 0 0 0 0 9 10 5 0 0 6 2 4 6 0 0 0 0 16 0 2 4 1 43 2 0 0 0 0 0 0 0 1 3 2 3 1 0 2 3 9 2 2 1 4 1 1 1 2 0 0 3 4 5 5 3 1 2 2 2 2 0 0 13 4 1 2 2 1 2 2
+53 0 1 2 0 0 0 1 0 0 0 0 6 2 2 8 2 0 0 0 0 13 56 1 1 1 0 1 1 1 1 2 8 1 0 0 1 2 3 2 2 0 0 0 0 9 10 5 0 0 6 0 2 2 2 4 1 0 43 0 0 0 0 16 1 3 2 3 1 0 1 0 2 0 0 0 0 2 0 2 10 9 0 1 4 1 0 1 3 0 1 3 3 6 1 1 0 3 1 1 0 0 0 13 4 1 2 2 1 2 2
+13 0 1 2 0 0 0 1 6 2 2 0 8 1 2 6 2 0 0 0 0 8 56 1 1 1 0 2 0 0 0 0 8 1 0 0 2 0 0 0 1 1 1 1 2 9 10 5 0 0 6 1 2 2 2 3 2 0 53 0 2 4 1 43 2 0 0 0 0 0 1 0 2 0 0 0 0 1 1 1 11 6 0 1 4 1 0 1 3 0 1 3 3 6 1 1 0 3 1 1 0 0 0 13 4 1 2 2 1 2 2
+8 0 1 2 1 0 0 1 8 1 2 0 0 0 0 24 1 2 3 1 2 6 56 1 1 1 0 2 0 0 0 0 8 1 0 0 2 6 2 2 2 0 0 0 0 9 10 5 0 0 6 2 2 2 0 0 0 0 13 0 2 3 2 53 2 0 0 0 0 0 1 0 1 1 1 1 2 0 2 0 12 7 0 1 4 1 0 1 3 0 1 3 3 6 1 1 0 3 1 1 0 0 0 13 4 1 2 2 1 2 2
+6 1 0 2 0 0 0 0 0 0 0 0 2 4 1 43 2 0 0 0 0 24 0 1 0 0 0 1 2 3 1 2 0 0 0 9 1 8 1 2 2 0 0 0 0 9 10 5 0 0 56 0 3 2 6 2 2 0 8 0 0 0 0 13 1 1 1 1 2 0 0 1 2 0 0 0 0 2 0 10 0 18 3 1 4 1 1 0 3 0 0 3 2 7 2 2 2 0 2 2 1 0 0 11 3 0 3 3 0 3 1
+24 1 0 2 0 0 0 0 2 4 1 0 6 1 1 35 2 0 0 0 0 43 0 1 0 0 0 2 0 0 0 0 0 0 0 9 2 0 0 0 1 2 3 1 2 9 10 5 0 0 56 1 3 2 8 1 2 0 6 0 6 2 2 8 2 0 0 0 0 0 0 1 2 0 0 0 0 1 1 9 1 2 3 1 4 1 1 0 3 0 0 3 2 7 2 2 2 0 2 2 1 0 0 11 3 0 3 3 0 3 1
+43 1 0 2 0 0 0 0 6 1 1 0 0 0 0 7 1 2 2 4 2 35 0 1 0 0 0 2 0 0 0 0 0 0 0 9 2 2 4 1 2 0 0 0 0 9 10 5 0 0 56 2 3 2 0 0 0 0 24 0 8 1 2 6 2 0 0 0 0 0 0 1 1 2 3 1 2 0 2 8 2 6 3 1 4 1 1 0 3 0 0 3 2 7 2 2 2 0 2 2 1 0 0 11 3 0 3 3 0 3 1
+35 0 0 3 0 0 0 0 0 0 0 0 3 2 2 18 2 0 0 0 0 7 0 1 0 0 9 1 2 2 4 2 0 0 0 0 1 6 1 1 2 0 0 0 0 9 10 5 0 0 56 0 4 1 2 4 1 0 43 0 0 0 0 24 1 2 3 1 2 0 1 0 2 0 0 0 0 1 0 7 3 14 0 1 4 1 0 0 4 0 0 2 1 8 1 1 1 1 1 1 0 0 0 11 3 0 3 3 0 3 1
+7 0 0 3 0 0 0 0 3 2 2 0 2 1 2 51 2 0 0 0 0 18 0 1 0 0 9 2 0 0 0 0 0 0 0 0 2 0 0 0 1 2 2 4 2 9 10 5 0 0 56 1 4 1 6 1 1 0 35 0 2 4 1 43 2 0 0 0 0 0 1 0 2 0 0 0 0 0 1 6 4 3 0 1 4 1 0 0 4 0 0 2 1 8 1 1 1 1 1 1 0 0 0 11 3 0 3 3 0 3 1
+18 0 0 3 0 0 0 0 2 1 2 0 7 5 1 17 2 0 0 0 0 51 0 1 0 0 0 2 0 0 0 0 0 0 0 0 1 3 2 2 2 0 0 0 0 9 10 5 0 0 56 0 2 1 0 0 0 0 7 0 6 1 1 35 2 0 0 0 0 0 0 0 1 2 2 4 2 5 0 5 5 2 5 1 4 1 0 0 4 0 4 6 0 9 2 2 0 2 0 0 0 9 0 11 3 0 3 3 0 3 1
+51 0 0 3 0 0 0 0 7 5 1 0 0 0 0 32 1 1 2 2 2 17 0 1 0 0 0 2 0 0 0 0 0 0 0 0 1 2 1 2 2 0 0 0 0 9 10 5 0 0 56 1 2 1 3 2 2 0 18 0 0 0 0 7 1 2 2 4 2 0 0 0 2 0 0 0 0 4 1 4 6 8 5 1 4 1 0 0 4 0 4 6 0 9 2 2 0 2 0 0 0 9 0 11 3 0 3 3 0 3 1
+17 0 0 3 0 0 0 0 0 0 0 0 1 1 2 47 2 0 0 0 0 32 0 1 0 0 0 1 1 2 2 2 0 0 0 0 1 7 5 1 2 0 0 0 0 9 10 5 0 0 56 2 2 1 2 1 2 0 51 0 3 2 2 18 2 0 0 0 0 0 0 0 2 0 0 0 0 3 2 3 7 21 5 1 4 1 0 0 4 0 4 6 0 9 2 2 0 2 0 0 0 9 0 11 3 0 3 3 0 3 1
+32 0 0 3 0 0 0 0 1 1 2 0 2 1 2 51 2 0 0 0 0 47 0 1 0 0 0 2 0 0 0 0 0 0 0 0 2 0 0 0 1 1 2 2 2 9 10 5 0 0 56 3 2 1 7 5 1 0 17 0 2 1 2 51 2 0 0 0 0 0 0 0 2 0 0 0 0 2 3 2 8 1 5 1 4 1 0 0 4 0 4 6 0 9 2 2 0 2 0 0 0 9 0 11 3 0 3 3 0 3 1
+47 0 0 3 0 0 0 0 2 1 2 0 0 0 0 23 0 0 0 0 0 51 0 1 0 0 0 2 0 0 0 0 0 0 0 0 2 1 1 2 2 0 0 0 0 9 10 5 0 0 56 4 2 1 0 0 0 0 32 0 7 5 1 17 2 0 0 0 0 0 0 0 1 1 2 2 2 1 4 1 9 2 5 1 4 1 0 0 4 0 4 6 0 9 2 2 0 2 0 0 0 9 0 11 3 0 3 3 0 3 1
+51 0 0 3 5 0 0 0 0 0 0 1 0 0 0 23 0 0 0 0 0 23 0 1 0 0 0 0 0 0 0 0 0 0 0 0 2 2 1 2 2 0 0 0 0 9 10 5 0 0 56 5 2 1 1 1 2 0 47 0 0 0 0 32 1 1 2 2 2 0 0 0 2 0 0 0 0 0 5 0 10 0 5 1 4 1 0 0 4 0 4 6 0 9 2 2 0 2 0 0 0 9 0 11 3 0 3 3 0 3 1
+23 0 0 3 0 0 0 0 0 0 0 0 0 0 0 23 0 0 0 0 0 23 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 9 10 5 0 0 0 0 0 1 2 1 2 0 51 0 1 1 2 47 2 0 0 0 0 0 0 4 2 0 0 0 0 0 0 0 0 0 0 1 4 1 0 0 4 0 0 0 0 10 3 3 0 0 0 0 0 0 0 0 0 0 4 0 0 4 0

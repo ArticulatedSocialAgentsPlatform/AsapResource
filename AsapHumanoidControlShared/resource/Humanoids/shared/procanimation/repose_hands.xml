@@ -1,0 +1,21 @@
+<!-- This procedural animation was constructed to repose the hands of the avatar -->
+
+<ProcAnimation prefDuration="0.5" minDuration="0.5" maxDuration="0.5">
+<EndEffector local="false" target="r_wrist" translation="0.1;1.1;0.4"/>
+<EndEffector local="false" target="l_wrist" translation="-0.1;1.1;0.4"/>
+
+<Keyframes target="r_wrist" encoding="quaternion">
+<Keyframe time="0.0" local="false" value="0.0;0.7071068;0.7071068;0.0"/>
+<Keyframe time="1.0" local="false" value="0.0;0.7071068;0.7071068;0.0"/>
+</Keyframes>
+<Keyframes target="l_wrist" encoding="quaternion">
+<Keyframe time="0.0" local="false" value="0.0;0.7071068;-0.7071068;-0.0"/>
+<Keyframe time="1.0" local="false" value="0.0;0.7071068;-0.7071068;-0.0"/>
+</Keyframes>
+<KeyPosition id="start" weight="1" time="0.0"/>
+<KeyPosition id="end" weight="1" time="1.0"/>
+<Parameter description="" sid="XEP" value="-0.3"/>
+<Parameter description="" sid="YUPPERC" value="-0.18"/>
+<Parameter description="" sid="ZNEAR" value="0.18"/>
+</ProcAnimation>
+

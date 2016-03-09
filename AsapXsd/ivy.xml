@@ -1,0 +1,11 @@
+<ivy-module version="2.0">
+   <info organisation="Asap" module="AsapXsd"/>
+   <configurations>
+      <include file="${ivy.settings.dir}/configurations.xml"/>
+   </configurations>
+   <dependencies>
+      
+
+
+   </dependencies>
+</ivy-module>

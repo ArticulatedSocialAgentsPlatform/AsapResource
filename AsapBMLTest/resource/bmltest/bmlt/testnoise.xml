@@ -1,0 +1,17 @@
+<!--
+Constraints:
+b:n:start = 0
+b:n:end = 5000
+
+Constraints tested in: test.bml.ParserTest
+-->
+<bml xmlns="http://www.bml-initiative.org/bml/bml-1.0"  id="b" xmlns:bmlt="http://hmi.ewi.utwente.nl/bmlt">
+	<bmlt:noise id="n" start="0" end="5000" type="perlin" joint="skullbase">
+		<bmlt:parameter name="baseamplitudex" value="0.5"/>
+		<bmlt:parameter name="baseamplitudey" value="0"/>
+		<bmlt:parameter name="baseamplitudez" value="0"/>
+		<bmlt:parameter name="offsetx" value="-0.1"/>
+		<bmlt:parameter name="offsety" value="0"/>
+		<bmlt:parameter name="offsetz" value="0"/>
+	</bmlt:noise>
+</bml>

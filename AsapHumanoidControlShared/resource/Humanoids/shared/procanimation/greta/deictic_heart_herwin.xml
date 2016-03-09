@@ -1,0 +1,22 @@
+<!--
+This procedural animation was constructed using the Greta (http://www.tsi.enst.fr/~pelachau/Greta/)
+gesture with the corresponding name.
+-->
+<ProcAnimation prefDuration="0.1" minDuration="0.1" maxDuration="0.1">
+<EndEffector local="true" swivel="-0.75" target="l_wrist" translation="tcbspline(t,0,0,-XC,0.0,-XC,1.0);tcbspline(t,0,0,YUPPERP,0.0,YUPPERP,1.0);tcbspline(t,0,0,ZVERYNEAR,0.0,ZVERYNEAR,1.0)"/>
+<!--
+<Keyframes target="l_wrist" encoding="quaternion">
+<Keyframe time="0.0" local="false" value="0.27059805;-0.6532815;-0.27059805;-0.6532815"/>
+<Keyframe time="1.0" local="false" value="0.27059805;-0.6532815;-0.27059805;-0.6532815"/>
+</Keyframes>
+-->
+<Keyframes target="l_wrist" encoding="quaternion">
+<Keyframe time="0.0" local="false" value="0.5;-0.5;-0.5;-0.5"/>
+<Keyframe time="1.0" local="false" value="0.5;-0.5;-0.5;-0.5"/>
+</Keyframes>
+<KeyPosition id="start" weight="1" time="0.0"/>
+<KeyPosition id="end" weight="1" time="1.0"/>
+<Parameter description="" sid="XC" value="0.01"/>
+<Parameter description="" sid="YUPPERP" value="-0.1"/>
+<Parameter description="" sid="ZVERYNEAR" value="0.15"/>
+</ProcAnimation>

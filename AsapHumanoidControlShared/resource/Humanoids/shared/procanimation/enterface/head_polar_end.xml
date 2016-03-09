@@ -1,0 +1,10 @@
+<ProcAnimation prefDuration="1.0" minDuration="1" maxDuration="1.0">
+	<Rotation rotation="dx * a * 0.5 * -sin( t * 0.5 * pi * r);dy * a * 0.5 * -sin( t * 0.5 * pi * r);0" target="vc4"/>
+	<Rotation rotation="dx * a * 0.5 * -sin( t * 0.5 * pi * r);dy * a * 0.5 * -sin( t * 0.5 * pi * r);0" target="skullbase"/>	
+  	<KeyPosition id="start" time="0.0" weight="1.0"></KeyPosition>
+  	<KeyPosition id="end" time="1.0" weight="1.0"></KeyPosition>
+  <Parameter sid="a" description="magnitude" value="0.25"/>
+  <Parameter sid="r" description="repeats" value="1"/>  
+  <Parameter sid="dx" description="direction x" value="1"/>  
+  <Parameter sid="dy" description="direction y" value="1"/>  
+</ProcAnimation>

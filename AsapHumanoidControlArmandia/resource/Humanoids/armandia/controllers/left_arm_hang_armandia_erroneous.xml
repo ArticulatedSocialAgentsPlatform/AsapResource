@@ -1,0 +1,41 @@
+<!--
+Matches with looselyhanging arms pose in restingpose dir
+-->
+<CompoundController xmlns:bmlt="http://hmi.ewi.utwente.nl/bmlt">
+  <required>
+	  <Controller class="hmi.physics.controller.BallJointController" id="shoulder">
+			<bmlt:parameter name="joint" value="l_shoulder"/>
+			<bmlt:parameter name="anglez" value="-1"/>
+			<bmlt:parameter name="ksz" value="15"/>
+			<bmlt:parameter name="dsz" value="8"/>
+			<bmlt:parameter name="anglex" value="-0.2"/>
+			<bmlt:parameter name="ksx" value="15"/>
+			<bmlt:parameter name="dsx" value="8"/>
+		</Controller>
+	  <Controller class="hmi.physics.controller.HingeJointController" id="elbow">
+			<bmlt:parameter name="joint" value="l_elbow"/>
+			<bmlt:parameter name="ds" value="3"/>
+			<bmlt:parameter name="ks" value="1"/>
+			<bmlt:parameter name="angle" value="-1"/>
+		</Controller>
+	</required>
+	<desired>		
+		<Controller class="hmi.physics.controller.HingeJointController" id="clavy">
+			<bmlt:parameter name="joint" value="l_sternoclavicular"/>		
+			<bmlt:parameter name="axis" value="1"/>
+			<bmlt:parameter name="ks" value="15"/>		
+			<bmlt:parameter name="ds" value="5"/>	
+			<bmlt:parameter name="angle" value="0"/>	
+		</Controller>
+		<Controller class="hmi.physics.controller.HingeJointController" id="clavz">
+			<bmlt:parameter name="joint" value="l_sternoclavicular"/>		
+			<bmlt:parameter name="axis" value="2"/>
+			<bmlt:parameter name="ks" value="20"/>		
+			<bmlt:parameter name="ds" value="10"/>	
+			<bmlt:parameter name="angle" value="-0.3"/>	
+		</Controller>
+		<Controller class="hmi.physics.controller.BallJointController" id="wrist">
+			<bmlt:parameter name="joint" value="l_wrist"/>		
+		</Controller>				
+	</desired>
+</CompoundController>

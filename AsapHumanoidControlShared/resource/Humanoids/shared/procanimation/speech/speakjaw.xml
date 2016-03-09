@@ -1,0 +1,5 @@
+<ProcAnimation prefDuration="1.0" minDuration="1.0" maxDuration="1.0">   
+   <Rotation rotation="offset+if(t &lt; 0.5,t,1-t)*a*0.5;0;0" target="temporomandibular"/>
+   <Parameter sid="a" description="a" value="0.9"/>   
+   <Parameter sid="offset" description="offset" value="0.1"/>   
+</ProcAnimation>

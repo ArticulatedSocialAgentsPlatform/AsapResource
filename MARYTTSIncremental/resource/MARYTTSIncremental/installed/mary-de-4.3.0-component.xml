@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<marytts-install xmlns="http://mary.dfki.de/installer">
+    <language locale="de" name="de" version="4.3.0">
+        <description>German language component</description>
+        <license href="http://www.gnu.org/licenses/lgpl-3.0-standalone.html"/>
+        <package filename="mary-de-4.3.0.zip"
+            md5sum="9ef75341bf798c1cf58fd641c00d17ea" size="11465462">
+            <location href="http://mary.dfki.de/download/4.3.0/"/>
+        </package>
+        <files>lib/, lib/modules/, lib/modules/de/, lib/modules/de/cap/, lib/modules/de/lexicon/, lib/modules/de/lexicon/denglish/, lib/modules/de/preprocess/, lib/modules/de/prosody/, lib/modules/de/tagger/, conf/, conf/de.config, java/, java/mary-de.jar, lib/modules/de/cap/klattrule-params-de.properties, lib/modules/de/cap/phoneme-list-de.xml, lib/modules/de/cap/tobirule-params-de.xml, lib/modules/de/lexicon/allophones.de.xml, lib/modules/de/lexicon/de.lts, lib/modules/de/lexicon/de.txt, lib/modules/de/lexicon/de_lexicon.fst, lib/modules/de/lexicon/denglish/EN-LEX.xml, lib/modules/de/lexicon/denglish/PrefixLex.xml, lib/modules/de/lexicon/denglish/flectionsPhonLex.xml, lib/modules/de/lexicon/denglish/germanEndings.xml, lib/modules/de/lexicon/denglish/terminal_voicing_for_german.xml, lib/modules/de/lexicon/userdict.txt, lib/modules/de/preprocess/abbrev.dat, lib/modules/de/preprocess/multiword.dat, lib/modules/de/prosody/POSAccentPriorities.properties, lib/modules/de/prosody/accentedVerbs.fst, lib/modules/de/prosody/focusWords.txt, lib/modules/de/prosody/tobipredparams_german.xml, lib/modules/de/prosody/wordFrequencies-de.fst, lib/modules/de/tagger/posModel.bin.gz</files>
+    </language>
+</marytts-install>

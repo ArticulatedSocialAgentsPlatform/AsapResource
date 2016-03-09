@@ -1,0 +1,31 @@
+<!--
+This procedural animation was constructed using the Greta (http://www.tsi.enst.fr/~pelachau/Greta/)
+gesture with the corresponding name.
+-->
+<ProcAnimation prefDuration="0.8234528" minDuration="0.8234528" maxDuration="0.8234528">
+<EndEffector local="true" target="l_wrist" translation="tcbspline(t,0,0,-XCC,0.0,-XCC,0.5,0,0,0,-XCC,1.0);tcbspline(t,0,0,YCC,0.0,YCC,0.5,0,0,0,YCC,1.0);tcbspline(t,0,0,ZFAR,0.0,ZMIDDLE,0.5,0,0,0,ZMIDDLE,1.0)"/>
+<Keyframes target="l_wrist" encoding="quaternion">
+<Keyframe time="0.0" local="false" value="0.5;-0.5;-0.5;-0.5"/>
+<Keyframe time="0.5" local="false" value="0.5;-0.5;-0.5;-0.5"/>
+<Keyframe time="1.0" local="false" value="0.5;-0.5;-0.5;-0.5"/>
+</Keyframes>
+<KeyPosition id="start" weight="1" time="0.0"/>
+<KeyPosition id="ready" weight="1" time="0.0"/>
+<KeyPosition id="strokeStart" weight="1" time="0.01"/>
+<KeyPosition id="stroke" weight="1" time="0.5"/>
+<KeyPosition id="strokeEnd" weight="1" time="0.5"/>
+<KeyPosition id="relax" weight="1" time="1.0"/>
+<KeyPosition id="end" weight="1" time="1.0"/>
+<Parameter description="" sid="XCC" value="0.137"/>
+<Parameter description="" sid="YCC" value="-0.3"/>
+<Parameter description="" sid="ZFAR" value="0.28"/>
+<Parameter description="" sid="ZMIDDLE" value="0.18"/>
+<SkeletonInterpolator rotationEncoding="axisangles" parts="l_pinky1 l_index1 l_middle1 l_ring1 l_pinky2 l_middle2 l_index2 l_ring2" encoding="R">
+		  	0  0 0 -1 1.57 0 0 -1 1.57 0 0 -1 1.57 0 0 -1 1.57 0 0 -1 1.57 0 0 -1 1.57 0 0 -1 1.57 0 0 -1 1.57 
+		  	1  0 0 -1 1.57 0 0 -1 1.57 0 0 -1 1.57 0 0 -1 1.57 0 0 -1 1.57 0 0 -1 1.57 0 0 -1 1.57 0 0 -1 1.57 
+</SkeletonInterpolator>
+<SkeletonInterpolator rotationEncoding="axisangles" parts="l_thumb1 l_thumb2 l_thumb3" encoding="R">
+	0	1 0 0 0.2 1 0 0 0.3 1 0 0 0.2
+	1	1 0 0 0.2 1 0 0 0.3 1 0 0 0.2
+</SkeletonInterpolator>
+</ProcAnimation>

@@ -1,0 +1,22 @@
+<ProcAnimation prefDuration="2.0" minDuration="2.0" maxDuration="2.0">
+	<EndEffector local="true" translation=" -hermite(t*12,0,0,  -0.02,-0.07,-0.045, 0.05, 0.25, 0.37, 0.35, 0.27, 0.15, 0.1, 0.06, 0.01,-0.02)*0.023*(10*a+3*abs(a)+12)+xoff;-0.37+ ((30-(10*a+3*abs(a)+12))/30)*0.3 +hermite(t*12, 0.0, 0.0,        0   , 0.12, 0.16, 0.12,  0.03, 0.13, 0.2 , 0.18, 0.1 , 0.29, 0.35 , 0.27, 0)*0.05*(10*a+3*abs(a)+12)+yoff;0.35+zoff" swivel="0.45" target="r_wrist"></EndEffector>
+	<EndEffector local="true" translation=" hermite(t*12,0,0,   -0.02,-0.07,-0.045, 0.05, 0.25, 0.37, 0.35, 0.27, 0.15, 0.1, 0.06, 0.01,-0.02)*0.023*(10*a+3*abs(a)+12)+xoff;-0.37+ ((30-(10*a+3*abs(a)+12))/30)*0.3 +hermite(t*12, 0.0, 0.0,        0   , 0.12, 0.16, 0.12,  0.03, 0.13, 0.2 , 0.18, 0.1 , 0.29, 0.35 , 0.27, 0)*0.05*(10*a+3*abs(a)+12)+yoff;0.35+zoff" swivel="-0.45" target="l_wrist"></EndEffector>	
+
+<KeyPosition id="start" time="0.0" weight="1.0"></KeyPosition>
+<KeyPosition id="beat1a" time="0.08333" weight="1.0"></KeyPosition>
+<KeyPosition id="beat1b" time="0.1667" weight="1.0"></KeyPosition>
+<KeyPosition id="beat1c" time="0.25" weight="1.0"></KeyPosition>
+<KeyPosition id="beat2" time="0.333333" weight="1.0"></KeyPosition>
+<KeyPosition id="beat2a" time="0.41667" weight="1.0"></KeyPosition>
+<KeyPosition id="beat2b" time="0.5" weight="1.0"></KeyPosition>
+<KeyPosition id="beat2c" time="0.58333" weight="1.0"></KeyPosition>
+<KeyPosition id="beat3" time="0.66667" weight="1.0"></KeyPosition>
+<KeyPosition id="beat3a" time="0.75" weight="1.0"></KeyPosition>
+<KeyPosition id="beat3b" time="0.833333" weight="1.0"></KeyPosition>
+<KeyPosition id="beat3c" time="0.91667" weight="1.0"></KeyPosition>
+<KeyPosition id="end" time="1.0" weight="1.0"></KeyPosition>
+<Parameter description="" sid="a" value="0"/>
+<Parameter description="" sid="xoff" value="0"/>
+<Parameter description="" sid="yoff" value="-0.05"/>
+<Parameter description="" sid="zoff" value="-0.05"/>
+</ProcAnimation>

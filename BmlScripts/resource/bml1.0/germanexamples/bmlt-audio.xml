@@ -1,0 +1,8 @@
+<!--
+To choose different audio: edit fileName to point to your own audio files.
+
+Requires audioengine.
+-->
+<bml xmlns="http://www.bml-initiative.org/bml/bml-1.0"  id="bml1" xmlns:bmlt="http://hmi.ewi.utwente.nl/bmlt">
+<bmlt:audiofile id="audio1" fileName="audio/audience.wav"/>
+</bml>

@@ -1,0 +1,15 @@
+<!--
+Required timing:
+speech1:start = dummyanticipator:dummy+1 (=2 in testcase)
+
+Constraints:
+c1 speech1:start, dummyanticipator:dummy+1
+
+Constraints tested in: test.bml.ParserTest
+Timing tested in: test.bml.TestScheduler
+-->
+<bml xmlns="http://www.bml-initiative.org/bml/bml-1.0"  id="bml1">
+	<speech id="speech1" start="anticipators:dummyanticipator:dummy+1"> 
+		<text>Hello world. </text>
+  </speech>    
+</bml>

@@ -1,0 +1,4 @@
+<bml xmlns="http://www.bml-initiative.org/bml/bml-1.0"  id="bml1"  >
+	<pointing id="point1" start="1" ready="2" relax="3" end="4" mode="RIGHT_HAND" target="bluebox"/>	  
+</bml>
+

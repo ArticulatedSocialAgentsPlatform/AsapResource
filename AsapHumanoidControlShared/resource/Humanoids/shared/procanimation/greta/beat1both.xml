@@ -1,0 +1,23 @@
+<!-- 
+ This procedural animation was constructed using the Greta (http://www.tsi.enst.fr/~pelachau/Greta/) gesture with the corresponding name. 
+ -->
+<ProcAnimation prefDuration="1.032555" minDuration="1.032555" maxDuration="1.032555">
+<EndEffector local="true" target="r_wrist" translation="tcbspline(t,0,0,XC,0.0,XC,0.5,0,0,0,XC,1.0);tcbspline(t,0,0,YCC,0.0,YLOWERP,0.5,0,0,0,YLOWERP,1.0);tcbspline(t,0,0,ZMIDDLE,0.0,(ZMIDDLE*0.5),0.5,0,0,0,(ZMIDDLE*0.5),1.0)"  swivel="tcbspline(t,0,0,0.35,0.0,0.23909079,0.5,0,0,0,0.23909079,1.0)"/>
+<EndEffector local="true" target="l_wrist" translation="tcbspline(t,0,0,-XC,0.0,-XC,0.5,0,0,0,-XC,1.0);tcbspline(t,0,0,YCC,0.0,YLOWERP,0.5,0,0,0,YLOWERP,1.0);tcbspline(t,0,0,ZMIDDLE,0.0,(ZMIDDLE*0.5),0.5,0,0,0,(ZMIDDLE*0.5),1.0)"  swivel="tcbspline(t,0,0,-0.35,0.0,-0.23909079,0.5,0,0,0,-0.23909079,1.0)"/>
+<Keyframes target="r_wrist" encoding="quaternion">
+<Keyframe time="0.5" local="false" value="0.5;-0.5;-0.5;0.5"/>
+<Keyframe time="1.0" local="false" value="0.5;-0.5;-0.5;0.5"/>
+</Keyframes>
+<Keyframes target="l_wrist" encoding="quaternion">
+<Keyframe time="0.5" local="false" value="0.5;-0.5;0.5;-0.5"/>
+<Keyframe time="1.0" local="false" value="0.5;-0.5;0.5;-0.5"/>
+</Keyframes>
+<KeyPosition id="strokeStart" weight="1" time="0.0"/>
+<KeyPosition id="strokeEnd" weight="1" time="0.5"/>
+<KeyPosition id="relax" weight="1" time="1.0"/>
+<Parameter description="" sid="XC" value="0.01"/>
+<Parameter description="" sid="YCC" value="-0.3"/>
+<Parameter description="" sid="ZMIDDLE" value="0.18"/>
+<Parameter description="" sid="YLOWERP" value="-0.47"/>
+<Parameter description="Spatial extend" sid="SPC" value="1"/>
+</ProcAnimation>

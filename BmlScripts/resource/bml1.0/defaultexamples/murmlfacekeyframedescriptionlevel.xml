@@ -1,0 +1,22 @@
+<bml xmlns="http://www.bml-initiative.org/bml/bml-1.0"  id="bml1" >
+<faceLexeme id="face1" start="2" lexeme="smile">
+	<description priority="1" type="murmlface">
+	<murmlface xmlns="http://www.techfak.uni-bielefeld.de/ags/soa/murml">
+	<murml-description>
+	  <dynamic>
+		<keyframing>			
+			<phase>			
+			<frame ftime="0.5">
+			<posture>Humanoid (Body_NG-mesh-morpher-yeux_NG01-1 1 100)</posture>
+			</frame>
+			<frame ftime="1">
+			<posture>Humanoid (Body_NG-mesh-morpher-yeux_NG01-1 1 0)</posture>
+			</frame>			
+			</phase>
+		</keyframing>
+	      </dynamic>
+	</murml-description>
+	</murmlface>
+	</description>	
+</faceLexeme>
+</bml>

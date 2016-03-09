@@ -1,0 +1,165 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+
+<!--gesturebinding-->
+<xs:element name="gesturebinding">
+	<xs:complexType>
+                <xs:choice maxOccurs="unbounded">
+                        <xs:element ref="RestPoseSpec"/>
+			<xs:element ref="RestGazeSpec"/>
+                        <xs:element ref="MotionUnitSpec"/>
+                        <xs:element ref="TimedMotionUnitSpec"/>
+                </xs:choice>
+	</xs:complexType>
+</xs:element>
+
+<xs:element name="RestPoseSpec">
+  <xs:complexType>
+  <xs:sequence>
+     <xs:group ref="rpContent" minOccurs="0" maxOccurs="unbounded"/>
+     <xs:element ref="RestPose" minOccurs="1" maxOccurs="1"/>
+     </xs:sequence>
+  </xs:complexType>
+</xs:element>
+
+<xs:element name="RestGazeSpec">
+  <xs:complexType>
+  <xs:sequence>
+     <xs:group ref="rpContent" minOccurs="0" maxOccurs="unbounded"/>
+     <xs:element ref="RestGaze" minOccurs="1" maxOccurs="1"/>
+     </xs:sequence>
+  </xs:complexType>
+</xs:element>
+
+<xs:element name="RestGaze">
+	<xs:complexType>
+		<xs:attribute use="required" name="type" type="xs:NMTOKEN"/>
+		<xs:attribute use="optional" name="class" type="xs:NMTOKEN"/>		
+	</xs:complexType>
+</xs:element>
+
+<xs:element name="RestPose">
+	<xs:complexType>
+		<xs:attribute use="required" name="type" type="xs:NMTOKEN"/>
+
+		<!-- Should be one of either class of file, but there is no way to define that in a Schema :( -->
+		<xs:attribute use="optional" name="class" type="xs:NMTOKEN"/>
+		<xs:attribute use="optional" name="file" type="xs:normalizedString"/>
+	</xs:complexType>
+</xs:element>
+
+<xs:group name="rpContent">
+	<xs:choice>
+		<xs:element ref="constraints"/>
+		<xs:element ref="parametermap"/>
+		<xs:element ref="parameterdefaults"/>
+	</xs:choice>
+</xs:group>
+
+<xs:element name="MotionUnitSpec">
+	<xs:complexType>
+		<xs:sequence>
+			<xs:group ref="muContent" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element ref="MotionUnit" minOccurs="1" maxOccurs="1"/>
+			<xs:group ref="muContent" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+		<xs:attribute use="required" name="type" type="xs:NMTOKEN"/>
+		<xs:attribute use="optional" name="namespace" type="xs:string"/>
+	</xs:complexType>
+</xs:element>
+
+<xs:group name="muContent">
+	<xs:choice>		
+		<xs:element ref="constraints"/>
+		<xs:element ref="parametermap"/>
+		<xs:element ref="parameterdefaults"/>
+	</xs:choice>
+</xs:group>
+
+<xs:element name="TimedMotionUnitSpec">
+	<xs:complexType>
+		<xs:sequence>
+			<xs:group ref="tmuContent" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element ref="TimedMotionUnit" minOccurs="1" maxOccurs="1"/>
+			<xs:group ref="tmuContent" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+		<xs:attribute use="required" name="type" type="xs:NMTOKEN"/>
+		<xs:attribute use="optional" name="namespace" type="xs:string"/>
+	</xs:complexType>
+</xs:element>
+
+<xs:element name="TimedMotionUnit">
+	<xs:complexType>
+        <xs:sequence>
+          <!-- allow internal XML descriptions here -->
+          <xs:any processContents="skip" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+        <xs:attribute use="required" name="type" type="xs:NMTOKEN"/>
+	</xs:complexType>
+</xs:element>
+
+<xs:group name="tmuContent">
+	<xs:choice>
+		<xs:element ref="constraints"/>
+		<xs:element ref="parametermap"/>
+		<xs:element ref="parameterdefaults"/>
+	</xs:choice>
+</xs:group>
+
+<xs:element name="MotionUnit">
+	<xs:complexType>
+		<xs:attribute use="required" name="type" type="xs:NMTOKEN"/>
+		
+		<!-- Should be one of either class of file, but there is no way to define that in a Schema :( -->
+		<xs:attribute use="optional" name="class" type="xs:NMTOKEN"/>
+		<xs:attribute use="optional" name="file" type="xs:normalizedString"/>								
+	</xs:complexType>				
+</xs:element>
+
+<xs:element name="constraints">
+	<xs:complexType>
+		<xs:sequence>
+			<xs:element ref="constraint" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>		
+</xs:element>
+
+<xs:element name="constraint">
+	<xs:complexType>
+		<xs:attribute use="required" name="name" type="xs:NMTOKEN"/>
+		<xs:attribute use="required" name="value" type="xs:NMTOKEN"/>
+                <xs:attribute use="optional" name="namespace" type="xs:string"/>
+	</xs:complexType>
+</xs:element>
+
+<xs:element name="parametermap">
+	<xs:complexType>
+		<xs:sequence>
+			<xs:element ref="parameter" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>	
+</xs:element>
+
+<xs:element name="parameter">
+	<xs:complexType>
+		<xs:attribute use="required" name="src" type="xs:NMTOKEN"/>
+		<xs:attribute use="required" name="dst" type="xs:NMTOKEN"/>
+	</xs:complexType>
+</xs:element>
+
+<xs:element name="parameterdefaults">
+	<xs:complexType>
+		<xs:sequence>
+			<xs:element ref="parameterdefault" minOccurs="0" maxOccurs="unbounded"/>				
+		</xs:sequence>
+	</xs:complexType>	
+</xs:element>
+
+<xs:element name="parameterdefault">
+	<xs:complexType>
+		<xs:attribute use="required" name="name" type="xs:NMTOKEN"/>
+		<xs:attribute use="required" name="value" type="xs:string"/>
+	</xs:complexType>
+</xs:element>
+
+</xs:schema>

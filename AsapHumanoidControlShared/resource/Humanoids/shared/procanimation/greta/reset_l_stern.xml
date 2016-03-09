@@ -1,0 +1,11 @@
+<ProcAnimation prefDuration="0.005" minDuration="0.005" maxDuration="0.005">
+<Keyframes target="l_sternoclavicular" encoding="axisangles">
+<Keyframe time="0.0" local="true" value="1;0;0;0"/>
+<Keyframe time="1.0" local="true" value="1;0;0;0"/>
+</Keyframes>
+<KeyPosition id="start" weight="1" time="0.0"/>
+<KeyPosition id="strokeStart" weight="1" time="0.0"/>
+<KeyPosition id="strokeEnd" weight="1" time="0.5"/>
+<KeyPosition id="relax" weight="1" time="1.0"/>
+<KeyPosition id="end" weight="1" time="1.0"/>
+</ProcAnimation>

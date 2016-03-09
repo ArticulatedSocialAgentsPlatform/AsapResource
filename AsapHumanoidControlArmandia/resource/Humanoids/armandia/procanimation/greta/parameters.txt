@@ -1,0 +1,7 @@
+default swivel: 0.4(r) -0.4(l)
+XC: -0.05 (in blueguy: 0.01)
+XCC: 0.08  (in blueguy: 0.137)
+XP: -0.16      (in blueguy: -0.113)
+YCC -0.3
+ZMIDDLE 0.18
+YLOWERP -0.47

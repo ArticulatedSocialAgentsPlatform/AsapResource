@@ -1,0 +1,58 @@
+<AsapVirtualHuman>
+
+  <Loader id="realizer" loader="asap.realizerembodiments.AsapRealizerEmbodiment"/>
+
+  <Loader id="guiembodiment" loader="asap.realizerembodiments.JFrameEmbodiment">
+    <BmlUI/>
+    <FeedbackUI/>
+  </Loader>
+
+  <Loader id="graphicalembodiment" loader="hmi.renderenvironment.HmiRenderEmbodimentLoader">
+    <Body postprocessing="SETHANIM" 
+          texturedir="Humanoids/skeleton" 
+          resourcedir="Humanoids/skeleton" 
+          filename="skeleton3.dae"/> 
+    <PermanentMorphs>
+        
+    </PermanentMorphs>
+   
+  </Loader>
+
+  <!-- since we will be using physics and a mixedanimationengine, we need to transform the skeletonembodiment into a mixedskeletonembodiment -->
+  <Loader id="mixedskeletonembodiment" loader="hmi.physicsenvironment.MixedSkeletonEmbodimentLoader" requiredloaders="graphicalembodiment"/>
+  
+  <!-- load the physicalembodiments and connect them to the mixedskeletonembodiment -->
+  <Loader id="physicalembodiment" 
+              loader="hmi.physicsenvironment.OdePhysicalEmbodiment"
+              requiredloaders="mixedskeletonembodiment">
+    <MixedSystems> <!-- preferably, those are generated on the fly from the physical model... but we cannot yet do this :/ -->
+    </MixedSystems>
+    <GlueFeetToFloor/>
+  </Loader>
+
+  <Loader id="physicsdebug" loader="hmi.debug.PhysicsDebugVisualisationLoader" requiredloaders="physicalembodiment">
+    <Placement offset="0.5 0 -0.5"/>
+  </Loader>
+
+  <Loader id="animationdebug" loader="hmi.debug.VJointDebugVisualisationLoader" requiredloaders="graphicalembodiment">
+    <Placement offset="-0.5 0 -0.5"/>
+  </Loader>
+
+  <Loader id="animationengine" 
+          loader="asap.animationengine.loader.MixedAnimationEngineLoader"
+          requiredloaders="mixedskeletonembodiment,physicalembodiment">
+    <GestureBinding basedir="" resources="Humanoids/armandia/gesturebinding/" filename="gesturebinding.xml"/>
+    <StartPosition offset="0.2 0 0"/>
+    <StartRotation rotation="0 1 0 -0.2"/>
+  </Loader>
+
+
+  
+
+  <!-- routing for BMLBehaviors to Engines -->
+  <!-- This overrides the routes that are registered by default for the various engines -->
+  <!-- BMLRouting>
+    <Route behaviourclass="saiba.bml.core.FaceBehaviour" engineid="animationengine"/>
+  </BMLRouting -->
+  
+</AsapVirtualHuman>

@@ -1,0 +1,128 @@
+<bml xmlns="http://www.bml-initiative.org/bml/bml-1.0"  id="bml1">   
+  <speech id="s1">
+  	<text>bla bla <sync id="w_1"/> bla</text>    
+  	<description priority="1" type="maryxml">
+   	   <maryxml xmlns="http://mary.dfki.de/2002/MaryXML" version="0.5" xml:lang="en-US" >  
+	           <phrase xmlns:ssml="http://www.w3.org/2001/10/synthesis">   
+		 <mark name="w_0"/><t  g2p_method="lexicon" pos="CD"  ph="' z I ">
+		zero<syllable ph="z I" stress="1" xmlns="http://mary.dfki.de/2002/MaryXML"><ph d="79" end="0.079" f0="(0,221)" p="z"/><ph d="52" end="0.131" p="I"/></syllable>
+		</t> 
+		<mark name="s_0_2"/>
+		<t  g2p_method="lexicon" pos="CD"  ph=" r @U">
+		zero<syllable ph="r @U" xmlns="http://mary.dfki.de/2002/MaryXML"><ph d="53" end="0.184" p="r"/><ph d="118" end="0.302" p="@U"/></syllable>
+		</t> 
+		<mark name="w_1"/><t  g2p_method="lexicon" pos="CD"  ph="' w V n">
+		one<syllable ph="w V n" stress="1" xmlns="http://mary.dfki.de/2002/MaryXML"><ph d="82" end="0.384" p="w"/><ph d="71" end="0.455" p="V"/><ph d="43" end="0.498" p="n"/></syllable>
+		</t> 
+		<mark name="w_2"/><t  g2p_method="lexicon" pos="CD"  ph="' t u">
+		two<syllable ph="t u" stress="1" xmlns="http://mary.dfki.de/2002/MaryXML"><ph d="61" end="0.559" p="t"/><ph d="75" end="0.634" p="u"/></syllable>
+		</t> 
+		<mark name="w_3"/><t  g2p_method="lexicon" pos="CD"  ph="' T r i">
+		three<syllable ph="T r i" stress="1" xmlns="http://mary.dfki.de/2002/MaryXML"><ph d="79" end="0.713" p="T"/><ph d="46" end="0.759" p="r"/><ph d="66" end="0.825" p="i"/></syllable>
+		</t> 
+		<mark name="w_4"/><t  g2p_method="lexicon" pos="CD"  ph="' f O r">
+		four<syllable ph="f O r" stress="1" xmlns="http://mary.dfki.de/2002/MaryXML"><ph d="105" end="0.930" p="f"/><ph d="67" end="0.997" p="O"/><ph d="42" end="1.039" p="r"/></syllable>
+		</t> 
+		<mark name="w_5"/><t  g2p_method="lexicon" pos="CD"  ph="' f AI v">
+		five<syllable ph="f AI v" stress="1" xmlns="http://mary.dfki.de/2002/MaryXML"><ph d="75" end="1.114" p="f"/><ph d="111" end="1.225" p="AI"/><ph d="36" end="1.261" p="v"/></syllable>
+		</t> 
+		<mark name="w_6"/><t  g2p_method="lexicon" pos="CD"  ph="' s I k s">
+		six<syllable ph="s I k s" stress="1" xmlns="http://mary.dfki.de/2002/MaryXML"><ph d="75" end="1.336" p="s"/><ph d="52" end="1.388" p="I"/><ph d="72" end="1.460" p="k"/><ph d="64" end="1.524" p="s"/></syllable>
+		</t> 
+		<mark name="w_7"/><t  g2p_method="lexicon" pos="CD"  ph="' s E ">
+		seven<syllable ph="s E" stress="1" xmlns="http://mary.dfki.de/2002/MaryXML"><ph d="82" end="1.606" p="s"/><ph d="71" end="1.677" p="E"/></syllable>
+		</t> 
+		<mark name="s_7_2"/>
+		<t  g2p_method="lexicon" pos="CD"  ph=" v @ n">
+		seven<syllable ph="v @ n" xmlns="http://mary.dfki.de/2002/MaryXML"><ph d="47" end="1.724" p="v"/><ph d="51" end="1.775" p="@"/><ph d="55" end="1.830" p="n"/></syllable>
+		</t> 
+		<mark name="w_8"/><t  g2p_method="lexicon" pos="CD"  ph="' EI t">
+		eight<syllable ph="EI t" stress="1" xmlns="http://mary.dfki.de/2002/MaryXML"><ph d="119" end="1.949" p="EI"/><ph d="54" end="2.003" p="t"/></syllable>
+		</t> 
+		<mark name="w_9"/><t  g2p_method="lexicon" pos="CD"  ph="' n AI n">
+		nine<syllable ph="n AI n" stress="1" xmlns="http://mary.dfki.de/2002/MaryXML"><ph d="47" end="2.050" p="n"/><ph d="111" end="2.161" p="AI"/><ph d="43" end="2.204" p="n"/></syllable>
+		</t> 
+		<mark name="w_10"/><t  g2p_method="lexicon" pos="CD"  ph="' t E n">
+		ten<syllable ph="t E n" stress="1" xmlns="http://mary.dfki.de/2002/MaryXML"><ph d="61" end="2.265" p="t"/><ph d="71" end="2.336" p="E"/><ph d="55" end="2.391" p="n"/></syllable>
+		</t> 
+		<mark name="w_11"/><t  g2p_method="lexicon" pos="CD"  ph="I ">
+		eleven<syllable ph="I" xmlns="http://mary.dfki.de/2002/MaryXML"><ph d="47" end="2.438" p="I"/></syllable>
+		</t> 
+		<mark name="s_11_2"/>
+		<t  g2p_method="lexicon" pos="CD"  ph=" ' l E ">
+		eleven<syllable ph="l E" stress="1" xmlns="http://mary.dfki.de/2002/MaryXML"><ph d="55" end="2.493" p="l"/><ph d="71" end="2.564" p="E"/></syllable>
+		</t> 
+		<mark name="s_11_3"/>
+		<t  g2p_method="lexicon" pos="CD"  ph=" v @ n">
+		eleven<syllable ph="v @ n" xmlns="http://mary.dfki.de/2002/MaryXML"><ph d="47" end="2.611" p="v"/><ph d="51" end="2.662" p="@"/><ph d="43" end="2.705" p="n"/></syllable>
+		</t> 
+		<mark name="w_12"/><t  g2p_method="lexicon" pos="CD"  ph="' t w E l v">
+		twelve<syllable ph="t w E l v" stress="1" xmlns="http://mary.dfki.de/2002/MaryXML"><ph d="61" end="2.766" p="t"/><ph d="60" end="2.826" p="w"/><ph d="71" end="2.897" p="E"/><ph d="42" end="2.939" p="l"/><ph d="34" end="2.973" p="v"/></syllable>
+		</t> 
+		<mark name="w_13"/><t  g2p_method="lexicon" pos="NN" accent="H*"  ph="' T r= ">
+		thirteen<syllable accent="H*" ph="T r=" stress="1" xmlns="http://mary.dfki.de/2002/MaryXML"><ph d="86" end="3.059" p="T"/><ph d="124" end="3.183" f0="(50,220)" p="r="/></syllable>
+		</t> 
+		<mark name="s_13_2"/>
+		<t  g2p_method="lexicon" pos="NN"  ph=" t i n">
+		thirteen<syllable ph="t i n" xmlns="http://mary.dfki.de/2002/MaryXML"><ph d="71" end="3.254" p="t"/><ph d="66" end="3.320" f0="(50,183)" p="i"/><ph d="43" end="3.363" p="n"/></syllable>
+		</t> 
+		<mark name="w_14"/><t  g2p_method="lexicon" pos="CD"  ph="' f O r ">
+		fourteen<syllable ph="f O r" stress="1" xmlns="http://mary.dfki.de/2002/MaryXML"><ph d="81" end="3.444" p="f"/><ph d="68" end="3.512" f0="(50,173)" p="O"/><ph d="48" end="3.560" p="r"/></syllable>
+		</t> 
+		<mark name="s_14_2"/>
+		<t  g2p_method="lexicon" pos="CD"  ph=" t i n">
+		fourteen<syllable ph="t i n" xmlns="http://mary.dfki.de/2002/MaryXML"><ph d="51" end="3.611" p="t"/><ph d="66" end="3.677" p="i"/><ph d="43" end="3.720" p="n"/></syllable>
+		</t> 
+		<mark name="w_15"/><t  g2p_method="lexicon" pos="CD"  ph="f I f ">
+		fifteen<syllable ph="f I f" xmlns="http://mary.dfki.de/2002/MaryXML"><ph d="75" end="3.795" p="f"/><ph d="47" end="3.842" p="I"/><ph d="67" end="3.909" p="f"/></syllable>
+		</t> 
+		<mark name="s_15_2"/>
+		<t  g2p_method="lexicon" pos="CD"  ph=" ' t i n">
+		fifteen<syllable ph="t i n" stress="1" xmlns="http://mary.dfki.de/2002/MaryXML"><ph d="58" end="3.967" p="t"/><ph d="72" end="4.039" p="i"/><ph d="49" end="4.088" p="n"/></syllable>
+		</t> 
+		<mark name="w_16"/><t  g2p_method="lexicon" pos="CD"  ph="s I k ">
+		sixteen<syllable ph="s I k" xmlns="http://mary.dfki.de/2002/MaryXML"><ph d="75" end="4.163" p="s"/><ph d="47" end="4.210" p="I"/><ph d="72" end="4.282" p="k"/></syllable>
+		</t> 
+		<mark name="s_16_2"/>
+		<t  g2p_method="lexicon" pos="CD"  ph=" ' s t i n">
+		sixteen<syllable ph="s t i n" stress="1" xmlns="http://mary.dfki.de/2002/MaryXML"><ph d="75" end="4.357" p="s"/><ph d="58" end="4.415" p="t"/><ph d="72" end="4.487" p="i"/><ph d="49" end="4.536" p="n"/></syllable>
+		</t> 
+		<mark name="w_17"/><t  g2p_method="lexicon" pos="CD"  ph="' s E ">
+		seventeen<syllable ph="s E" stress="1" xmlns="http://mary.dfki.de/2002/MaryXML"><ph d="82" end="4.618" p="s"/><ph d="71" end="4.689" p="E"/></syllable>
+		</t> 
+		<mark name="s_17_2"/>
+		<t  g2p_method="lexicon" pos="CD"  ph=" v @ n ">
+		seventeen<syllable ph="v @ n" xmlns="http://mary.dfki.de/2002/MaryXML"><ph d="47" end="4.736" p="v"/><ph d="47" end="4.783" p="@"/><ph d="43" end="4.826" p="n"/></syllable>
+		</t> 
+		<mark name="s_17_3"/>
+		<t  g2p_method="lexicon" pos="CD"  ph=" t i n">
+		seventeen<syllable ph="t i n" xmlns="http://mary.dfki.de/2002/MaryXML"><ph d="51" end="4.877" p="t"/><ph d="66" end="4.943" p="i"/><ph d="55" end="4.998" p="n"/></syllable>
+		</t> 
+		<mark name="w_18"/><t  g2p_method="lexicon" pos="CD"  ph="EI ">
+		eighteen<syllable ph="EI" xmlns="http://mary.dfki.de/2002/MaryXML"><ph d="108" end="5.106" p="EI"/></syllable>
+		</t> 
+		<mark name="s_18_2"/>
+		<t  g2p_method="lexicon" pos="CD"  ph=" ' t i n">
+		eighteen<syllable ph="t i n" stress="1" xmlns="http://mary.dfki.de/2002/MaryXML"><ph d="73" end="5.179" p="t"/><ph d="72" end="5.251" p="i"/><ph d="49" end="5.300" p="n"/></syllable>
+		</t> 
+		<mark name="w_19"/><t  g2p_method="lexicon" pos="CD"  ph="' n AI n ">
+		nineteen<syllable ph="n AI n" stress="1" xmlns="http://mary.dfki.de/2002/MaryXML"><ph d="52" end="5.352" p="n"/><ph d="116" end="5.468" p="AI"/><ph d="49" end="5.517" p="n"/></syllable>
+		</t> 
+		<mark name="s_19_2"/>
+		<t  g2p_method="lexicon" pos="CD"  ph=" t i n">
+		nineteen<syllable ph="t i n" xmlns="http://mary.dfki.de/2002/MaryXML"><ph d="51" end="5.568" p="t"/><ph d="66" end="5.634" p="i"/><ph d="43" end="5.677" p="n"/></syllable>
+		</t> 
+		<mark name="w_20"/><t  g2p_method="lexicon" pos="CD"  ph="' t w E n ">
+		twenty<syllable ph="t w E n" stress="1" xmlns="http://mary.dfki.de/2002/MaryXML"><ph d="65" end="5.742" p="t"/><ph d="66" end="5.808" p="w"/><ph d="71" end="5.879" p="E"/><ph d="49" end="5.928" p="n"/></syllable>
+		</t> 
+		<mark name="s_20_2"/>
+		<t  g2p_method="lexicon" pos="CD"  ph=" t i">
+		twenty<syllable ph="t i" xmlns="http://mary.dfki.de/2002/MaryXML"><ph d="51" end="5.979" p="t"/><ph d="121" end="6.100" f0="(100,156)" p="i"/></syllable>
+		</t> 
+		<mark name="w_21"/>
+		<t pos="." xmlns="http://mary.dfki.de/2002/MaryXML">!</t><boundary breakindex="5" duration="355" tone="L-L%" xmlns="http://mary.dfki.de/2002/MaryXML"/>
+		   </phrase>
+		</maryxml>
+	</description>
+   </speech>
+</bml>

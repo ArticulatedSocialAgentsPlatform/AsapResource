@@ -1,0 +1,194 @@
+<!-- 
+Current (work in progress) layer map:
+ 1 - base image
+ 2 - left eye
+ 3 - right eye
+ 4 - left eyelid
+ 5 - right eyelid
+ 6 - left eyebrow (?)
+ 7 - right eyebrow (?)
+ 8 - mouth
+ 9 - left arm
+10 - right arm
+11 - left icon
+12 - right icon
+-->
+<picturebinding>
+    
+    <!-- Picture Engine base behaviours -->
+    
+    <PictureUnitSpec type="setImage" namespace="http://hmi.ewi.utwente.nl/pictureengine">
+        <constraints>
+        </constraints>
+        <parametermap>
+            <parameter src="filePath" dst="filePath"/>
+            <parameter src="fileName" dst="fileName"/>
+            <parameter src="layer" dst="layer"/>
+        </parametermap>
+        <PictureUnit type="SetImagePU"/>
+    </PictureUnitSpec>	
+    <PictureUnitSpec type="addImage" namespace="http://hmi.ewi.utwente.nl/pictureengine">
+        <constraints>
+        </constraints>
+        <parametermap>
+            <parameter src="filePath" dst="filePath"/>
+            <parameter src="fileName" dst="fileName"/>
+            <parameter src="layer" dst="layer"/>
+        </parametermap>
+        <PictureUnit type="AddImagePU"/>
+    </PictureUnitSpec>
+    <PictureUnitSpec type="addAnimationDir" namespace="http://hmi.ewi.utwente.nl/pictureengine">
+        <constraints>
+        </constraints>
+        <parametermap>
+            <parameter src="resourcePath" dst="resourcePath"/>
+            <parameter src="directoryName" dst="directoryName"/>
+            <parameter src="layer" dst="layer"/>
+        </parametermap>
+        <PictureUnit type="AddAnimationDirPU"/>
+    </PictureUnitSpec>	
+    <PictureUnitSpec type="addAnimationXML" namespace="http://hmi.ewi.utwente.nl/pictureengine">
+        <constraints>
+        </constraints>
+        <parametermap>
+            <parameter src="filePath" dst="filePath"/>
+            <parameter src="fileName" dst="fileName"/>
+            <parameter src="layer" dst="layer"/>
+        </parametermap>
+        <PictureUnit type="AddAnimationXMLPU"/>
+    </PictureUnitSpec>
+    
+    <!-- Core BML behaviors -->
+    
+    <!-- Smile -->
+    <PictureUnitSpec type="faceLexeme">
+        <constraints>
+            <constraint name="lexeme" value="smile"/>
+        </constraints>
+        <parametermap>
+        </parametermap>
+        <parameterdefaults>
+            <parameterdefault name="filePath" value="pictureengine/example/animations/"/>
+            <parameterdefault name="fileName" value="smile.xml"/>
+            <parameterdefault name="layer" value="8"/>
+        </parameterdefaults>
+        <PictureUnit type="AddAnimationXMLPU"/>
+    </PictureUnitSpec>
+
+    <!-- Blink -->
+    <PictureUnitSpec type="faceLexeme">
+        <constraints>
+            <constraint name="lexeme" value="BLINK"/>
+        </constraints>
+        <parametermap>
+        </parametermap>
+        <parameterdefaults>
+            <parameterdefault name="filePath" value="pictureengine/example/pictures/"/>
+            <parameterdefault name="fileName" value="eyes-closed.png"/>
+            <parameterdefault name="layer" value="5"/>
+        </parameterdefaults>
+        <PictureUnit type="AddImagePU"/>
+    </PictureUnitSpec>
+    
+    <!-- Point -->
+    <PictureUnitSpec type="pointing">
+        <constraints>
+            <constraint name="mode" value="LEFT_HAND"/>
+        </constraints>
+        <parametermap>
+        </parametermap>
+        <parameterdefaults>
+            <parameterdefault name="filePath" value="pictureengine/example/pictures/"/>
+            <parameterdefault name="fileName" value="point-up-right.png"/>
+            <parameterdefault name="layer" value="9"/>
+        </parameterdefaults>
+        <PictureUnit type="AddImagePU"/>
+    </PictureUnitSpec>
+    <PictureUnitSpec type="pointing">
+        <constraints>
+            <constraint name="mode" value="RIGHT_HAND"/>
+        </constraints>
+        <parametermap>
+        </parametermap>
+        <parameterdefaults>
+            <parameterdefault name="filePath" value="pictureengine/example/pictures/"/>
+            <parameterdefault name="fileName" value="point-up-left.png"/>
+            <parameterdefault name="layer" value="10"/>
+        </parameterdefaults>
+        <PictureUnit type="AddImagePU"/>
+    </PictureUnitSpec>
+    
+    <!-- Beat -->
+    <PictureUnitSpec type="gesture">
+        <constraints>
+            <constraint name="lexeme" value="BEAT"/>
+            <constraint name="mode" value="RIGHT_HAND"/>
+        </constraints>
+        <parametermap>
+        </parametermap>
+        <parameterdefaults>
+            <parameterdefault name="filePath" value="pictureengine/example/pictures/"/>
+            <parameterdefault name="fileName" value="beat-left.png"/>
+            <parameterdefault name="layer" value="9"/>
+        </parameterdefaults>
+        <PictureUnit type="AddImagePU"/>
+    </PictureUnitSpec>
+    <PictureUnitSpec type="gesture">
+        <constraints>
+            <constraint name="lexeme" value="BEAT"/>
+            <constraint name="mode" value="LEFT_HAND"/>
+        </constraints>
+        <parametermap>
+        </parametermap>
+        <parameterdefaults>
+            <parameterdefault name="filePath" value="pictureengine/example/pictures/"/>
+            <parameterdefault name="fileName" value="beat-right.png"/>
+            <parameterdefault name="layer" value="10"/>
+        </parameterdefaults>
+        <PictureUnit type="AddImagePU"/>
+    </PictureUnitSpec>
+    <PictureUnitSpec type="gesture">
+        <constraints>
+            <constraint name="lexeme" value="BEAT"/>
+            <constraint name="mode" value="BOTH_HANDS"/>
+        </constraints>
+        <parametermap>
+        </parametermap>
+        <parameterdefaults>
+            <parameterdefault name="filePath" value="pictureengine/example/pictures/"/>
+            <parameterdefault name="fileName" value="beat-both.png"/>
+            <parameterdefault name="layer" value="10"/>
+        </parameterdefaults>
+        <PictureUnit type="AddImagePU"/>
+    </PictureUnitSpec>
+    
+    <!-- Gaze -->
+    <PictureUnitSpec type="gaze">
+        <constraints>
+            <constraint name="influence" value="EYES"/>
+            <constraint name="target" value="left"/>
+        </constraints>
+        <parametermap>
+        </parametermap>
+        <parameterdefaults>
+            <parameterdefault name="filePath" value="pictureengine/example/pictures/"/>
+            <parameterdefault name="fileName" value="eyes-left.png"/>
+            <parameterdefault name="layer" value="3"/>
+        </parameterdefaults>
+        <PictureUnit type="AddImagePU"/>
+    </PictureUnitSpec>
+    <PictureUnitSpec type="gaze">
+        <constraints>
+            <constraint name="influence" value="EYES"/>
+            <constraint name="target" value="right"/>
+        </constraints>
+        <parametermap>
+        </parametermap>
+        <parameterdefaults>
+            <parameterdefault name="filePath" value="pictureengine/example/pictures/"/>
+            <parameterdefault name="fileName" value="eyes-right.png"/>
+            <parameterdefault name="layer" value="3"/>
+        </parameterdefaults>
+        <PictureUnit type="AddImagePU"/>
+    </PictureUnitSpec>
+</picturebinding>

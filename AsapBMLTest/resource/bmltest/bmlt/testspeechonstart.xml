@@ -1,0 +1,9 @@
+<!--
+Expected timing:
+speech1:start = 0
+-->
+<bml xmlns="http://www.bml-initiative.org/bml/bml-1.0"  xmlns:bmla="http://www.asap-project.org/bmla" id="bml4" bmla:onStart="bml1,bml2,bml3">
+	<speech id="speech1"> 
+  	<text>I've appended some speech here!</text>
+  </speech>    
+</bml>

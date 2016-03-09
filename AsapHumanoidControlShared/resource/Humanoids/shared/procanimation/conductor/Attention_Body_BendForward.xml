@@ -1,0 +1,5 @@
+<ProcAnimation prefDuration="10" minDuration="10" maxDuration="10">
+	<Rotation rotation="0+tcbspline(t,0,0,    0,0,  0.15,0.2,0,0,0,   0.15,0.8,0,0,0,   0,1);0;0" target="vl3"/>
+	<Rotation rotation="0+tcbspline(t,0,0,    0,0,  0.1,0.2,0,0,0,   0.1,0.8,0,0,0,   0,1);0;0" target="vt10"/>
+	<Rotation rotation="0+tcbspline(t,0,0,    0,0,  -0.2,0.2,0,0,0,   -0.2,0.8,0,0,0,   0,1);0;0" target="vc6"/>
+</ProcAnimation>

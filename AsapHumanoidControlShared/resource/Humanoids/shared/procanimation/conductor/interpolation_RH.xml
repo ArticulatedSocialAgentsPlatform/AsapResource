@@ -1,0 +1,11 @@
+<ProcAnimation prefDuration="10" minDuration="10" maxDuration="10">
+	<EndEffector local="true" translation="hermite(t,0,0,   xa, xb);hermite(t,0,0,   ya,yb);hermite(t,0,0,   za,zb)" swivel="hermite(t,0,0,  sa,sb)" target="r_wrist"/>
+	<Parameter sid="xa" value="0.0"/>
+	<Parameter sid="xb" value="0.0"/>
+	<Parameter sid="ya" value="0.0"/>
+	<Parameter sid="yb" value="0.0"/>
+	<Parameter sid="za" value="0.0"/>
+	<Parameter sid="zb" value="0.0"/>
+	<Parameter sid="sa" value="0.0"/>
+	<Parameter sid="sb" value="0.0"/>
+</ProcAnimation>

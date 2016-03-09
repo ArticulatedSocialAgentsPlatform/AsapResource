@@ -1,0 +1,28 @@
+<bml xmlns="http://www.bml-initiative.org/bml/bml-1.0"  id="bml1" >
+<gesture id="g1" mode="LEFT_HAND" lexeme="BEAT" start="0.5">
+<description priority="1" type="murmlgesture">
+<murmlgesture xmlns="http://www.techfak.uni-bielefeld.de/ags/soa/murml" start="2">
+<murml-description>
+  <dynamic>
+	<keyframing easescale="10" easeturningpoint="0.5" >
+		<phase>		
+		<frame ftime="0.5">
+		<posture>Humanoid (l_shoulder 3 100 0 0)</posture>
+		</frame>
+		<frame ftime="1">
+		<posture>Humanoid (l_shoulder 3 0 0 0)</posture>
+		</frame>		
+		<frame ftime="1.5">
+		<posture>Humanoid (l_shoulder 3 100 0 0)</posture>
+		</frame>
+		<frame ftime="2">
+		<posture>Humanoid (l_shoulder 3 0 0 0)</posture>
+		</frame>		
+		</phase>
+	</keyframing>
+      </dynamic>      
+</murml-description>	
+</murmlgesture>
+</description>
+</gesture>
+</bml>

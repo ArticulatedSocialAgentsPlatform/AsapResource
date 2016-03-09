@@ -1,0 +1,10 @@
+<!--
+Requires emitterengine.
+-->
+<bml xmlns="http://www.bml-initiative.org/bml/bml-1.0"  id="bml1" xmlns:bmlt="http://hmi.ewi.utwente.nl/bmlt" xmlns:bmla="http://www.asap-project.org/bmla">
+  <bmlt:blinkemitter id="blinkemitter1" start="0" range="0.5" avgwaitingtime="10"/>
+  <bmlt:breathingemitter id="breathingemitter1" start="0" range="2" avgwaitingtime="10"/>
+  <bmla:parametervaluechange id="pvc1" target="bml1:blinkemitter1" paramId="avgwaitingtime" start="1"> 
+    <bmla:trajectory type="instant" targetValue="1"/>
+  </bmla:parametervaluechange>
+</bml>

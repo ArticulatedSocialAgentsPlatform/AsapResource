@@ -1,0 +1,16 @@
+<!--
+Constraints:
+b:n:start = 0
+b:n:end = 5000
+
+Constraints tested in: test.bml.ParserTest
+-->
+<bml xmlns="http://www.bml-initiative.org/bml/bml-1.0"  id="bml2" xmlns:bmla="http://www.asap-project.org/bmla">  
+	<bmla:parametervaluechange id="pvc" target="b:n" paramId="baseamplitudex" start="b:n:start+16" end="b:n:start+20">    
+		<bmla:trajectory type="linear" initialValue="0.5" targetValue="3"/>    
+	</bmla:parametervaluechange>
+	<bmla:parametervaluechange id="pvc2" target="b:n" paramId="offsetx" start="b:n:start+16" end="b:n:start+20">    
+		<bmla:trajectory type="linear" initialValue="-0.25" targetValue="-1.5"/>    
+	</bmla:parametervaluechange>
+</bml>
+

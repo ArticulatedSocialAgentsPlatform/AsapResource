@@ -1,0 +1,39 @@
+<ProcAnimation prefDuration="2.0" minDuration="2.0" maxDuration="2.0">
+	<EndEffector local="true" translation="-0.15+0.2+hermite(t*16, 0, 0,             0    , 0.035, 0.050, 0     ,-0.1 ,-0.04 , 0    , 0.025, 0.1  , 0.18 , 0.2  , 0.16 , 0.08, 0.055 , 0   , 0   , 0   )*0.035*(10*a+3*abs(a)+12);-0.42 -(10*a+3*abs(a)+12)*0.002 +((30-(10*a+3*abs(a)+12))/30)*0.32 + hermite(t*16, 0  , 0   ,	0.07, 0.19, 0.2 , 0.17, 0.12, 0.22, 0.25, 0.22, 0.1 , 0.17, 0.2, 0.22, 0.17, 0.32, 0.4 , 0.32, 0.07 )*0.05*(10*a+3*abs(a)+12);0.05+0.3" swivel="-0.45" target="l_wrist"/>
+	<EndEffector local="true" translation="0.15+-0.2-hermite(t*16, 0, 0,             0    , 0.035, 0.050, 0     ,-0.1 ,-0.04 , 0    , 0.025, 0.1  , 0.18 , 0.2  , 0.16 , 0.08, 0.055 , 0   , 0   , 0   )*0.035*(10*a+3*abs(a)+12);-0.42 -(10*a+3*abs(a)+12)*0.002 +((30-(10*a+3*abs(a)+12))/30)*0.32 + hermite(t*16, 0  , 0   ,	0.07, 0.19, 0.2 , 0.17, 0.12, 0.22, 0.25, 0.22, 0.1 , 0.17, 0.2, 0.22, 0.17, 0.32, 0.4 , 0.32, 0.07 )*0.05*(10*a+3*abs(a)+12);0.05+0.3" swivel="0.45" target="r_wrist"/>
+	<Rotation rotation="((30-a)/30)*0.1;((30-a)/30)*0.1;-((30-a)/30)*0.3" target="r_wrist"/>
+	<Rotation rotation="((30-a)/30)*-0.1;((30-a)/30)*0.1;((30-a)/30)*0.3" target="l_wrist"/>
+	<Rotation rotation="0.3;0;0" target="r_thumb1"/>
+	<Rotation rotation="0.2;0;0" target="r_thumb2"/>
+	<Rotation rotation="0.2;0;0" target="r_thumb3"/>
+	<Rotation rotation="0;0;0.1" target="r_index1"/>
+	<Rotation rotation="0;0;0.2" target="r_index2"/>
+	<Rotation rotation="0;0;0.3" target="r_index3"/>
+	<Rotation rotation="0;0;0.1" target="r_middle1"/>
+	<Rotation rotation="0;0;0.2" target="r_middle2"/>
+	<Rotation rotation="0;0;0.3" target="r_middle3"/>
+	<Rotation rotation="0;0;0.1" target="r_ring1"/>
+	<Rotation rotation="0;0;0.2" target="r_ring2"/>
+	<Rotation rotation="0;0;0.3" target="r_ring3"/>
+	<Rotation rotation="0;0;0.1" target="r_pinky1"/>
+	<Rotation rotation="0;0;0.2" target="r_pinky2"/>
+	<Rotation rotation="0;0;0.3" target="r_pinky3"/>	
+<KeyPosition id="start" time="0.0" weight="1.0" ></KeyPosition>
+<KeyPosition id="beat1a" time="0.0625" weight="1.0" ></KeyPosition>
+<KeyPosition id="beat1b" time="0.125" weight="1.0" ></KeyPosition>
+<KeyPosition id="beat1c" time="0.1875" weight="1.0" ></KeyPosition>
+<KeyPosition id="beat2" time="0.25" weight="1.0" ></KeyPosition>
+<KeyPosition id="beat2a" time="0.3125" weight="1.0" ></KeyPosition>
+<KeyPosition id="beat2b" time="0.375" weight="1.0" ></KeyPosition>
+<KeyPosition id="beat2c" time="0.4375" weight="1.0" ></KeyPosition>
+<KeyPosition id="beat3" time="0.5" weight="1.0" ></KeyPosition>
+<KeyPosition id="beat3a" time="0.5625" weight="1.0" ></KeyPosition>
+<KeyPosition id="beat3b" time="0.625" weight="1.0" ></KeyPosition>
+<KeyPosition id="beat3c" time="0.6875" weight="1.0" ></KeyPosition>
+<KeyPosition id="beat4" time="0.75" weight="1.0" ></KeyPosition>
+<KeyPosition id="beat4a" time="0.8125" weight="1.0" ></KeyPosition>
+<KeyPosition id="beat4b" time="0.875" weight="1.0" ></KeyPosition>
+<KeyPosition id="beat4c" time="0.9375" weight="1.0" ></KeyPosition>
+<KeyPosition id="end" time="1.0" weight="1.0" ></KeyPosition>
+<Parameter description="" sid="a" value="0.5"/>
+</ProcAnimation>

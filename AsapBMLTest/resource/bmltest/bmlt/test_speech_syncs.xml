@@ -1,0 +1,18 @@
+<!--
+Required timing:
+speech1:start = 2
+ref1:strokeEnd = speech1:tm1
+
+Constraints:
+c1 speech1:start, 2
+c2 ref1:strokeEnd, speech1:tm1
+
+Constraints tested in: test.bml.ParserTest
+Timing tested in: test.bml.TestScheduler
+-->
+<bml xmlns="http://www.bml-initiative.org/bml/bml-1.0"  id="bml1" xmlns:bmlt="http://hmi.ewi.utwente.nl/bmlt">
+	<speech id="speech1" start="2"> 
+  	<text>Welcome ladies and gentlemen <sync id="tm1"/>! This is the BMLT speech test.</text>
+  </speech>
+  <gesture id="ref1" lexeme="greta_refuse" strokeEnd="speech1:tm1"/>	
+</bml>

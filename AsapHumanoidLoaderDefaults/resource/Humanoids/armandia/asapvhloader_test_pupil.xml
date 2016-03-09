@@ -1,0 +1,41 @@
+<AsapVirtualHuman>
+
+  <Loader id="realizer" loader="asap.realizerembodiments.AsapRealizerEmbodiment"/>
+
+  <Loader id="guiembodiment" loader="asap.realizerembodiments.JFrameEmbodiment">
+    <BmlUI/>
+    <FeedbackUI/>
+  </Loader>
+
+  <Loader id="graphicalembodiment" loader="hmi.renderenvironment.HmiRenderEmbodimentLoader">
+    <Body postprocessing="ARMANDIA" 
+          texturedir="Humanoids/armandia/maps" 
+          resourcedir="Humanoids/armandia/bin" 
+          filename="armandia_boring_neckfix_light_toplevel_pupil.bin"/> <!-- other possible attributes: shaderdir, ... -->
+    <PermanentMorphs>
+        <PermanentMorph target="Body_NG-mesh-morpher-Body_chest_L-0" amount="4.0"/>
+        <PermanentMorph target="Pull_A_-mesh-morpher-_pull01_morph_NG-0" amount="1.7"/> 
+        <PermanentMorph target="Body_NG-mesh-morpher-Face02-18" amount="1"/>
+        <!--PermanentMorph target="T_Shirt_A_-mesh-morpher-tshirt_03_morph-0" amount="1.7"/--> 
+        <!--PermanentMorph target="Body_NG-mesh-morpher-Face01-17" amount="1"/-->  
+        <!-- pull_B_-mesh-morpher-pull_B_morph-0 1.7 -->
+        <!-- T_Shirt_B_-mesh-morpher-tshirt02_morph-0 1.5 -->
+    </PermanentMorphs>
+   
+  </Loader>
+
+    
+  <Loader id="shaderengine" 
+          loader="hmi.shaderengine.loader.ShaderEngineLoader"
+		  requiredloaders="graphicalembodiment"/>
+<!--
+<bml xmlns="http://www.bml-initiative.org/bml/bml-1.0"  id="bml1" xmlns:bmlt="http://hmi.ewi.utwente.nl/bmlt">
+  <bmlt:setshaderparameter id="ssp1" start="0" end="10" mesh="Eye_L-mesh" material="irisModified" parameter="pupilsize" value="0.01"/>
+  <bmlt:parametervaluechange id="pvc1" target="bml1:ssp1" paramId="value" start="3" end="5"> 
+    <bmlt:trajectory type="linear" targetValue="0.08"/>
+  </bmlt:parametervaluechange>
+</bml>
+-->
+  
+  
+</AsapVirtualHuman>

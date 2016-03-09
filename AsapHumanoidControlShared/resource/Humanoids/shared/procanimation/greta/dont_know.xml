@@ -1,0 +1,29 @@
+<!-- 
+ This procedural animation was constructed using the Greta (http://www.tsi.enst.fr/~pelachau/Greta/) gesture with the corresponding name. 
+ -->
+<ProcAnimation prefDuration="1.2342687" minDuration="1.2342687" maxDuration="1.2342687">
+<EndEffector local="true" target="r_wrist" translation="tcbspline(t,0,0,0,0,XEP*(1+SPC*if(SPC&gt;=0,1.3,0.7)),0.45949018,PWR,FLD,PWR,XEP*(1+SPC*if(SPC&gt;=0,1.3,0.7)),0.5405098,PWR,FLD,PWR,0,1);tcbspline(t,0,0,YLOWERP,0,YLOWERP*(1+SPC*if(SPC&gt;=0,0.6,0.25)),0.45949018,PWR,FLD,PWR,YLOWERP*(1+SPC*if(SPC&gt;=0,0.6,0.25)),0.5405098,PWR,FLD,PWR,YLOWERP,1);tcbspline(t,0,0,0,0,(ZMIDDLE*0.5)*(1+SPC*if(SPC&lt;=0,0.25,0.25)),0.45949018,PWR,FLD,PWR,(ZMIDDLE*0.5)*(1+SPC*if(SPC&lt;=0,0.25,0.25)),0.5405098,PWR,FLD,PWR,0,1)"  swivel="tcbspline(t,0,0,0.35,0,if((YLOWERP*(1+SPC*if(SPC&gt;=0,0.6,0.25))-61.0+20)&lt;0 &amp;&amp; -(YLOWERP*(1+SPC*if(SPC&gt;=0,0.6,0.25))-61.0+20)&gt;0.7*57.295,(1-(0.7*57.295*((-(YLOWERP*(1+SPC*if(SPC&gt;=0,0.6,0.25))-61.0+20))-0.7*57.295) / (0.3*57.295)))*0.35,0.35)*(1+0.5*SPC),0.45949018,PWR,FLD,PWR,if((YLOWERP*(1+SPC*if(SPC&gt;=0,0.6,0.25))-61.0+20)&lt;0 &amp;&amp; -(YLOWERP*(1+SPC*if(SPC&gt;=0,0.6,0.25))-61.0+20)&gt;0.7*57.295,(1-(0.7*57.295*((-(YLOWERP*(1+SPC*if(SPC&gt;=0,0.6,0.25))-61.0+20))-0.7*57.295) / (0.3*57.295)))*0.35,0.35)*(1+0.5*SPC),0.5405098,PWR,FLD,PWR,0.35,1)+0.2"/>
+<EndEffector local="true" target="l_wrist" translation="tcbspline(t,0,0,0,0,-XEP,0.45949018,PWR,FLD,PWR,-XEP,0.5405098,PWR,FLD,PWR,0,1);tcbspline(t,0,0,YLOWERP,0,YLOWERP,0.45949018,PWR,FLD,PWR,YLOWERP,0.5405098,PWR,FLD,PWR,YLOWERP,1);tcbspline(t,0,0,0,0,(ZMIDDLE*0.5),0.45949018,PWR,FLD,PWR,(ZMIDDLE*0.5),0.5405098,PWR,FLD,PWR,0,1)"  swivel="tcbspline(t,0,0,-0.35,0,-0.23909079,0.45949018,PWR,FLD,PWR,-0.23909079,0.5405098,PWR,FLD,PWR,-0.35,1)"/>
+<Keyframes target="r_wrist" encoding="quaternion">
+<Keyframe time="0" value="1;0;0;0" local="true"/>
+<Keyframe time="0.45949018" local="false" value="0.5;-0.5;-0.5;0.5"/>
+<Keyframe time="0.5405098" local="false" value="0.5;-0.5;-0.5;0.5"/>
+<Keyframe time="1" value="1;0;0;0" local="true"/>
+</Keyframes>
+<Keyframes target="l_wrist" encoding="quaternion">
+<Keyframe time="0" value="1;0;0;0" local="true"/>
+<Keyframe time="0.45949018" local="false" value="0.5;-0.5;0.5;-0.5"/>
+<Keyframe time="0.5405098" local="false" value="0.5;-0.5;0.5;-0.5"/>
+<Keyframe time="1" value="1;0;0;0" local="true"/>
+</Keyframes>
+<KeyPosition id="start" weight="1" time="0"/>
+<KeyPosition id="strokeStart" weight="1" time="0.45949018"/>
+<KeyPosition id="strokeEnd" weight="1" time="0.5405098"/>
+<KeyPosition id="end" weight="1" time="1"/>
+<Parameter description="" sid="XEP" value="-0.3"/>
+<Parameter description="" sid="YLOWERP" value="-0.47"/>
+<Parameter description="" sid="ZMIDDLE" value="0.18"/>
+<Parameter description="Spatial extend" sid="SPC" value="0"/>
+<Parameter description="Power" sid="PWR" value="0"/>
+<Parameter description="Fluidity" sid="FLD" value="0"/>
+</ProcAnimation>

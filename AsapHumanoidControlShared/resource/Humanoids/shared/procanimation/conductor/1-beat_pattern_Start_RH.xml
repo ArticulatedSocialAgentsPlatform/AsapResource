@@ -1,0 +1,27 @@
+<ProcAnimation prefDuration="2" minDuration="2" maxDuration="2">
+<EndEffector local="true" translation="-(0 -0.0012*(10*a+3*abs(a)+12)+(0.5-t)^2*( 0.07+(10*a+3*abs(a)+12)*0.012))*0.8+xoff;-0.3+((10*a+3*abs(a)+12)*0.025-(0.8*(10*a+3*abs(a)+12)-15)*0.007 -(t-0.5)^2*((10*a+3*abs(a)+12)*0.1))*0.8+yoff;0.05+0.30-0.002*(10*a+3*abs(a)+12)*sin(t*pi)+ (t-0.5)^2*((10*a+3*abs(a)+12)*0.0018)+zoff" swivel="0.42" target="r_wrist"></EndEffector>
+<Rotation rotation="pi- (0.2+0.01*a)*(t-0.5)^2;pi;pi" target="vc7"></Rotation>
+<Rotation rotation="3;3;3" target="vc1"></Rotation>
+<Rotation rotation="((30-a)/30)*0.1;((30-a)/30)*-0.5;((30-a)/30)*-0.2" target="r_wrist"></Rotation>
+<Rotation rotation="0.3;0;0" target="r_thumb1"></Rotation>
+<Rotation rotation="0.2;0;0" target="r_thumb2"></Rotation>
+<Rotation rotation="0.2;0;0" target="r_thumb3"></Rotation>
+<Rotation rotation="0;0;0.1" target="r_index1"></Rotation>
+<Rotation rotation="0;0;0.2" target="r_index2"></Rotation>
+<Rotation rotation="0;0;0.3" target="r_index3"></Rotation>
+<Rotation rotation="0;0;0.1" target="r_middle1"></Rotation>
+<Rotation rotation="0;0;0.2" target="r_middle2"></Rotation>
+<Rotation rotation="0;0;0.3" target="r_middle3"></Rotation>
+<Rotation rotation="0;0;0.1" target="r_ring1"></Rotation>
+<Rotation rotation="0;0;0.2" target="r_ring2"></Rotation>
+<Rotation rotation="0;0;0.3" target="r_ring3"></Rotation>
+<Rotation rotation="0;0;0.1" target="r_pinky1"></Rotation>
+<Rotation rotation="0;0;0.2" target="r_pinky2"></Rotation>
+<Rotation rotation="0;0;0.3" target="r_pinky3"></Rotation>
+<KeyPosition time="0.0" weight="1.0" id="start"></KeyPosition>
+<KeyPosition time="0.25" weight="1.0" id="b1a"></KeyPosition>
+<KeyPosition time="0.5" weight="1.0" id="b1b"></KeyPosition>
+<KeyPosition time="0.75" weight="1.0" id="b1c"></KeyPosition>
+<KeyPosition time="1.0" weight="1.0" id="end"></KeyPosition>
+<Parameter sid="a" value="1.0"></Parameter>
+</ProcAnimation>

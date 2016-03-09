@@ -1,0 +1,6 @@
+<!--
+Gaze to an absolute point
+-->
+<bml xmlns="http://www.bml-initiative.org/bml/bml-1.0"  id="bml1">
+  <gaze id="gaze1" influence="WAIST"  target="1,1,1" />		 
+</bml>

@@ -1,0 +1,5 @@
+
+<bml xmlns="http://www.bml-initiative.org/bml/bml-1.0" id="bml1" xmlns:pe="http://hmi.ewi.utwente.nl/pictureengine">
+    <pe:setImage filePath="pictureengine/example/pictures/" fileName="neutral-open.png" start="1" end="7" id="sq"/>
+    <pe:addImage filePath="pictureengine/example/pictures/" fileName="smile-open.png" layer="1" start="2" end="5" id="ai1"/>
+</bml>

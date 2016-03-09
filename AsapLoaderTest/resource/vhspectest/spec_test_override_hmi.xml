@@ -1,0 +1,21 @@
+<VirtualHumanSpecHmi version="1.0">
+  <IncludeSpec filename="spec_test_defaults_generic.xml"/>
+  <!-- and now start to override some stuff (e.g. voice), and add some stuff (for graphics, face) -->
+  <VoiceSpec          voicetype="SAPI5" voicename="Kate"/>
+  <FaceSpec>
+      <FapDeform filename="Humanoids/armandia/mpeg4faps/armandia.xml" facemesh="Body_NG-mesh-1"/> <!-- Hmi graphics specific: the mapping from FAPs to mesh. -->
+      <MorphTargets> <!-- reduced version to test override -->
+          <Target name="Body_NG-mesh-morpher-HAA-16"/>
+      </MorphTargets>
+  </FaceSpec>
+  <BodySpec>
+   <ColladaSpec>
+     <ColladaTextureDir  path="Humanoids/armandia/maps"/>
+   </ColladaSpec>
+  </BodySpec>
+  <DebugSpec>
+    <DebugVJoints       offset="-0.5 0 -0.5" type="box"/>
+    <DebugPhysicalHuman offset=" 0.5 0 -0.5"/>
+  </DebugSpec>
+
+</VirtualHumanSpecHmi>

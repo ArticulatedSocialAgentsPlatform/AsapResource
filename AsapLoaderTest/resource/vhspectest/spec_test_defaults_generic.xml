@@ -1,0 +1,51 @@
+<VirtualHumanSpec version="1.0">
+  <!-- generic render-independent default stuff for Armandia, e.g. gesturebinding and physical models -->
+  <GestureBindingSpec resources="" filename="Humanoids/shared/gesturebinding/gesturebinding.xml"/>
+  <BMLRealizerSpec    createrealizer="true"/>
+  <VoiceSpec          voicetype="TEXT"/>
+  <FaceSpec>
+      <FaceBinding        resources="" filename="Humanoids/armandia/facebinding/facebinding.xml"/>
+      <MorphVisemeBinding resources="" filename="Humanoids/armandia/facebinding/disneyvisemebinding.xml"/> 
+      <!-- alternative: FapVisemeBinding file=viseme2fapmapping.xml -->
+      <MorphTargets> <!-- the morph targets that are available for face expressions -->
+          <Target name="Body_NG-mesh-morpher-A-2"/>
+          <Target name="Body_NG-mesh-morpher-E-5"/>
+          <Target name="Body_NG-mesh-morpher-I-6"/>
+          <Target name="Body_NG-mesh-morpher-U-4"/>
+          <Target name="Body_NG-mesh-morpher-O-3"/>
+          <Target name="Body_NG-mesh-morpher-P_B-8"/>
+          <Target name="Body_NG-mesh-morpher-Hum-19"/>
+          <Target name="Body_NG-mesh-morpher-Wink-20"/>
+          <Target name="Body_NG-mesh-morpher-yeux_NG01-1"/>
+          <Target name="Body_NG-mesh-morpher-F-7"/>
+          <Target name="Body_NG-mesh-morpher-Smile01-9"/>
+          <Target name="Body_NG-mesh-morpher-Pff-10"/>
+          <Target name="Body_NG-mesh-morpher-T_severe-11"/>
+          <Target name="Body_NG-mesh-morpher-T_severe02-12"/>
+          <Target name="Body_NG-mesh-morpher-T_dent-13"/>
+          <Target name="Body_NG-mesh-morpher-T_trist-14"/>
+          <Target name="Body_NG-mesh-morpher-T_trist02-15"/>
+          <Target name="Body_NG-mesh-morpher-HAA-16"/>
+      </MorphTargets>
+  </FaceSpec>
+  <BodySpec>
+   <ColladaSpec>
+     <ColladaIncludeDir path="Humanoids/armandia/dae"/>
+     <ColladaFile filename="Humanoids/armandia/dae/armandia_boring_neckfix_dark_toplevel.dae"/>
+     <ColladaRenamingFile filename="Humanoids/armandia/dae/armandia-renaming.txt"/>
+   </ColladaSpec>
+   <StartPose resources="" filename="Humanoids/armandia/restposes/looselyhangingarms.xml"/>
+   <StartPosition offset="0.2 0 0"/>
+   <StartRotation rotation="0 1 0 -0.2"/>
+   <GlueFeetToFloor/>
+  </BodySpec>
+  <PhysicsSpec resources="">
+      <PhysicalModel filename="Humanoids/armandia/physicalmodels/armandia_ph.xml"/>
+      <MixedSystems> <!-- preferably, those are generated on the fly from the physical model... -->
+        <MixedSystem name="lowerbody"            filename="Humanoids/armandia/mixedsystems/armandialowerbody.xml"/> <!-- name is for debugging purposes only! -->
+        <MixedSystem name="lowerbodyandleftarm"  filename="Humanoids/armandia/mixedsystems/armandialowerbodyandleftarm.xml"/>
+        <MixedSystem name="lowerbodyandrightarm" filename="Humanoids/armandia/mixedsystems/armandialowerbodyandrightarm.xml"/>
+        <MixedSystem name="lowerbodyandarms"     filename="Humanoids/armandia/mixedsystems/armandialowerbodyarms.xml"/>
+      </MixedSystems>
+  </PhysicsSpec>
+</VirtualHumanSpec>

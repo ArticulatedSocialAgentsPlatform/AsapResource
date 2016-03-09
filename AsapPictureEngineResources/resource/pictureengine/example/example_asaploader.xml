@@ -1,0 +1,53 @@
+<AsapVirtualHuman>
+  <Loader id="realizer" loader="asap.realizerembodiments.AsapRealizerEmbodiment">
+    <!--LogPipe requestlog="asap.bml.requests" /--> <!--only requests -->
+    <!--LogPipe requestlog="asap.bml.requests" feedbacklog="asap.bml.feedback"/--> <!--log both requests and feedback-->
+    <!--ServerAdapter requestport="7521" feedbackport="1257"/-->
+    </Loader> 
+
+    <Loader id="guiembodiment" loader="asap.realizerembodiments.JFrameEmbodiment">
+        <BmlUI demoscriptresources="pictureengine/example/bmlexamples"/>
+        <FeedbackUI/>
+        <!--ServerUI/-->
+        <!--KillButton/-->
+    </Loader>
+
+  <!-- Engine for playing audio files, nice for sound effects (e.g., clapping) or for prerecorded speech fragments -->
+  <!--Loader id="audioengine" loader="asap.audioengine.loader.AudioEngineLoader"/-->
+
+  <!-- Text label embodiment and text speech engine together can be used to put all text on a label (kind of "subcaptions") instead of turning them into audio. If using this, remove the other speechengine -->
+    <Loader id="textlabel" loader="asap.textengine.JLabelTextEmbodiment" requiredloaders="guiembodiment"/>
+    <Loader id="textspeechengine" loader="asap.textengine.TextEngineLoader" requiredloaders="textlabel"/>
+  
+    <!-- Blinkemitter that sens small blink animations every now and then -->
+    <Loader id="blinkengine" loader="asap.emitterengine.loader.EmitterEngineLoader">
+        <EmitterInfo class="asap.blinkemitter.BlinkEmitterInfo"/>
+    </Loader>
+
+    <Loader id="pictureembodiment" loader="asap.picture.swing.JFramePictureEmbodiment"/>
+  
+    <Loader id="pictureengine" loader="asap.picture.loader.PictureEngineLoader" requiredloaders="pictureembodiment">
+        <PictureBinding basedir="" resources="pictureengine/example/" filename="picturebinding.xml"/>
+    </Loader>
+    
+    <Loader id="lipsync" loader="asap.picture.loader.TimedPictureUnitLipSynchProviderLoader" requiredloaders="pictureengine,pictureembodiment">
+        <AnimationXML filePath="pictureengine/example/animations/" fileName="speak.xml"/>
+    </Loader>
+    
+    <Loader id="subtitle" loader="asap.textengine.loader.TimedSpeechTextUnitLipSynchProviderLoader" requiredloaders="textspeechengine"/>
+
+    <Loader id="speechengine" loader="asap.speechengine.loader.SpeechEngineLoader" requiredloaders="guiembodiment,subtitle,lipsync">
+        <Voice voicetype="SAPI5" voicename="LH Michelle" factory="WAV_TTS"/> 
+        <SpeechUI/>
+    </Loader>
+
+    <BMLRouting>
+        <Route behaviourclass="saiba.bml.core.FaceLexemeBehaviour" engineid="pictureengine"/>
+        <Route behaviourclass="saiba.bml.core.ext.FaceFacsBehaviour" engineid="pictureengine"/>
+        <Route behaviourclass="saiba.bml.core.GestureBehaviour" engineid="pictureengine"/>
+        <Route behaviourclass="saiba.bml.core.GazeBehaviour" engineid="pictureengine"/>
+        <Route behaviourclass="saiba.bml.core.PointingBehaviour" engineid="pictureengine"/>
+
+        <Route behaviourclass="saiba.bml.core.SpeechBehaviour" engineid="speechengine"/>
+	</BMLRouting>
+</AsapVirtualHuman>

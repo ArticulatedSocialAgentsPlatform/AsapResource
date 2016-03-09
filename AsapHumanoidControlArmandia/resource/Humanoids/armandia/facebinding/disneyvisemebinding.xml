@@ -1,0 +1,25 @@
+<VisemeToMorphMapping>
+  <!-- This maps the Disney-13 visemes to the morph target provided in Armandia -->
+  <Mapping viseme="0" intensity="0" target="Body_NG-mesh-morpher-P_B-8"/>
+  <Mapping viseme="1" target="Body_NG-mesh-morpher-A-2"/>
+  <Mapping viseme="2" target="Body_NG-mesh-morpher-A-2"/>
+  <Mapping viseme="3" target="Body_NG-mesh-morpher-A-2"/>
+  <Mapping viseme="4" target="Body_NG-mesh-morpher-E-5"/>
+  <Mapping viseme="5" target="Body_NG-mesh-morpher-E-5"/>
+  <Mapping viseme="6" target="Body_NG-mesh-morpher-I-6"/>
+  <Mapping viseme="7" target="Body_NG-mesh-morpher-U-4"/>
+  <Mapping viseme="8" target="Body_NG-mesh-morpher-O-3"/>
+  <Mapping viseme="9" target="Body_NG-mesh-morpher-A-2"/>
+  <Mapping viseme="10" target="Body_NG-mesh-morpher-O-3"/>
+  <Mapping viseme="11" target="Body_NG-mesh-morpher-A-2"/>
+  <Mapping viseme="12" target="Body_NG-mesh-morpher-E-5"/>
+  <Mapping viseme="13" target="Body_NG-mesh-morpher-E-5"/>
+  <Mapping viseme="14" target="Body_NG-mesh-morpher-E-5"/>
+  <Mapping viseme="15" intensity="0" target="Body_NG-mesh-morpher-P_B-8"/> <!-- s, z -->
+  <Mapping viseme="16" intensity="0" target="Body_NG-mesh-morpher-P_B-8"/> <!--sh, ch, jh, zh -->
+  <Mapping viseme="17" intensity="0" target="Body_NG-mesh-morpher-P_B-8"/> <!--th, dh -->
+  <Mapping viseme="18" target="Body_NG-mesh-morpher-P_B-8"/>
+  <Mapping viseme="19" intensity="0" target="Body_NG-mesh-morpher-P_B-8"/> <!-- d, t, n -->
+  <Mapping viseme="20" target="Body_NG-mesh-morpher-E-5"/>
+  <Mapping viseme="21" target="Body_NG-mesh-morpher-P_B-8"/>
+</VisemeToMorphMapping>

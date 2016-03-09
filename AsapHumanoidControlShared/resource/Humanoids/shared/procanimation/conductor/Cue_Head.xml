@@ -1,0 +1,10 @@
+<ProcAnimation prefDuration="10" minDuration="10" maxDuration="10">
+	<Rotation rotation="0+tcbspline(t,0,0,    0,0,  0.15,0.2,0,0,0,   0.15,0.8,0,0,0,   0,1);0;0" target="vl3"/>
+	<Rotation rotation="0+tcbspline(t,0,0,    0,0,  0.1,0.2,0,0,0,   0.1,0.8,0,0,0,   0,1);0;0" target="vt10"/>
+	<Rotation rotation="pi- (0.2+0.01*a)*(t-0.5)^2;pi;pi" target="vc7"/>
+	<Rotation rotation="0+tcbspline(t,0,0,    0,0,  0.5,0.5,0,0,-1,  0,1);0+tcbspline(t,0,0,    0,0,   (direction/90*0.5),0.2,0,0,0,   (direction/90*0.5),0.8,0,0,0,  0,1);0" target="vc2"/>
+	<Rotation rotation="((30-a)/30)*-0.1;((30-a)/30)*0.5;((30-a)/30)*0.3" target="l_wrist"/>
+	<Rotation rotation="((30-a)/30)*0.1;((30-a)/30)*0.1;-((30-a)/30)*0.3" target="r_wrist"/>
+	<KeyPosition time="0.5" weight="1.0" id="mid"/>
+	<Parameter sid="direction" value="0.0"/>
+</ProcAnimation>

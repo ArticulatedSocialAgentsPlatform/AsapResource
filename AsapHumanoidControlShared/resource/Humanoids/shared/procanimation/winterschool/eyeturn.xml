@@ -1,0 +1,12 @@
+<ProcAnimation prefDuration="1.0" minDuration="1.0" maxDuration="1.0">
+	<Rotation rotation="- if(t &lt; 0.5,p*t,p*(1-t));if(t &lt; 0.5,y*t,y*(1-t));0" target="l_eyeball_joint"/>
+	<Rotation rotation="- if(t &lt; 0.5,p*t,p*(1-t));if(t &lt; 0.5,y*t,y*(1-t));0" target="r_eyeball_joint"/>
+		<KeyPosition id="start" time="0.0" weight="1.0"></KeyPosition>
+		<KeyPosition id="ready" time="0.5" weight="1.0"></KeyPosition>
+		<KeyPosition id="relax" time="0.5" weight="1.0"></KeyPosition>
+		<KeyPosition id="end" time="1.0" weight="1.0"></KeyPosition>
+	<Parameter sid="y" description="yaw" value="1"/>
+	<Parameter sid="p" description="pitch" value="1"/>
+	<Parameter sid="r" description="repeats" value="1"/>  
+</ProcAnimation>
+

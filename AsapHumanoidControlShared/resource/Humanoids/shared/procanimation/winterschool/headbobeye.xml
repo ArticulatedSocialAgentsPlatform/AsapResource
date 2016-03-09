@@ -1,0 +1,11 @@
+<ProcAnimation prefDuration="1.0" minDuration="1" maxDuration="1.0">
+	<Rotation rotation="a * 0.5 * sin( t * pi * r);0;0" target="vc4"/> 
+	<Rotation rotation="b * 0.5 * sin( t * pi * r);0;0" target="skullbase"/>	
+	<Rotation rotation="-c * 0.5 * sin( t * pi * r);0;0" target="l_eyeball_joint"/>
+	<Rotation rotation="-c * 0.5 * sin( t * pi * r);0;0" target="r_eyeball_joint"/>
+  <Parameter sid="a" description="magnitudeVC4" value="0.25"/>
+  <Parameter sid="b" description="magnitudeSkullbase" value="0.25"/>
+  <Parameter sid="c" description="magnitudeEyes" value="0.5"/>
+  <Parameter sid="r" description="repeats" value="1"/>  
+  <KeyPosition id="stroke" weight="1" time="0.5"/>
+</ProcAnimation>
