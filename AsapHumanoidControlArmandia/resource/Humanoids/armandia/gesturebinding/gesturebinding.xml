@@ -70,8 +70,7 @@
 			<parameter src="priority" dst="priority"/>
 		</parametermap>
 		<parameterdefaults>
-			<parameterdefault name="pelvisheight" value="1.7"/>
-			<parameterdefault name="replacementgroup" value="posture"/>
+			<parameterdefault name="pelvisheight" value="1.7"/>			
 		</parameterdefaults>
 		<MotionUnit type="PhysicalController" class="hmi.physics.controller.BalanceController"/>
 	</MotionUnitSpec>
