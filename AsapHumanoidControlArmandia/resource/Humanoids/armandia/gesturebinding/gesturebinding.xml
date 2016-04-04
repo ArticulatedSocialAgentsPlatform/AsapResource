@@ -1037,7 +1037,6 @@ CONDUIT (BOTH|-)
 		</constraints>
 		<parametermap>
 			<parameter src="pelvisheight" dst="pelvisheight"/>
-			<parameter src="replacementgroup" dst="replacementgroup"/>
 			<parameter src="priority" dst="priority"/>
 		</parametermap>		
 		<MotionUnit type="PhysicalController" class="hmi.physics.controller.BalanceController"/>
@@ -1049,7 +1048,6 @@ CONDUIT (BOTH|-)
 		</constraints>
 		<parametermap>
 			<parameter src="joints" dst="joints"/>
-			<parameter src="replacementgroup" dst="replacementgroup"/>
 			<parameter src="priority" dst="priority"/>
 		</parametermap>		
 		<MotionUnit type="PhysicalController" class="hmi.physics.controller.RagdollController"/>
@@ -1063,7 +1061,6 @@ CONDUIT (BOTH|-)
 			<parameter src="body" dst="body"/>
 			<parameter src="dsrot" dst="dsrot"/>
 			<parameter src="dslin" dst="dslin"/>
-			<parameter src="replacementgroup" dst="replacementgroup"/>
 			<parameter src="priority" dst="priority"/>
 		</parametermap>		
 		<MotionUnit type="PhysicalController" class="hmi.physics.controller.RigidBodyDamper"/>
@@ -1084,7 +1081,6 @@ CONDUIT (BOTH|-)
 			<parameter src="dsy" dst="dsy"/>
 			<parameter src="ksz" dst="ksz"/>
 			<parameter src="dsz" dst="dsz"/>
-			<parameter src="replacementgroup" dst="replacementgroup"/>
 			<parameter src="priority" dst="priority"/>
 		</parametermap>		
 		<MotionUnit type="PhysicalController" class="hmi.physics.controller.BallJointController"/>
@@ -1095,7 +1091,6 @@ CONDUIT (BOTH|-)
 			<constraint name="class" value="NoController"/>
 		</constraints>
 		<parametermap>
-			<parameter src="replacementgroup" dst="replacementgroup"/>
 			<parameter src="priority" dst="priority"/>
 		</parametermap>		
 		<MotionUnit type="PhysicalController" class="hmi.physics.controller.NoController"/>
@@ -1111,7 +1106,6 @@ CONDUIT (BOTH|-)
 			<parameter src="ks" dst="ks"/>
 			<parameter src="ds" dst="ds"/>
 			<parameter src="axis" dst="axis"/>
-			<parameter src="replacementgroup" dst="replacementgroup"/>
 			<parameter src="priority" dst="priority"/>
 		</parametermap>		
 		<MotionUnit type="PhysicalController" class="hmi.physics.controller.HingeJointController"/>
@@ -1124,7 +1118,6 @@ CONDUIT (BOTH|-)
 		<parametermap>
 			<parameter src="joint" dst="joint"/>			
 			<parameter src="friction" dst="friction"/>
-			<parameter src="replacementgroup" dst="replacementgroup"/>
 			<parameter src="priority" dst="priority"/>
 		</parametermap>		
 		<MotionUnit type="PhysicalController" class="hmi.physics.controller.FrictionController"/>
