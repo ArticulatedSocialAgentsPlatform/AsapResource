@@ -982,8 +982,7 @@ CONDUIT (BOTH|-)
 			<constraint name="class" value="CompoundController"/>
 			<constraint name="name" value="leftarmhang"/>
 		</constraints>
-		<parametermap>
-			<parameter src="replacementgroup" dst="replacementgroup"/>
+		<parametermap>			
 			<parameter src="priority" dst="priority"/>
 			<parameter src="shoulder:anglex" dst="shoulder:anglex"/>
 			<parameter src="shoulder:angley" dst="shoulder:angley"/>
@@ -1010,8 +1009,7 @@ CONDUIT (BOTH|-)
 			<constraint name="name" value="rightarmhang"/>
 		</constraints>
 		<parametermap>
-			<parameter src="priority" dst="priority"/>			
-			<parameter src="replacementgroup" dst="replacementgroup"/>
+			<parameter src="priority" dst="priority"/>						
 			<parameter src="shoulder:anglex" dst="shoulder:anglex"/>
 			<parameter src="shoulder:angley" dst="shoulder:angley"/>
 			<parameter src="shoulder:anglez" dst="shoulder:anglez"/>			
