@@ -1,0 +1,10 @@
+<bml xmlns="http://www.bml-initiative.org/bml/bml-1.0"  id="bml1" xmlns:bmlt="http://hmi.ewi.utwente.nl/bmlt">
+	<bmlt:controller id="balance1" class="BalanceController" start="0" end="4">
+    <bmlt:parameter name="pelvisheight" value="1"/>
+    <bmlt:parameter name="replacementgroup" value="posture"/>
+  </bmlt:controller>	
+  <bmlt:controller id="balance2" class="BalanceController" start="4" end="10">
+    <bmlt:parameter name="pelvisheight" value="0.785"/>
+    <bmlt:parameter name="replacementgroup" value="posture"/>
+  </bmlt:controller>
+</bml>
